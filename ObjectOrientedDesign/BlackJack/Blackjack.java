@@ -17,8 +17,6 @@ public enum AccountStatus {
     ACTIVE, CLOSED, BALCKLISTED
 }
 
-
-
 public abstract class BasePlayer {
     private String userId;
     private String passWord;
