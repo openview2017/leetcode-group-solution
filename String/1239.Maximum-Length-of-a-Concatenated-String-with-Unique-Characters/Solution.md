@@ -10,7 +10,7 @@ for each String curStr in list  [takes n]
 ```
 Time: n * m * (n * m)
 Space: set/array of max size 26
-
+***add
 
 #### Solution2: DFS
 
