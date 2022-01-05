@@ -18,6 +18,7 @@ public enum AccountStatus {
 }
 
 
+
 public abstract class BasePlayer {
     private String userId;
     private String passWord;
