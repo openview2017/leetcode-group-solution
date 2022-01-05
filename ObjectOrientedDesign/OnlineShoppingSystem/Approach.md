@@ -15,6 +15,7 @@
   User can add new product to sell
   System will send notification to user once there is change in the order or shipping status
 ```
+
 ### Use Case Diagram
 ```
   Actors :
@@ -43,6 +44,7 @@
     Send notification to members with order/shipment updates
 ```
 
+
 ### Class Diagram
 ```
   Account
@@ -60,5 +62,4 @@
   ShipmentLog
   Notification
   Payment
-
 ```
