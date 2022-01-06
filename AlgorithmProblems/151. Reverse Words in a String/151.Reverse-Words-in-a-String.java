@@ -6,7 +6,7 @@ step 3: reverse each word
 TC: O(n)
 SC: O(1)
 */
-class Solution34 {
+class Solution56 {
     public String reverseWords(String s) {
         char[] array = s.toCharArray();
         int slow = 0; // 0..slow - 1 to keep*
