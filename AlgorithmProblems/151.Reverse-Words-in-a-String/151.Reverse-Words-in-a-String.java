@@ -1,11 +1,11 @@
-/*
-step 1: remove spaces
-step 2: reverse overall
-step 3: reverse each word
+// /*
+// step 1: remove spaces
+// step 2: reverse overall
+// step 3: reverse each word
 
-TC: O(n)
-SC: O(1)
-*/
+// TC: O(n)
+// SC: O(1)
+// */
 class Solution {
     public String reverseWords(String s) {
         char[] array = s.toCharArray();
