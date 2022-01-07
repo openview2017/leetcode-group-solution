@@ -20,6 +20,8 @@ Only consider 2 type of ingredients: sugar and milk
 ```
 Decorator pattern allows a user to add new functionality to an existing object without altering its structure.
 This type of design pattern comes under structural pattern as this pattern acts as a wrapper to existing class.
+Example of shape use decorator pattern : https://dzone.com/articles/decorator-design-pattern-in-java
+Example of Christmas Tree use decorator pattern : https://www.baeldung.com/java-decorator-pattern
 ```
 
 #### Second how to implement Decrator Pattern in Design
