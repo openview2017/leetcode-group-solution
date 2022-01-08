@@ -21,6 +21,7 @@ class Solution {
                 set.add(c);
             }
         }
+
         StringBuffer sb = new StringBuffer();
         while (!stack.isEmpty()) {
             sb.append(stack.pollLast());
