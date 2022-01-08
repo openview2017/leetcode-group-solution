@@ -10,7 +10,7 @@ for each String curStr in list  [takes n]
 ```
 Time: n * m * (n * m)
 Space: set/array of max size 26
-
+***add
 
 #### Solution2: DFS
 
@@ -30,3 +30,4 @@ dfs(arr, path, index) - > for (i = index + 1 to end )
         bitmap[i][1] represent a string length by int
 
 ```
+
