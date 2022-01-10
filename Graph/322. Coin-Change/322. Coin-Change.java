@@ -84,3 +84,49 @@ class BFSwMemoSolution { // bfs
     }
 }
 
+class DFSprune { // dfs w prune
+    int res = Integer.MAX_VALUE;
+
+    public int coinChange(int[] coin, int amount) {
+        if (amount == 0) return 0;
+        Set<Integer> s = new HashSet<Integer>();
+        for (int cc : coin) {
+            if (cc > 0) s.add(cc);
+        }
+        int[] coins = new int[s.size()];
+        int i = 0;
+        for (int c : s) {
+            coins[i++] = c;
+        } 
+        Arrays.sort(coins);
+        dfs(coins, amount, coins.length - 1, 0);
+        return res == Integer.MAX_VALUE ? -1 : res;
+    }
+
+    private void dfs(int[] coins, int amount, int index, int count) {
+        if (amount == 0) {
+            res = Math.min(res, count);
+            return;
+        }
+        if (index < 0 || amount < 0) {
+            return;
+        }
+        for (int i = amount / coins[index]; i >= 0 && i < res - count; i--) {
+            dfs(coins, amount - i * coins[index], index - 1, count + i);
+        }
+    }
+}
+/*abstract
+ 11 [1 2 5 10]   100   -> 4^100
+ 1.      11
+        / | \
+       10 9  6
+ 
+          11
+          / | 
+10      11  1              100^4
+        /|\    |
+5     11 6 1   1
+       
+2
+*/
