@@ -1,3 +1,5 @@
+import java.util.*;
+
 /*
 constructor: 把tree的最左边一条加进stack O（height）
 hasNext：看stack是否为空 O(1)
