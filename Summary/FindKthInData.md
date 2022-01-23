@@ -117,3 +117,37 @@ class Solution {
 
 
 ```
+
+
+# 215. Kth Largest Element in an Array
+``` java
+class Solution { 
+    public int findKthLargest(int[] nums, int k) {
+        return findKthLargest(nums, 0, nums.length - 1, k);
+    }
+    
+    private int findKthLargest(int[] nums, int left, int right, int k) {
+        int pivot = left + (int)((right - left + 1) * Math.random());
+        pivot = left;
+        swap(nums, pivot, right);
+        for (int i = left; i < right; i++) {
+            if (nums[i] <= nums[right]) {
+                swap(nums, i, pivot++);
+            }
+        }
+        swap(nums, pivot, right);
+        int count = right - pivot + 1;
+        if (count == k) return nums[pivot];
+        if (count > k) return findKthLargest(nums, pivot + 1, right, k);
+        return findKthLargest(nums, left, pivot - 1, k - count);
+    }
+    
+    private void swap(int[] nums, int left, int right) {
+        int tmp = nums[left];
+        nums[left] = nums[right];
+        nums[right] = tmp;
+    }
+}
+```
+
+# 973. K Closest Points to Origin
