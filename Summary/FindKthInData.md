@@ -83,3 +83,37 @@ class Solution {
 
 ```
 
+# 347. Top K Frequent Elements
+
+```java
+class Solution {
+    public int[] topKFrequent(int[] nums, int k) {
+        // 1. o(1)
+        if (k == nums.length) {
+            return nums;
+        }
+        
+        Map<Integer,  Integer> count = new HashMap<>();
+        for (int i : nums) {
+            count.put(i, count.getOrDefault(i, 0) + 1);
+        }
+        
+        Queue<Integer> minHeap = new PriorityQueue<>((n1, n2) -> count.get(n1) - count.get(n2) );
+        
+        for (int e1 : count.keySet()) {
+            minHeap.offer(e1);
+            if (minHeap.size() > k) {
+                minHeap.poll();
+            }
+        }
+        
+        int[] res = new int[minHeap.size()];
+        for (int i = res.length - 1; i >= 0; i--) {
+            res[i] = minHeap.poll();
+        }
+        return res;
+    }
+}
+
+
+```
