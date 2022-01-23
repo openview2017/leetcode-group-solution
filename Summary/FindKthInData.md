@@ -48,3 +48,38 @@ class Cell {
 
 
 ```
+
+# 692. Top K Frequent Words
+```java
+class Solution {
+    public List<String> topKFrequent(String[] words, int k) {
+        if (words == null || words.length == 0 || k == 0) {
+            return new ArrayList<String>();
+        }
+        // 1. conv to hashmap<string, integer> - tc/sc: o(n)
+        Map<String, Integer> freqMap = new HashMap<>();
+        for (String str : words) {
+            freqMap.put(str, freqMap.getOrDefault(str, 0) + 1);
+        }
+        
+        // 2. pq minheap from map.value: tc: o(nlogk); sc: o(k)
+        Queue<String> minHeap = new PriorityQueue<String>((w1, w2) -> freqMap.get(w1).equals(freqMap.get(w2)) ?
+                w2.compareTo(w1) : freqMap.get(w1) - freqMap.get(w2) );
+        
+        for(String str : freqMap.keySet()) {
+            minHeap.offer(str);
+            if (minHeap.size() > k) {
+                minHeap.poll();
+            }
+        }
+        // 3. output: tc/sc: o(k)
+        List<String> ans = new ArrayList();
+        while (!minHeap.isEmpty()) ans.add(minHeap.poll());
+        Collections.reverse(ans);
+        return ans;
+    }
+}
+
+
+```
+
