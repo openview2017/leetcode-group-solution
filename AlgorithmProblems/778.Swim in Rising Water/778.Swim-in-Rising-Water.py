@@ -3,7 +3,8 @@ import sys
 from typing import List
 """
 Using Dijkstra's algorithm. Greedy algorithm
-Time complexity: O(N)
+N is the length of matrix
+Time complexity: O(N**2*logN)
 Space complexity: O(N**2)
 """
 class Solution:
@@ -24,9 +25,7 @@ class Solution:
                 if 0 <= row + i < len(grid) and 0 <= col + j < len(grid[0]) and (row+i, col+j) not in picked and (row+i, col+j) not in visited:
                     min_neighbor = sys.maxsize
                     # Find all chosen neighbors and update current height with their height.
-                    for m, n in directions:
-                        if (row+i+m, col+j+n) in picked:
-                            min_neighbor = min(min_neighbor, picked[(row+i+m, col+j+n)])
+                    min_neighbor = min(min_neighbor, picked[(row, col)])
                     optimal = max(grid[row+i][col+j], min_neighbor)
                     # Add current optimal to candidate heap
                     heapq.heappush(closest, (optimal, row+i, col+j))
