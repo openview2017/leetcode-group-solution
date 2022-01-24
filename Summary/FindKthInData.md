@@ -107,6 +107,7 @@ class Solution {
             }
         }
         
+        
         int[] res = new int[minHeap.size()];
         for (int i = res.length - 1; i >= 0; i--) {
             res[i] = minHeap.poll();
