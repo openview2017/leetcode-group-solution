@@ -7,8 +7,8 @@ Time complexity: O(N)
 Space complexity: O(N)
 """
 
-class MinimumSwap:
-    def minimumSwap(self, coins):
+class MinimumFlip:
+    def minimumFlip(self, coins):
         count = [0 for i in coins]
         min_steps = len(coins)
         # Count the number of 1s on the left side of current node.
@@ -30,16 +30,14 @@ class MinimumSwap:
 if __name__ == "__main__":
     # Test case1
     coins = [0,1,0,0,1]
-    ms = MinimumSwap()
-    print(ms.minimumSwap(coins))
+    ms = MinimumFlip()
+    print(ms.minimumFlip(coins))
     print("Expected result: {}".format(1))
     # Test case2
     coins = [0,0,0,0,0]
-    ms = MinimumSwap()
-    print(ms.minimumSwap(coins))
+    print(ms.minimumFlip(coins))
     print("Expected result: {}".format(0))
     # Test case3
     coins = [0,1,0,1,1,0,1]
-    ms = MinimumSwap()
-    print(ms.minimumSwap(coins))
+    print(ms.minimumFlip(coins))
     print("Expected result: {}".format(2))
