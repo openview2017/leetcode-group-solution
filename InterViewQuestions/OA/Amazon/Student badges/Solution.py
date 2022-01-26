@@ -6,10 +6,11 @@ Therefore, we can scan from left and from right to find the longest subarray who
 
 Using N to denote negative numbers, and P to denode positeve numbers.
 For array without 0 cases:
+111111
 (N) means the product of the middle part of the array is Negative. (P) is for positive
-    1. N(N)N || P(N)P|| N(P)P || P(P)N => Result subarray starting from both left and right.
-    2. N(N)P => Result subarray starting from left.
-    3. P(N)N => Result subarray starting from Right.
+    1. N(N)N || P(N)P => Result subarray starting from both left and right.
+    2. N(N)P || P(P)N => Result subarray starting from left.
+    3. P(N)N || N(P)P => Result subarray starting from Right.
     4. P(P)P => Result subarray starting either from left or from right.
 If array contains 0, then we should split the input array by the 0 elements and calculate each part individually because the result subarray couldn't contain 0s.
 
