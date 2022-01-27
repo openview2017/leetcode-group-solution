@@ -40,8 +40,3 @@ if __name__ == "__main__":
     c = CountMaximumTeams()
     print(c.teamCount(skill,teamSize,maxDiff))
     print("Expected result: {}".format(0))
-
-"""
-6,5,4,3,3,1
-
-"""
