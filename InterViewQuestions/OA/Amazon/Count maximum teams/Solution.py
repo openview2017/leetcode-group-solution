@@ -5,28 +5,15 @@ class CountMaximumTeams:
             return 0
         result = 0
         skill = sorted(skill, reverse=True)
-        left = right = 0
-        max_stack = deque([])  #[idx1, idx2]
-        min_stack = deque([])
+        left, right = 0, teamSize - 1
         while right < len(skill):
-            while max_stack and skill[right] > skill[max_stack[-1]]:
-                max_stack.pop()
-            while min_stack and skill[right] < skill[min_stack[-1]]:
-                min_stack.pop()
-            max_stack.append(right)
-            min_stack.append(right)
-            right += 1
-            if skill[max_stack[0]] - skill[min_stack[0]] > maxDiff:
-                if max_stack[0] == left:
-                    max_stack.popleft()
-                if min_stack[0] == left:
-                    min_stack.popleft()
-                left += 1
-            if right - left == teamSize:
+            if skill[left] - skill[right] <= maxDiff:
                 result += 1
-                left = right
-                max_stack.clear()
-                min_stack.clear()
+                left = right + 1
+                right += teamSize
+            else:
+                left += 1
+                right += 1        
         return result
 
 if __name__ == "__main__":
@@ -53,3 +40,8 @@ if __name__ == "__main__":
     c = CountMaximumTeams()
     print(c.teamCount(skill,teamSize,maxDiff))
     print("Expected result: {}".format(0))
+
+"""
+6,5,4,3,3,1
+
+"""
