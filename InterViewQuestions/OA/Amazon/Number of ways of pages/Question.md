@@ -27,7 +27,7 @@ Complete the function *numberOfWays* in the editor below.
 *long*: the total number of ways to select 3 pages that meet the criterion  
 
 **Constraints**  
-1 ≤ | book | ≤ 2 · 105  
+1 ≤ | book | ≤ 2 · 10^5  
 Each character in book is either '0' or '1'.  
 Sample Case 0  
 Sample Input For Custom Testing  
