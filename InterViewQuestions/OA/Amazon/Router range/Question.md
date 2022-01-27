@@ -3,9 +3,9 @@
 **reference link**: (https://leetcode.com/discuss/interview-question/1643403/Amazon-OA-SDE-1)  
 
 **Similar leetcode question**:   
-[475. Heaters](https://leetcode.com/problems/heaters/)  
+[370. Range Addition](https://leetcode.com/problems/range-addition/)  
 
-Amazon has installed WiFi routers on the houses along a straight street. The city's buildings are arranged linearly, denoted by indices 1 to n. There are m Amazon routers, and each has a certain range associated with it. Router j installed at a certain building location can only provide Internet to the buildings in the range [(i - routerRangeLin, (i+ routerRangelin] inclusive, where routerRangeli) is the range parameter of router j. A building is considered to be served if the number of routers providing Internet to the building is greater than or equal to the number of people living in it. Given a list of the number of people living in each building, the locations of the buildings where the routers will be installed and each router's range, find the number of served buildings in the city.
+Amazon has installed WiFi routers on the houses along a straight street. The city's buildings are arranged linearly, denoted by indices 1 to n. There are m Amazon routers, and each has a certain range associated with it. Router j installed at a certain building location can only provide Internet to the buildings in the range [(i - routerRangeLin, (i+ routerRangelin] inclusive, where routerRange[i] is the range parameter of router j. A building is considered to be served if the number of routers providing Internet to the building is greater than or equal to the number of people living in it. Given a list of the number of people living in each building, the locations of the buildings where the routers will be installed and each router's range, find the number of served buildings in the city.
 
 **Example**  
 buildingCount = [1, 2, 1, 2, 2]  

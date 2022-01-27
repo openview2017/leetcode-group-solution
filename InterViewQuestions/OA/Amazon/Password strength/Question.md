@@ -1,6 +1,6 @@
 # Password strength  
 
-Your team at Amazon has recently adopted a new password validationscheme for internal user accounts.  
+Your team at Amazon has recently adopted a new password validation scheme for internal user accounts.  
 
 A password consists of lowercase English letters only and is valid only if it contains at least one vowel and at least one consonant. Vowels are the characters 'a', 'e', i', 'o'and 'u'. The rest are consonants. The strength of a password is defined as the maximum number of contiguous subsegments the entire password can be divided into such that each subsegment is a valid password.  
  
