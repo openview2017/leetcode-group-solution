@@ -119,7 +119,6 @@ class Solution {
 
 ```
 
-
 # 215. Kth Largest Element in an Array
 ``` java
 class Solution { 
