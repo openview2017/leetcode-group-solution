@@ -1,0 +1,148 @@
+39. Combination Sum
+
+class Solution {
+    public List<List<Integer>> combinationSum(int[] candidates, int target) {
+        List<Integer> cur = new ArrayList<>();
+        List<List<Integer>> result = new ArrayList<>();
+        helper(candidates, target, 0, cur, result);
+        return result;
+    }
+    private void helper(int[] candidates, int target, int index, List<Integer> cur, List<List<Integer>> result) {
+        // base case
+        if (index == candidates.length) {
+            if (target == 0) {
+                result.add(new ArrayList<>(cur));
+            }
+            return;
+        }
+        
+        // recursion rule
+        helper(candidates, target, index + 1, cur, result);
+        int value = candidates[index];
+        int size = cur.size();
+        while (target - value >= 0) {
+            cur.add(value);
+            target = target - value;
+            helper(candidates, target, index + 1, cur, result);
+            
+        }
+        cur.subList(size, cur.size()).clear();
+    }
+}
+
+40. Combination Sum II
+/*
+n = candidates.length;
+how many levels: n leveles, each level is an element from input
+for each level, pick or not pick this element
+
+sort the input array, so same elements stay together.
+When picking, if not pick a certain element, skip through the elements, next round will be a different element;
+but if pick an element, we can continue to pick or not to puck
+
+TC: O(2^n)
+SC: O(n) for the call stack
+
+*/
+class Solution {
+    public List<List<Integer>> combinationSum2(int[] candidates, int target) {
+        List<Integer> cur = new ArrayList<>();
+        List<List<Integer>> res = new ArrayList<>();
+        Arrays.sort(candidates);
+        helper(candidates, target, cur, res, 0);
+        return res;
+    }
+    private void helper(int[] candidates, int target, List<Integer> cur, List<List<Integer>> res, int index) {
+
+        // base case
+        if (target == 0) {
+            res.add(new ArrayList(cur));
+            return;
+        }
+        
+        if (target < 0 || index >= candidates.length) {
+            return;
+        }
+        
+        // case 1: add the current element
+
+        cur.add(candidates[index]);
+        helper(candidates, target - candidates[index], cur, res, index + 1);
+        cur.remove(cur.size() - 1); // cur list还原
+        //target = target + candidates[index]; // target 还原 其实这里不用变他，用的是本轮的parameter的target即可。
+        
+        // case 2: not add the current element, also skip all same elements
+        while (index + 1 < candidates.length && candidates[index + 1] == candidates[index]) { // 
+            index++;
+        }
+        
+        helper(candidates, target, cur, res, index + 1); //从不相等的index位置往下走
+    }
+}
+Combination Sum IV
+/*
+dp
+TC: O(n^2)
+SC: O(n)
+*/
+
+class Solution {
+    public int combinationSum4(int[] nums, int target) {
+        // corner case check
+        if (nums == null || nums.length == 0) {
+            return 0;
+        }
+        
+        int[] dp = new int[target + 1];
+        dp[0] = 1;
+        
+        for (int i = 1; i <= target; i++) {  // i represents the target so far
+            for (int j = 0; j < nums.length; j++) { // j represents the index of the current nums, so we have 0...j index values
+                if (i >= nums[j]) {
+                    dp[i]+= dp[i - nums[j]];
+                }
+            }
+        }
+        return dp[target];
+    }
+}
+
+216. Combination Sum III
+/*
+DFS
+how many levels: there're 1 to 9, a total of 9 levels, each level is 1 or 2 or 3...or 9
+what does each level mean: use or not to use the current level value
+
+TC: O(2^9)
+SC: O(9)
+
+k ...when we have k elements in the cur list, then return
+*/
+'''
+class Solution {
+    public List<List<Integer>> combinationSum3(int k, int n) {
+        List<Integer> cur = new ArrayList<>();
+        List<List<Integer>> res = new ArrayList<>();
+        helper(k, n, cur, res, 1);
+        return res;
+    }
+    
+    private void helper(int k, int n, List<Integer> cur, List<List<Integer>> res, int index) {
+        if (cur.size() == k) {
+            if (n == 0) {
+                res.add(new ArrayList(cur));
+            }
+            return;
+        }
+        if (index == 10 || n < 0) {
+            return;
+        }
+        
+        cur.add(index);
+        helper(k, n - index, cur, res, index + 1);
+        cur.remove(cur.size() - 1);
+        
+        helper(k, n, cur, res, index + 1);
+    }
+}
+'''
