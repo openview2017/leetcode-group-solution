@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
+        "AlgorithmProblems/33. Search in Rotated Sorted Array",
         "AlgorithmProblems/1026.Maximum-Difference-Between-Node-and-Ancestor",
-        "AlgorithmProblems/33. Search in Rotated Sorted Array"
+        "AlgorithmProblems/0311. Sparse Matrix Multiplication"
     ]
 }

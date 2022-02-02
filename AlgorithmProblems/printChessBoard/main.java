@@ -1,3 +1,10 @@
+/*
+Write apis
+1) draw a size 8*8
+2) two chesses: knight and bishop
+3) initialize board with two chesses location
+4) give commands and make chess move if chess doesn't go out of board or collids with the other
+*/
 import java.util.*;
 
 // "static void main" must be defined in a public class.
@@ -45,7 +52,7 @@ class Chess {
         System.out.println();
     }
   
-        public void chessMove(String[][] moves) {    
+    public void chessMove(String[][] moves) {    
         for (String[] move : moves) {
             //System.out.println(Arrays.toString(move));
             String type = move[0];
@@ -83,45 +90,3 @@ class Chess {
         return true;
     }
 }
-
-//     public void chessMove(String[][] moves) {    
-//         for (String[] move : moves) {
-//             //System.out.println(Arrays.toString(move));
-//             String type = move[0];
-//             int distance = Integer.parseInt(move[2]);
-//             int[] curdir = moveDIRS.get(move[1]);
-//              //System.out.println(Arrays.toString(curdir));
-//             if (type.equals("B")) {
-//                 boolean canMove = true;
-//                 for (int i = 0; i < distance; i++) {
-//                      int tmpnextr = curB[0] + curdir[0] * i;
-//                      int tmpnextc = curB[1] + curdir[1] * i;
-//                      canMove = canMove && isValid(type, tmpnextr, tmpnextc);    
-//                      // System.out.println(canMove);
-//                 }
-                
-//                 if (canMove) {
-//                     board[curB[0]][curB[1]] = " ";
-//                     curB[0] += curdir[0] * distance;
-//                     curB[1] += curdir[1] * distance;
-//                     board[curB[0]][curB[1]] = "B";
-//                 }
-//             } else {
-//                 boolean canMove = true;
-//                 for (int i = 0; i < distance; i++) {
-//                      int tmpnextr = curK[0] + curdir[0] * i;
-//                      int tmpnextc = curK[1] + curdir[1] * i;
-//                      canMove = canMove && isValid(type, tmpnextr, tmpnextc);    
-//                       //System.out.println(canMove);
-//                 }
-                
-//                 if (canMove) {
-//                     board[curK[0]][curK[1]] = " ";
-//                     curK[0] += curdir[0] * distance;
-//                     curK[1] += curdir[1] * distance;
-//                     board[curK[0]][curK[1]] = "K";
-//                 }                
-//             }
-//             print();            
-//         }
-//     }
