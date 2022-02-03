@@ -4,13 +4,15 @@ class CountMaximumTeams:
         if not skill or len(skill) < teamSize:
             return 0
         result = 0
-        skill = sorted(skill, reverse=True)
-        left, right = 0, teamSize - 1
+        skill = sorted(skill, reverse=True)  # Sorting to put developers with similar skills together.
+        left, right = 0, teamSize - 1  # Two pointers.
         while right < len(skill):
+            # Check if the developers with in the 2 pointers can form a team.
             if skill[left] - skill[right] <= maxDiff:
                 result += 1
                 left = right + 1
                 right += teamSize
+            # If cannot form a team, move the pointers rightward.
             else:
                 left += 1
                 right += 1        

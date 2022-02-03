@@ -18,11 +18,10 @@ class BSTIterator:
     def next(self) -> int:
         cur = self.stack.pop()
         result = cur
-        if cur.right:
-            cur = cur.right
-            while cur:
-                self.stack.append(cur)
-                cur = cur.left
+        cur = cur.right
+        while cur:
+            self.stack.append(cur)
+            cur = cur.left
         return result.val
 
     def hasNext(self) -> bool:

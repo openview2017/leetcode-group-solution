@@ -16,7 +16,7 @@ Find the maximum possible sum of the qualities of all channels. If the answer is
 packets = [1, 2, 3. 4, 5]  
 channels = 2  
 
-At least one packet has to go though each of the 2 channels. One maximal solution is to transfer packets {1, 2, 3, 4} throuigh channel 1 and packet {5} through channel 2.  
+At least one packet has to go through each of the 2 channels. One maximal solution is to transfer packets {1, 2, 3, 4} throuigh channel 1 and packet {5} through channel 2.  
 
            [1] [2] [3] [4]  
 Channel 1
@@ -50,7 +50,7 @@ channels = 2
 7
 
 Explanation  
-One solution is to send packet {5} through one channel and {2, 2, 1, 3} through the other. The sum of qquality is 5 + (2+2)/2 = 7  
+One solution is to send packet {5} through one channel and {2, 2, 1, 3} through the other. The sum of quality is 5 + (2+2)/2 = 7  
 
 Sample Test Case 1  
 packets[] size n = 5  
@@ -66,7 +66,7 @@ channels = 2
 **Sample Test Case 2**  
 packets[] size n = 3  
 packets = [89, 48, 14]  
-channels = 2  
+channels = 3  
 
 **Sample Output**  
 151  
