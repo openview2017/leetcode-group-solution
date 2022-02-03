@@ -1,4 +1,12 @@
+"""
+Divide the array into multiple decreasing subarray sections.
+[9, 8, 4, 9, 3] => [9,8,4] + [9,3]
+For each array with length n, number of subarrays is n + (n-1) + ... + 1 = n*(n-1) // 2
+Sum the numbers and get the result.
 
+Time complexity: O(N)
+Space complexity: O(1) => we are using pointer rather than really splitting the array.
+"""
 #[9, 8, 4, 9, 3]
 class CountDecreasingSubarray:
     def getSubarrayCount(self, array):
