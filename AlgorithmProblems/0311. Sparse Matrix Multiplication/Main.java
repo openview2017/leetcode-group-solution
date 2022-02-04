@@ -46,5 +46,14 @@ class Solution311 {
     }
 }
 
-// a*b  b*c  -> a*c
+/*
+ a*b  b*c  -> a*c
 //  sum(a[i][:] * b[:][j])           c[i][j]
+
+method:
+1. change the sequence of loop, move k to outer
+2. check A[i][k] == 0? 
+
+tc: o(r1c1c2) r - r1 * c1 * c2, with scape 0 elements
+sc: o(1)
+*/
