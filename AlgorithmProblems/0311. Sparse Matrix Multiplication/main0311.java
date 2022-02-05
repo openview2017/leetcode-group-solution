@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Main {
+public class main0311 {
     public static void main(String[] args) {
         Solution311 sol = new Solution311();
         int[][] mat1, mat2;
