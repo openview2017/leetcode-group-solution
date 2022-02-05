@@ -14,7 +14,6 @@ public class main384 {
 }
 
 
-
 class Solution384 {
     int[] nums, orig;
     
