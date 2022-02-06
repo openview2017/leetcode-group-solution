@@ -9,11 +9,12 @@
         "AlgorithmProblems/1026.Maximum-Difference-Between-Node-and-Ancestor",
         "AlgorithmProblems/0833. Find And Replace in String",
         "AlgorithmProblems/0821. Shortest Distance to a Character",
+        "AlgorithmProblems/0777. Swap Adjacent in LR String",
         "AlgorithmProblems/0524. Longest Word in Dictionary through Deleting",
         "AlgorithmProblems/0522. Longest Uncommon Subsequence II",
         "AlgorithmProblems/0384. Shuffle an Array",
         "AlgorithmProblems/0311. Sparse Matrix Multiplication",
         "AlgorithmProblems/0209. Minimum Size Subarray Sum",
-        "AlgorithmProblems/0777. Swap Adjacent in LR String"
+        "AlgorithmProblems/0954. Array of Doubled Pairs"
     ]
 }
