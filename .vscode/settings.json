@@ -12,6 +12,7 @@
         "AlgorithmProblems/0522. Longest Uncommon Subsequence II",
         "AlgorithmProblems/0384. Shuffle an Array",
         "AlgorithmProblems/0311. Sparse Matrix Multiplication",
-        "AlgorithmProblems/0209. Minimum Size Subarray Sum"
+        "AlgorithmProblems/0209. Minimum Size Subarray Sum",
+        "AlgorithmProblems/1381. Design a Stack With Increment Operation"
     ]
 }
