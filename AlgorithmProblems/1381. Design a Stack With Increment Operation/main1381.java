@@ -102,6 +102,8 @@ class CustomStack {
 }
 
 /**
+ * Reference: https://leetcode.com/problems/design-a-stack-with-increment-operation/discuss/843182/lee215's-solution-with-more-explanation
+ * 
  * Your CustomStack object will be instantiated and called as such:
  * CustomStack obj = new CustomStack(maxSize);
  * obj.push(x);
