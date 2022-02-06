@@ -42,6 +42,12 @@ public class main0209 {
         res = sol.minSubArrayLen(target, nums);
         System.out.println(Arrays.toString(nums) + ", target = " +  target);
         System.out.println(res);
+                
+        target = 11;
+        nums = new int[]{1,1,1,1,1,1,1,1};
+        res = sol.minSubArrayLen(target, nums);
+        System.out.println(Arrays.toString(nums) + ", target = " +  target);
+        System.out.println(res);
     }
 }
 
