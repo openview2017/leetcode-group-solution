@@ -97,6 +97,8 @@ sc: O(e)
 1. graph: map- k: ingredients, v: list<recipies>
           indegree: map- k: recipie, v: ingredients to be found
 2. add recipies with v == 0 to result
+
+ref: https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/discuss/1646584/JavaPython-3-Toplogical-Sort-w-brief-explanation.
 */
 class Solution2115 {
     public List<String> findAllRecipes(String[] recipes, List<List<String>> ingredients, String[] supplies) {
