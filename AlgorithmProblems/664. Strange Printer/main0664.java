@@ -12,6 +12,7 @@ public class main0664 {
         res = sol.strangePrinter(s);
         System.out.println(s + ":" + res);        
     }
+    
 }
 // tc: o(n3), sc:o(n2)
 // reference: https://leetcode-cn.com/problems/strange-printer/solution/qi-guai-de-da-yin-ji-by-leetcode-solutio-ogbu/
