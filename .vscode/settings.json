@@ -7,6 +7,7 @@
         "AlgorithmProblems/1381. Design a Stack With Increment Operation",
         "AlgorithmProblems/1293. Shortest Path in a Grid with Obstacles Elimination",
         "AlgorithmProblems/1026.Maximum-Difference-Between-Node-and-Ancestor",
+        "AlgorithmProblems/0954. Array of Doubled Pairs",
         "AlgorithmProblems/0833. Find And Replace in String",
         "AlgorithmProblems/0821. Shortest Distance to a Character",
         "AlgorithmProblems/0777. Swap Adjacent in LR String",
@@ -15,6 +16,6 @@
         "AlgorithmProblems/0384. Shuffle an Array",
         "AlgorithmProblems/0311. Sparse Matrix Multiplication",
         "AlgorithmProblems/0209. Minimum Size Subarray Sum",
-        "AlgorithmProblems/0954. Array of Doubled Pairs"
+        "AlgorithmProblems/KeepDistanceK"
     ]
 }
