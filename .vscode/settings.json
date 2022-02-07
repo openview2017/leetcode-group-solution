@@ -1,6 +1,6 @@
 {
     "java.project.sourcePaths": [
-        "AlgorithmProblems/978. Longest Turbulent Subarray",
+        "AlgorithmProblems/KeepDistanceK",
         "AlgorithmProblems/581. Shortest Unsorted Continuous Subarray",
         "AlgorithmProblems/244. Shortest Word Distance II",
         "AlgorithmProblems/2128. Remove All Ones With Row and Column Flips",
@@ -16,6 +16,6 @@
         "AlgorithmProblems/0384. Shuffle an Array",
         "AlgorithmProblems/0311. Sparse Matrix Multiplication",
         "AlgorithmProblems/0209. Minimum Size Subarray Sum",
-        "AlgorithmProblems/KeepDistanceK"
+        "AlgorithmProblems/664. Strange Printer"
     ]
 }
