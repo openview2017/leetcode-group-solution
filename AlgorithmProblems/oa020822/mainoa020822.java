@@ -3,48 +3,40 @@ import java.util.*;
 public class mainoa020822 {
     public static void main(String[] args) {
         SolutionOA020822 sol = new SolutionOA020822();
-        String[] words;
-        int res;
-
-        words = new String[]{"a","b","ba","bca","bda","bdca"};
-        res = sol.longestStrChain(words);
-        System.out.println("Input : " + Arrays.toString(words));
-        System.out.println("Resuult : " + res);
-        // longest chain : "a","ba","bda","bdca"
-
-        words = new String[]{"abcd","dbqca"};
-        res = sol.longestStrChain(words);
-        System.out.println("Input : " + Arrays.toString(words));
-        System.out.println("Resuult : " + res);
+        List<String> list1, list2, res;
+        list1 = Arrays.asList(new String[]{"ACK", "BAC", "BAR"});
+        list2 = Arrays.asList(new String[]{"KACT", "BAAC", "ESAD", "BASS"});
+        res = sol.selectWord(list1, list2);
+        System.out.println(Arrays.toString(list1.toArray()));
+        System.out.println(Arrays.toString(list2.toArray()));
+        System.out.println(Arrays.toString(res.toArray()));
     }
 }
 
 class SolutionOA020822 {
-    public int longestStrChain(String[] words) {
-        Map<String, Integer> chainLen = new HashMap<>();
-
-        Arrays.sort(words, (s1, s2) -> (s1.length() - s2.length()));
-        
-        int longest = 0;
-        for (String word : words) {
-            int best = 0;
-            for (int i = 0; i < word.length(); i++) {
-                String tmp = word.substring(0, i) + word.substring(i+1);
-                String tmpcode = conv(tmp);
-                best = Math.max(best, chainLen.getOrDefault(tmpcode, 0)); 
-            }
-            
-            chainLen.put(conv(word), best + 1);
-            
-            longest = Math.max(longest, best + 1);
+    public List<String> selectWord(List<String> list1, List<String> list2) {
+        Set<String> res = new HashSet<>();
+        Set<String> dict = new HashSet<>(); // ANAGRAM DICT OF list1
+        for (String str : list1) {
+            dict.add(conv(str));
         }
-        
-        return longest;
+        // System.out.println("dict:" + dict.toString());
+        for (String str : list2) {
+            for (int i = 0; i < str.length(); i++) {
+                String tmp = str.substring(0,i) + str.substring(i+1);
+                //System.out.println(tmp);
+                String tmpcode = conv(tmp);
+                if (dict.contains(tmpcode)) {
+                    res.add(str);
+                }
+            }
+        }
+        return new ArrayList<String>(res);
     }
     private String conv(String s) {
         int[] res = new int[26];
         for (char c : s.toCharArray()) {
-            res[c-'a']++;
+            res[c-'A']++;
         }
         return Arrays.toString(res);
     }
