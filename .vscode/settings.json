@@ -1,5 +1,6 @@
 {
     "java.project.sourcePaths": [
+        "AlgorithmProblems/oa020822",
         "AlgorithmProblems/KeepDistanceK",
         "AlgorithmProblems/664. Strange Printer",
         "AlgorithmProblems/581. Shortest Unsorted Continuous Subarray",
@@ -20,6 +21,6 @@
         "AlgorithmProblems/0384. Shuffle an Array",
         "AlgorithmProblems/0311. Sparse Matrix Multiplication",
         "AlgorithmProblems/0209. Minimum Size Subarray Sum",
-        "AlgorithmProblems/oa020822"
+        "AlgorithmProblems/1277. Count Square Submatrices with All Ones"
     ]
 }
