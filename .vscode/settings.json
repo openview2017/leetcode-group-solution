@@ -10,6 +10,7 @@
         "AlgorithmProblems/1381. Design a Stack With Increment Operation",
         "AlgorithmProblems/1376. Time Needed to Inform All Employees",
         "AlgorithmProblems/1293. Shortest Path in a Grid with Obstacles Elimination",
+        "AlgorithmProblems/1277. Count Square Submatrices with All Ones",
         "AlgorithmProblems/1026.Maximum-Difference-Between-Node-and-Ancestor",
         "AlgorithmProblems/0954. Array of Doubled Pairs",
         "AlgorithmProblems/0833. Find And Replace in String",
@@ -21,6 +22,6 @@
         "AlgorithmProblems/0384. Shuffle an Array",
         "AlgorithmProblems/0311. Sparse Matrix Multiplication",
         "AlgorithmProblems/0209. Minimum Size Subarray Sum",
-        "AlgorithmProblems/1277. Count Square Submatrices with All Ones"
+        "AlgorithmProblems/562. Longest Line of Consecutive One in Matrix"
     ]
 }
