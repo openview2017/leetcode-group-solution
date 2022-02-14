@@ -1,7 +1,9 @@
 /*
 经典大数加法
 从后往前加，列竖式
-和Add two number很想
+和Add two number一样的基本
+2. Add Two Numbers 是linked list的node的相加
+
 */
 
 class Solution {
