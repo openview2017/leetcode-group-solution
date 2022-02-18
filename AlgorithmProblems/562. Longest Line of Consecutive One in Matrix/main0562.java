@@ -10,6 +10,7 @@ public class main0562 {
     }
 }
 
+
 class Solution0562 {
     public int longestLine(int[][] M) {
       if (M.length == 0) return 0;
