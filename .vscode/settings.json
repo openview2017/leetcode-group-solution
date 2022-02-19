@@ -4,6 +4,7 @@
         "AlgorithmProblems/KeepDistanceK",
         "AlgorithmProblems/664. Strange Printer",
         "AlgorithmProblems/581. Shortest Unsorted Continuous Subarray",
+        "AlgorithmProblems/562. Longest Line of Consecutive One in Matrix",
         "AlgorithmProblems/244. Shortest Word Distance II",
         "AlgorithmProblems/2128. Remove All Ones With Row and Column Flips",
         "AlgorithmProblems/2115. Find All Possible Recipes from Given Supplies",
@@ -22,6 +23,6 @@
         "AlgorithmProblems/0384. Shuffle an Array",
         "AlgorithmProblems/0311. Sparse Matrix Multiplication",
         "AlgorithmProblems/0209. Minimum Size Subarray Sum",
-        "AlgorithmProblems/562. Longest Line of Consecutive One in Matrix"
+        "AlgorithmProblems/0329. Longest Increasing Path in a Matrix"
     ]
 }
