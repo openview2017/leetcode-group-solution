@@ -13,7 +13,7 @@ public class main0329 {
     }
 }
 
-class Solution0329 { // 25 - 32
+class Solution0329 { // tc/sc: o(row * col)
     int[][] DIRS = new int[][]{{-1,0},{1,0},{0,-1},{0,1}};
     public int longestIncreasingPath(int[][] matrix) {
         int r = matrix.length, c = matrix[0].length;
