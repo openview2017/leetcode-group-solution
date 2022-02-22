@@ -11,7 +11,6 @@ public class main0777 {
     }
 }
 
-
 class Solution0777 {
     public boolean canTransform(String start, String end) {
         
