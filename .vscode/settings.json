@@ -2,10 +2,7 @@
     "java.project.sourcePaths": [
         "AlgorithmProblems/oa020822",
         "AlgorithmProblems/KeepDistanceK",
-        "AlgorithmProblems/664. Strange Printer",
-        "AlgorithmProblems/581. Shortest Unsorted Continuous Subarray",
         "AlgorithmProblems/562. Longest Line of Consecutive One in Matrix",
-        "AlgorithmProblems/244. Shortest Word Distance II",
         "AlgorithmProblems/2128. Remove All Ones With Row and Column Flips",
         "AlgorithmProblems/2115. Find All Possible Recipes from Given Supplies",
         "AlgorithmProblems/1381. Design a Stack With Increment Operation",
@@ -13,6 +10,7 @@
         "AlgorithmProblems/1293. Shortest Path in a Grid with Obstacles Elimination",
         "AlgorithmProblems/1277. Count Square Submatrices with All Ones",
         "AlgorithmProblems/1026.Maximum-Difference-Between-Node-and-Ancestor",
+        "AlgorithmProblems/0978. Longest Turbulent Subarray",
         "AlgorithmProblems/0954. Array of Doubled Pairs",
         "AlgorithmProblems/0833. Find And Replace in String",
         "AlgorithmProblems/0821. Shortest Distance to a Character",
@@ -24,6 +22,6 @@
         "AlgorithmProblems/0329. Longest Increasing Path in a Matrix",
         "AlgorithmProblems/0311. Sparse Matrix Multiplication",
         "AlgorithmProblems/0209. Minimum Size Subarray Sum",
-        "AlgorithmProblems/0978. Longest Turbulent Subarray"
+        "AlgorithmProblems/2007. Find Original Array From Doubled Array"
     ]
 }
