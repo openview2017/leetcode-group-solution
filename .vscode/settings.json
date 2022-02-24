@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
         "AlgorithmProblems/oa020822",
+        "AlgorithmProblems/Largest-Square-Of-Matches",
         "AlgorithmProblems/KeepDistanceK",
         "AlgorithmProblems/562. Longest Line of Consecutive One in Matrix",
         "AlgorithmProblems/2128. Remove All Ones With Row and Column Flips",
@@ -23,6 +24,6 @@
         "AlgorithmProblems/0329. Longest Increasing Path in a Matrix",
         "AlgorithmProblems/0311. Sparse Matrix Multiplication",
         "AlgorithmProblems/0209. Minimum Size Subarray Sum",
-        "AlgorithmProblems/Largest-Square-Of-Matches"
+        "AlgorithmProblems/0681. Next Closest Time"
     ]
 }
