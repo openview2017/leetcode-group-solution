@@ -15,7 +15,7 @@ public class main0447 {
     }
 }
 
-class Solution0447 { // 49 - 01
+class Solution0447 { // tc/sc: o(n2)
     public int numberOfBoomerangs(int[][] points) {
         Map<Integer, Integer> distFreq = new HashMap<>();
         int count = 0;
