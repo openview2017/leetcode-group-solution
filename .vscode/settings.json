@@ -4,6 +4,7 @@
         "AlgorithmProblems/Largest-Square-Of-Matches",
         "AlgorithmProblems/KeepDistanceK",
         "AlgorithmProblems/562. Longest Line of Consecutive One in Matrix",
+        "AlgorithmProblems/2158. Amount of New Area Painted Each Day",
         "AlgorithmProblems/2128. Remove All Ones With Row and Column Flips",
         "AlgorithmProblems/2115. Find All Possible Recipes from Given Supplies",
         "AlgorithmProblems/2007. Find Original Array From Doubled Array",
@@ -28,6 +29,6 @@
         "AlgorithmProblems/0329. Longest Increasing Path in a Matrix",
         "AlgorithmProblems/0311. Sparse Matrix Multiplication",
         "AlgorithmProblems/0209. Minimum Size Subarray Sum",
-        "AlgorithmProblems/2158. Amount of New Area Painted Each Day"
+        "AlgorithmProblems/0984. String Without AAA or BBB"
     ]
 }
