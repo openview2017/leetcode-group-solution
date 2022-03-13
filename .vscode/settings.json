@@ -13,6 +13,7 @@
         "AlgorithmProblems/1293. Shortest Path in a Grid with Obstacles Elimination",
         "AlgorithmProblems/1277. Count Square Submatrices with All Ones",
         "AlgorithmProblems/1026.Maximum-Difference-Between-Node-and-Ancestor",
+        "AlgorithmProblems/0984. String Without AAA or BBB",
         "AlgorithmProblems/0978. Longest Turbulent Subarray",
         "AlgorithmProblems/0954. Array of Doubled Pairs",
         "AlgorithmProblems/0939. Minimum Area Rectangle",
@@ -29,6 +30,6 @@
         "AlgorithmProblems/0329. Longest Increasing Path in a Matrix",
         "AlgorithmProblems/0311. Sparse Matrix Multiplication",
         "AlgorithmProblems/0209. Minimum Size Subarray Sum",
-        "AlgorithmProblems/0984. String Without AAA or BBB"
+        "AlgorithmProblems/1386. Cinema Seat Allocation"
     ]
 }
