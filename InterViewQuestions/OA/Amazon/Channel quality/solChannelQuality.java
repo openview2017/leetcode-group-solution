@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class solChannelQuality { // ???
+public class solChannelQuality { // ???, not correct
     public static void main(String[] args) {
         ChannelQuality sol = new ChannelQuality();
         int[] packets;
@@ -22,6 +22,9 @@ class ChannelQuality {
     }
 
     private double dfs(int[] packets, int index, int channelsLeft) { // [index, length) >= left
+        if (packets.length - index < channelsLeft) {
+            return -100;
+        } 
         if (channelsLeft == 1) {
             return getMedian(packets, index, packets.length - 1);
         }
@@ -31,9 +34,10 @@ class ChannelQuality {
                 sum += packets[i];
             }
             return sum;
-        }        
+        }     
+            
         double maxSum = 0.0;
-        for (int i = index + 1; i <= packets.length - channelsLeft && i < packets.length; i++) { // [i, len) >= left-1; len - i >= left-1
+        for (int i = index + 1; i < packets.length; i++) { // [i, len) >= left-1; len - i >= left-1
             maxSum = Math.max(maxSum, getMedian(packets, index, i-1) + dfs(packets, i, channelsLeft-1));
         }
         return maxSum;
