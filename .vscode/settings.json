@@ -1,5 +1,6 @@
 {
     "java.project.sourcePaths": [
+        "InterViewQuestions/OA/Amazon/Count decreasing subarray",
         "InterViewQuestions/OA/Amazon/Channel quality",
         "AlgorithmProblems/oa020822",
         "AlgorithmProblems/Largest-Square-Of-Matches",
@@ -34,6 +35,6 @@
         "AlgorithmProblems/0329. Longest Increasing Path in a Matrix",
         "AlgorithmProblems/0311. Sparse Matrix Multiplication",
         "AlgorithmProblems/0209. Minimum Size Subarray Sum",
-        "InterViewQuestions/OA/Amazon/Count decreasing subarray"
+        "AlgorithmProblems/0582. Kill Process"
     ]
 }
