@@ -37,7 +37,8 @@
         "AlgorithmProblems/0384. Shuffle an Array",
         "AlgorithmProblems/0329. Longest Increasing Path in a Matrix",
         "AlgorithmProblems/0311. Sparse Matrix Multiplication",
+        "AlgorithmProblems/0273. Integer to English Words",
         "AlgorithmProblems/0209. Minimum Size Subarray Sum",
-        "AlgorithmProblems/0273. Integer to English Words"
+        "AlgorithmProblems/0472. Concatenated Words"
     ]
 }
