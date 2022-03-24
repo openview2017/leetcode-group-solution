@@ -148,5 +148,7 @@ class Solution0420 {
         }
     }
 }
+
+//https://leetcode-cn.com/problems/strong-password-checker/solution/ti-gong-jian-dan-de-si-lu-by-ray112358-5q1j/
 //https://leetcode-cn.com/problems/strong-password-checker/solution/si-lu-qing-xi-ban-yun-ban-ben-by-bakezq/
 //https://leetcode-cn.com/problems/strong-password-checker/solution/zhi-xing-1ms-ji-bai-100-javajie-ti-si-lu-by-chu-yu/
