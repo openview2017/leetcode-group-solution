@@ -30,7 +30,7 @@ public class main0273 {
         str = sol.numberToWords(num);
         System.out.println(num + ": " + str);
         
-        num = 123;
+        num = 1234567;
         str = sol.numberToWords(num);
         System.out.println(num + ": " + str);
     }
