@@ -5,6 +5,7 @@
         "AlgorithmProblems/oa020822",
         "AlgorithmProblems/Largest-Square-Of-Matches",
         "AlgorithmProblems/KeepDistanceK",
+        "AlgorithmProblems/891. Sum of Subsequence Widths",
         "AlgorithmProblems/562. Longest Line of Consecutive One in Matrix",
         "AlgorithmProblems/2158. Amount of New Area Painted Each Day",
         "AlgorithmProblems/2128. Remove All Ones With Row and Column Flips",
@@ -36,6 +37,6 @@
         "AlgorithmProblems/0329. Longest Increasing Path in a Matrix",
         "AlgorithmProblems/0311. Sparse Matrix Multiplication",
         "AlgorithmProblems/0209. Minimum Size Subarray Sum",
-        "AlgorithmProblems/891. Sum of Subsequence Widths"
+        "AlgorithmProblems/0828. Count Unique Characters of All Substrings of a Given String"
     ]
 }
