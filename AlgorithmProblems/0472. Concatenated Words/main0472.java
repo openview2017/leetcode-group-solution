@@ -30,6 +30,12 @@ public class main0472 {
         System.out.println("Input : " + Arrays.deepToString(words));
         res = sol.findAllConcatenatedWordsInADict(words);
         System.out.println("Output: " + Arrays.deepToString(res.toArray()));
+        System.out.println();
+        
+        words = new String[]{"cat","dog","catdog"};
+        System.out.println("Input : " + Arrays.deepToString(words));
+        res = sol.findAllConcatenatedWordsInADict(words);
+        System.out.println("Output: " + Arrays.deepToString(res.toArray()));
     }
 }
 
