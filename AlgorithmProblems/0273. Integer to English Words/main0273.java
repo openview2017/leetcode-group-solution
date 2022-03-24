@@ -25,6 +25,14 @@ public class main0273 {
         num = 123;
         str = sol.numberToWords(num);
         System.out.println(num + ": " + str);
+        
+        num = 12345;
+        str = sol.numberToWords(num);
+        System.out.println(num + ": " + str);
+        
+        num = 123;
+        str = sol.numberToWords(num);
+        System.out.println(num + ": " + str);
     }
 }
 
