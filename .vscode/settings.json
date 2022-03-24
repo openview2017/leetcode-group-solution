@@ -23,6 +23,7 @@
         "AlgorithmProblems/0954. Array of Doubled Pairs",
         "AlgorithmProblems/0939. Minimum Area Rectangle",
         "AlgorithmProblems/0833. Find And Replace in String",
+        "AlgorithmProblems/0828. Count Unique Characters of All Substrings of a Given String",
         "AlgorithmProblems/0821. Shortest Distance to a Character",
         "AlgorithmProblems/0777. Swap Adjacent in LR String",
         "AlgorithmProblems/0722. Remove Comments",
@@ -37,6 +38,6 @@
         "AlgorithmProblems/0329. Longest Increasing Path in a Matrix",
         "AlgorithmProblems/0311. Sparse Matrix Multiplication",
         "AlgorithmProblems/0209. Minimum Size Subarray Sum",
-        "AlgorithmProblems/0828. Count Unique Characters of All Substrings of a Given String"
+        "AlgorithmProblems/0273. Integer to English Words"
     ]
 }
