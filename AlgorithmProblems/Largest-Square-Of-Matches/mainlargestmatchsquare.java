@@ -22,7 +22,6 @@ Assumptions
 The given matrix is guaranteed to be of size M * N, where M, N >= 0
 
 
-
 Examples
 
 {{3, 1, 1, 3, 0, 1, 1, 0},
