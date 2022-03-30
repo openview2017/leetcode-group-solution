@@ -71,7 +71,7 @@ class Solution1644_2 {
 
 
 /* Iterative solution */
-class Solution_3 {
+class Solution1644_3 {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         Map<TreeNode, TreeNode> parents = new HashMap<>(); 
 		Stack<TreeNode> stack = new Stack<>();
