@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Stack;
 
 public class main2130 {
     public static void main(String[] args) {
@@ -28,6 +29,20 @@ public class main2130 {
 }
 
 class Solution2130 {
+    public int pairSum0(ListNode head) { // short but less efficient method
+        Stack<ListNode> stack = new Stack<>();
+        ListNode dummy = head;
+        while(dummy != null){
+            stack.push(dummy);
+            dummy = dummy.next;
+        }
+        int max = 0;
+        while(stack.size() > stack.size()/2){
+            max = Math.max(max, (head.val + stack.pop().val));
+            head = head.next;
+        }
+        return max;
+    }
     protected ListNode convList(int[] arr) {
         ListNode dum = new ListNode(0);
         ListNode cur = dum;
