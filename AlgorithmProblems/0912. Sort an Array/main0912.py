@@ -1,8 +1,8 @@
 from random import randint
 from typing import List
 
-class MergeSort:
-    def sortArray(self, nums: List[int]) -> List[int]:
+class Sort:
+    def mergeSort(self, nums: List[int]) -> List[int]:
         #mergesort
         if len(nums) <= 1:
             return nums
@@ -35,6 +35,30 @@ class MergeSort:
                     nums[j + 1] = nums[j] 
                     j -= 1
             nums[j + 1] = key
+
+    def sortArray(self, nums: List[int]) -> List[int]:
+        def quicksort(A, low, high):
+            if low >= high: return
+            p = partition(A, low, high)
+            quicksort(A, low, p-1), 
+            quicksort(A, p + 1, high)
+        
+        def partition(A, low, high):
+            # swap median with pivot
+            mid = (low + high) // 2
+            A[high], A[mid] = A[mid], A[high]
+            i = low - 1
+
+            for j in range(low, high):
+                if A[j] < A[high]: 
+                    i = i + 1
+                    A[i], A[j] = A[j], A[i]
+                    
+            A[high], A[i+1] = A[i+1], A[high]
+            return i + 1
+        
+        quicksort(nums,0,len(nums) - 1)
+        return nums            
     
 class QuickSort:
     def sortArray(self, nums: List[int]) -> List[int]:
@@ -63,11 +87,19 @@ class QuickSort:
         nums[idx],nums[right] = nums[right], nums[idx]
         return idx # return the idx for part
 
-s = MergeSort()
+s = Sort()
+arr = [5,2,3,1]
+print(arr)
+sorted_arr = s.mergeSort(arr)
+print(sorted_arr)
+print()
+
+s = Sort()
 arr = [5,2,3,1]
 print(arr)
 sorted_arr = s.sortArray(arr)
 print(sorted_arr)
+print()
 
 s = QuickSort()
 arr = [5,2,3,1]
