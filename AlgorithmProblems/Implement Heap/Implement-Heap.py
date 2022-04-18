@@ -21,6 +21,7 @@ class MinHeap:
             # Move the index to the parent to keep the properties
             i = i // 2
  
+ 
     def insert(self, k):
         """
         Inserts a value into the heap

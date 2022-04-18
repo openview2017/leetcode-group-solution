@@ -1,0 +1,196 @@
+/* hashmap<string, node> + 
+doubly linkedlist: 
+node:
+value: frequency
+set :<string key>
+
+dummy head
+dummy tail
+pre
+next
+insert：O（1），arraylist删除的话浪费空间 
+
+head-> 1 ->    2  -  > 3 -> tail
+     tang             <hello
+              <word    leet>
+             jiaqian>
+
+*/
+class AllOne {
+
+    DoubleLinkedList list;
+    Map<String, Node> map;
+    
+    public AllOne() {
+        list = new DoubleLinkedList();
+        map = new HashMap<>();
+    }
+    
+    
+    /** Inserts a new key <Key> with value 1. Or increments an existing key by 1. */
+    public void inc(String key) {
+       
+        Node node = map.get(key);
+        Node next = list.addKey(node, key);
+        map.put(key, next);
+        // 2--> 3 
+                
+    }
+    
+    
+    /** Decrements an existing key by 1. If Key's value is 1, remove it from the data structure. */
+    public void dec(String key) {
+       
+        Node node = map.get(key);
+        
+        if(node == null)
+            return;
+        
+        list.removeKey(node, key);  //  2-->3
+        map.put(key, node.prev);
+        if(node.val == 1)
+            map.remove(key);
+    }
+    
+    /** Returns one of the keys with maximal value. */
+    public String getMaxKey() {
+        
+        return map.size() == 0 ? "" : list.getMax();
+    }
+    
+    /** Returns one of the keys with Minimal value. */
+    public String getMinKey() {
+        return map.size() == 0 ? "" : list.getMin();
+    }
+}
+
+
+class DoubleLinkedList{
+    
+    Node head, tail;
+    public DoubleLinkedList(){
+        head = new Node(0);
+        tail = new Node(Integer.MAX_VALUE);
+        head.next = tail;
+        tail.prev = head;
+       
+    }
+    
+
+    public Node addKey(Node present, String key){ 
+                                                           
+        if(present == null){
+            return addFirst(key);
+        }
+        
+        if( isTail(present.next) || present.next.val != (present.val + 1) ){
+             Node next = new Node(present.val + 1);
+             addNodeAfter(present, next, key);
+             
+        }else{
+            present.next.set.add(key);   
+        }
+        
+        present.set.remove(key);
+        if(present.set.size() == 0)
+            remove(present);
+        
+        return present.next;
+    }
+    
+    public void addNodeAfter(Node present, Node next, String key){
+        
+        Node temp = present.next;
+        present.next = next;
+        next.next = temp;
+        temp.prev = next;
+        next.prev = present;
+        next.set.add(key);
+    }
+    
+    public void removeKey(Node node, String key){
+           
+        if(node.val != 1 && (isHead(node.prev) || node.prev.val != (node.val -1) )){ head--> 1 --2  1 --> 3 
+            Node n = new Node(node.val-1);
+            addNodeBefore(node, n, key);
+        }else if(node.val != 1){     
+            node.prev.set.add(key);
+        }
+        
+        node.set.remove(key);
+        if(node.set.size() == 0)
+            remove(node);
+    }
+    
+    public void addNodeBefore(Node present, Node prev, String key){
+        Node temp = present.prev;
+        temp.next = prev;
+        prev.prev = temp;
+        present.prev = prev;
+        prev.next = present;
+        prev.set.add(key);
+    }
+    
+    public void remove(Node node){
+        node.prev.next = node.next;
+        node.next.prev = node.prev;
+    }
+    
+    public boolean isTail(Node node){
+        return node == tail;
+    }
+    
+    public boolean isHead(Node node){
+        return node == head;
+    }
+    
+    public String getMax(){
+        Set<String> set = tail.prev.set;
+        return set.iterator().next();// 随机
+    }
+    
+    public String getMin(){
+        Set<String> set = head.next.set;
+        return set.iterator().next();
+    }
+    
+    public Node addFirst(String key){
+        
+        if(head.next.val == 1)
+            head.next.set.add(key);
+        else{
+            Node node = new Node(1);
+            this.addNodeAfter(head, node, key);
+        }
+        
+        return head.next;
+    }
+
+    
+}
+
+
+class Node{
+    int val;// frequency
+    Set<String> set; // strore string key with the same frequency
+    Node next, prev;
+    
+    public Node(int val){
+        this.val = val;
+        set = new HashSet();// initilize
+    }
+    
+    public String toString(){
+        return val+"";
+    }
+}
+
+
+/**
+ * Your AllOne object will be instantiated and called as such:
+ * AllOne obj = new AllOne();
+ * obj.inc(key);
+ * obj.dec(key);
+ * String param_3 = obj.getMaxKey();
+ * String param_4 = obj.getMinKey();
+ */
