@@ -1,45 +1,56 @@
 """
-For each number, count number of 1s on the left and number of 0s on the right side.
-These are the coins we need to flip if we select the current coin as the boundary.
-Then add the numbers together and pick the smallest one which represents the minimum number of coins need to flip.
-
+Minimum number of swaps equals to the sum of the distances between corresponding 0s and 1s.
 Time complexity: O(N)
-Space complexity: O(N)
+Space complexity: O(1)
 """
+import sys
+class SortBinaryArrayWithSwap:
+    def findMinSwaps(self, arr):
+        no_of_ones = sum(arr)
+        result = sys.maxsize
 
-class MinimumSwap:
-    def minimumSwap(self, coins):
-        count = [0 for i in coins]
-        min_steps = len(coins)
-        # Count the number of 1s on the left side of current node.
-        cur = 0
-        for i in range(len(coins)):
-            count[i] = cur
-            if coins[i] == 1:
-                cur += 1
-        # Count the number of 0s on the right side of current node.
-        cur = 0
-        for i in range(len(coins)-1, -1, -1):
-            count[i] += cur
-            if coins[i] == 0:
-                cur += 1
-            min_steps = min(min_steps, count[i])
-        return min_steps
+        idx_of_zeros = 0
+        idx_of_ones = 0
+        # Move all 1s to the left
+        for i in range(len(arr)):
+            if i < no_of_ones:
+                if arr[i] == 0:
+                    idx_of_zeros += i
+            else:
+                if arr[i] == 1:
+                    idx_of_ones += i
+        result = min(result, idx_of_ones - idx_of_zeros)
 
+        idx_of_zeros = 0
+        idx_of_ones = 0
+        # Move all 1s to the right
+        for i in range(len(arr)):
+            if i < len(arr) - no_of_ones:
+                if arr[i] == 1:
+                    idx_of_ones += i
+            else:
+                if arr[i] == 0:
+                    idx_of_zeros += i
+        result = min(result, idx_of_zeros - idx_of_ones)
+
+        return result
 
 if __name__ == "__main__":
+
     # Test case1
-    coins = [0,1,0,0,1]
-    ms = MinimumSwap()
-    print(ms.minimumSwap(coins))
-    print("Expected result: {}".format(1))
+    arr = [ 0, 0, 1, 0, 1, 0, 1, 1 ]
+    s = SortBinaryArrayWithSwap()
+    print (s.findMinSwaps(arr))
+    print("Expected result: {}".format(3))
+
     # Test case2
-    coins = [0,0,0,0,0]
-    ms = MinimumSwap()
-    print(ms.minimumSwap(coins))
-    print("Expected result: {}".format(0))
+    arr = [ 0, 0, 1, 0, 1]
+    s = SortBinaryArrayWithSwap()
+    print (s.findMinSwaps(arr))
+    print("Expected result: {}".format(1))
+
     # Test case3
-    coins = [0,1,0,1,1,0,1]
-    ms = MinimumSwap()
-    print(ms.minimumSwap(coins))
-    print("Expected result: {}".format(2))
+    arr = [ 1, 0, 1, 0, 1 ]
+    s = SortBinaryArrayWithSwap()
+    print (s.findMinSwaps(arr))
+    print("Expected result: {}".format(3))
