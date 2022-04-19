@@ -23,6 +23,7 @@
         "AlgorithmProblems/0978. Longest Turbulent Subarray",
         "AlgorithmProblems/0954. Array of Doubled Pairs",
         "AlgorithmProblems/0939. Minimum Area Rectangle",
+        "AlgorithmProblems/0912. Sort an Array",
         "AlgorithmProblems/0833. Find And Replace in String",
         "AlgorithmProblems/0828. Count Unique Characters of All Substrings of a Given String",
         "AlgorithmProblems/0821. Shortest Distance to a Character",
@@ -43,6 +44,6 @@
         "AlgorithmProblems/0311. Sparse Matrix Multiplication",
         "AlgorithmProblems/0273. Integer to English Words",
         "AlgorithmProblems/0209. Minimum Size Subarray Sum",
-        "AlgorithmProblems/0912. Sort an Array"
+        "AlgorithmProblems/0445. Add Two Numbers II"
     ]
 }
