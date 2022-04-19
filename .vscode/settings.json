@@ -38,12 +38,13 @@
         "AlgorithmProblems/0489. Robot Room Cleaner",
         "AlgorithmProblems/0472. Concatenated Words",
         "AlgorithmProblems/0447. Number of Boomerangs",
+        "AlgorithmProblems/0445. Add Two Numbers II",
         "AlgorithmProblems/0420. Strong Password Checker",
         "AlgorithmProblems/0384. Shuffle an Array",
         "AlgorithmProblems/0329. Longest Increasing Path in a Matrix",
         "AlgorithmProblems/0311. Sparse Matrix Multiplication",
         "AlgorithmProblems/0273. Integer to English Words",
         "AlgorithmProblems/0209. Minimum Size Subarray Sum",
-        "AlgorithmProblems/0445. Add Two Numbers II"
+        "AlgorithmProblems/0024. Swap Nodes in Pairs"
     ]
 }
