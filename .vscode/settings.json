@@ -45,6 +45,7 @@
         "AlgorithmProblems/0311. Sparse Matrix Multiplication",
         "AlgorithmProblems/0273. Integer to English Words",
         "AlgorithmProblems/0209. Minimum Size Subarray Sum",
-        "AlgorithmProblems/0024. Swap Nodes in Pairs"
+        "AlgorithmProblems/0024. Swap Nodes in Pairs",
+        "AlgorithmProblems/0025. Reverse Nodes in k-Group"
     ]
 }
