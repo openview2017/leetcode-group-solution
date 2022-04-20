@@ -16,8 +16,8 @@ class Solution002:
             if l2:
                 carry += l2.val
                 l2 = l2.next
-            carry,val = divmod(carry, 10)
-            cur.next = ListNode(val)    
+            cur.next = ListNode(carry%10)  
+            carry //= 10  
             cur = cur.next
             
         if carry != 0:
@@ -34,7 +34,6 @@ class Solution002:
         return dummy.next
 
     def print(self, lst):
-       
         # defining a blank res variable
         res = ""
         # initializing ptr to head
