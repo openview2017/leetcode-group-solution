@@ -4,7 +4,13 @@ class ListNode:
         self.next = next
 
 class Solution0024:
-    def swapPairs(self, head: ListNode) -> ListNode:
+    def swapPairs(self, head: ListNode) -> ListNode:        
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
+        # Dummy node acts as the prevNode for the head node
+        # of the list and hence stores pointer to the head node.
         if not head or not head.next:
             return head
         
@@ -15,6 +21,27 @@ class Solution0024:
         second_node.next = first_node
 
         return second_node
+
+    def swapPairsIter(self, head: ListNode) -> ListNode:
+        dum = ListNode(0)
+        dum.next = head
+        prev = dum
+
+        while head and head.next:
+            # Nodes to be swapped
+            first_node = head
+            second_node = head.next
+
+            # Swapping
+            prev.next = second_node
+            first_node.next = second_node.next
+            second_node.next = first_node
+
+            # Reinitializing the head and prev_node for next swap
+            prev = first_node
+            head = first_node.next
+        
+        return dum.next
 
 
     def lst2link(self, lst):
@@ -46,5 +73,11 @@ sol = Solution0024()
 a1 = [1,2,3,4]   
 h1 = sol.lst2link(a1)
 print(sol.print(h1))
+print("Recursion:")
 res = sol.swapPairs(h1)
 print(sol.print(res)) 
+print("Iteration:")
+h1 = sol.lst2link(a1)
+res = sol.swapPairsIter(h1)
+print(sol.print(res)) 
+
