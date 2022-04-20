@@ -42,9 +42,10 @@ class Solution0445 {
     }
     public void printList(ListNode head) {
         List<Integer> res = new ArrayList<>();
-        while (head != null) {
-            res.add(head.val);
-            head = head.next;
+        ListNode curr = head;
+        while (curr != null) {
+            res.add(curr.val);
+            curr = curr.next;
         }
         System.out.println(Arrays.toString(res.toArray()));
     }
