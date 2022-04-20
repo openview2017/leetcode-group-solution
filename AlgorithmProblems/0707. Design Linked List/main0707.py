@@ -1,3 +1,5 @@
+# https://zxi.mytechroad.com/blog/list/leetcode-707-design-linked-list/
+
 class Node:
   def __init__(self, val, _next=None):
     self.val = val
