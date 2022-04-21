@@ -13,25 +13,36 @@
 public class DeleteFive {
     public static void main(String[] args) {
         DeleteFive test = new DeleteFive();
-        System.out.println(test.deleteFive(955));
+        System.out.println(test.deleteFive(15859));
+        System.out.println(test.deleteFive(-1583));
+        System.out.println(test.deleteFive(5000));
+        System.out.println(test.deleteFive(-1596259));
+        System.out.println(test.deleteFive(5));
+
     }
     public int deleteFive(int num) {
         if (num == 0) return num;
+
         String str = String.valueOf(num);
-        char[] arr = str.toCharArray();
-        int removalIndex = -1;
-        boolean findFive = false;
-        if (num > 0) {
-            //remove first 5 with next char greater than 5, otherwise
-            for (int i = 0; i < arr.length - 1; i++) {
-
+        int res = Integer.MIN_VALUE;
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == '5') {
+                res = Math.max(res, remove(num, str.length() - i));
             }
-        } else {
-            //remove
         }
+        return res;
+    }
 
-        if (!findFive) return num;
+    private int remove(int num, int k) {
 
-        return 0;
+        boolean positive = num > 0;
+        num = Math.abs(num);
+
+
+        int part1 = (num / (int)Math.pow(10, k)) *  (int)(Math.pow(10, k - 1));
+
+        int part2 = num % (int)(Math.pow(10, k - 1));
+
+        return positive ? (part1 + part2) : -1 * (part1 + part2);
     }
 }
