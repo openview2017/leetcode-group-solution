@@ -29,6 +29,7 @@
         "AlgorithmProblems/0821. Shortest Distance to a Character",
         "AlgorithmProblems/0777. Swap Adjacent in LR String",
         "AlgorithmProblems/0722. Remove Comments",
+        "AlgorithmProblems/0707. Design Linked List",
         "AlgorithmProblems/0681. Next Closest Time",
         "AlgorithmProblems/0588. Design In-Memory File System",
         "AlgorithmProblems/0582. Kill Process",
@@ -50,6 +51,6 @@
         "AlgorithmProblems/0147. Insertion Sort List",
         "AlgorithmProblems/0025. Reverse Nodes in k-Group",
         "AlgorithmProblems/0024. Swap Nodes in Pairs",
-        "AlgorithmProblems/0707. Design Linked List"
+        "AlgorithmProblems/0360. Sort Transformed Array"
     ]
 }
