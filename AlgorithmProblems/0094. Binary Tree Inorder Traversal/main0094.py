@@ -30,5 +30,5 @@ class Solution0094(object):
     def helper(self, root, res):
         if root:
             self.helper(root.left, res)
-            res.add(root.val)
+            res.append(root.val)
             self.helper(root.right, res)
