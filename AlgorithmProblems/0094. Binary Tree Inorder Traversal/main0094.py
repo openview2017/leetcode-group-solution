@@ -19,7 +19,16 @@ class Solution0094(object):
             else:
                 cur = stack.pop()
                 res.append(cur.val)
-                cur = cur.right
-        
+                cur = cur.right      
         return res
-        
+    
+    def inorderTraversalRec(self, root):
+        res = []
+        self.helper(root, res)
+        return res
+    
+    def helper(self, root, res):
+        if root:
+            self.helper(root.left, res)
+            res.add(root.val)
+            self.helper(root.right, res)
