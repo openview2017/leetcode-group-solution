@@ -31,6 +31,7 @@
         "AlgorithmProblems/0722. Remove Comments",
         "AlgorithmProblems/0707. Design Linked List",
         "AlgorithmProblems/0681. Next Closest Time",
+        "AlgorithmProblems/0678. Valid Parenthesis String",
         "AlgorithmProblems/0588. Design In-Memory File System",
         "AlgorithmProblems/0582. Kill Process",
         "AlgorithmProblems/0539. Minimum Time Difference",
@@ -53,7 +54,7 @@
         "AlgorithmProblems/0035. Search Insert Position",
         "AlgorithmProblems/0025. Reverse Nodes in k-Group",
         "AlgorithmProblems/0024. Swap Nodes in Pairs",
-        "AlgorithmProblems/0678. Valid Parenthesis String"
+        "AlgorithmProblems/0153. Find Minimum in Rotated Sorted Array"
     ],
     "files.associations": {
         "iostream": "cpp"
