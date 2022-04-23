@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
       {
+        "type": "java",
+        "name": "Launch main0678",
+        "request": "launch",
+        "mainClass": "main0678",
+        "projectName": "leetcode-group-solution_96afe6d1"
+      },
+      {
         "name": "g++.exe - 生成和调试活动文件",
         "type": "cppdbg",
         "request": "launch",
