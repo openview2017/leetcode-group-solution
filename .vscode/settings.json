@@ -49,12 +49,13 @@
         "AlgorithmProblems/0273. Integer to English Words",
         "AlgorithmProblems/0209. Minimum Size Subarray Sum",
         "AlgorithmProblems/0156. Binary Tree Upside Down",
+        "AlgorithmProblems/0153. Find Minimum in Rotated Sorted Array",
         "AlgorithmProblems/0148. Sort List",
         "AlgorithmProblems/0147. Insertion Sort List",
         "AlgorithmProblems/0035. Search Insert Position",
         "AlgorithmProblems/0025. Reverse Nodes in k-Group",
         "AlgorithmProblems/0024. Swap Nodes in Pairs",
-        "AlgorithmProblems/0153. Find Minimum in Rotated Sorted Array"
+        "AlgorithmProblems/0081. Search in Rotated Sorted Array II"
     ],
     "files.associations": {
         "iostream": "cpp"
