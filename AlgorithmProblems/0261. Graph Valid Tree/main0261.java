@@ -16,7 +16,7 @@ public class main0261 {
 Variant of topological sort due to double directed edge
 
 */
-class Solution0261 { // method: bfs; tc: o(n), sc: o(n)
+class Solution0261 { // method: dfs; tc: o(n), sc: o(n)
     public boolean validTree(int n, int[][] edges) {
         if (edges.length + 1 != n) {
 		    return false;
