@@ -16,7 +16,7 @@ public class main0025 {
 }
 
 // optimal solution inspired by Linghan
-class solution0025 {
+class solution0025 { // tc: o(n), sc: o(1)
     public int findKthLargest(int[] nums, int k) {
         int left = 0, right = nums.length - 1;
         int mid = 0;
