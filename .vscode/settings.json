@@ -47,6 +47,7 @@
         "AlgorithmProblems/0329. Longest Increasing Path in a Matrix",
         "AlgorithmProblems/0311. Sparse Matrix Multiplication",
         "AlgorithmProblems/0273. Integer to English Words",
+        "AlgorithmProblems/0261. Graph Valid Tree",
         "AlgorithmProblems/0215.Kth Largest Element in an Array",
         "AlgorithmProblems/0209. Minimum Size Subarray Sum",
         "AlgorithmProblems/0156. Binary Tree Upside Down",
@@ -57,7 +58,7 @@
         "AlgorithmProblems/0035. Search Insert Position",
         "AlgorithmProblems/0025. Reverse Nodes in k-Group",
         "AlgorithmProblems/0024. Swap Nodes in Pairs",
-        "AlgorithmProblems/0261. Graph Valid Tree"
+        "AlgorithmProblems/0245. Shortest Word Distance III"
     ],
     "files.associations": {
         "iostream": "cpp"

@@ -41,3 +41,30 @@ class solution0094{
         helper(root.right, res);
       }
 }
+/*abstract
+      1
+      /\
+     2  3
+     /
+    4 
+ inorder: [root.left] root.val [root.right] 
+ inorder: 4,2, 1, 3
+
+ preorder: root.val [root.left]  [root.right] 
+ inorder: 1,2,4,3
+
+
+ 1. recursion input: root of tree, out: List<Integer> inorder
+    base: root == null 
+    tc: o(n), sc: o(height)
+
+ 2. iteration: sc: o(height)
+    stack<TreeNode>
+    List<Integer>: 4,2,1,3
+    curNode: 
+    stack: 
+
+
+
+
+*/
