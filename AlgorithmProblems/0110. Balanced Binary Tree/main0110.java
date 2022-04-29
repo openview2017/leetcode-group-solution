@@ -20,7 +20,7 @@ class Solution0110 {
     }
 }
 
-class Solution {
+class Solution0110Rec2  {
     // Recursively obtain the height of a tree. An empty tree has -1 height
     private int height(TreeNode root) {
       // An empty tree has height -1
