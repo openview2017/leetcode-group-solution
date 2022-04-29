@@ -22,6 +22,7 @@ class Node {
 */
 
 class Solution0429 {
+    // Method 1. Iteration
     public List<List<Integer>> levelOrderIter(Node root) {     
         List<List<Integer>> result = new ArrayList<>();
         if (root == null) return result;
@@ -38,5 +39,26 @@ class Solution0429 {
             result.add(level);
         }
         return result;
+    }
+
+    public List<List<Integer>> levelOrderRec(Node root) {
+        List<List<Integer>> result = new ArrayList<>();
+        if (root == null) {
+            return result;
+        }
+        dfs(root, 0, result);
+        return result;
+    }
+    
+    private void dfs(Node node, int level, List<List<Integer>> result) {
+        if (node == null) return;
+        
+        while (result.size() <= level) {
+            result.add(new ArrayList<>());
+        }
+        result.get(level).add(node.val);
+        for (Node child : node.children) {
+            dfs(child, level + 1, result);
+        }
     }
 }
