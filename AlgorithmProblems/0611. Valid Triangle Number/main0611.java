@@ -6,7 +6,7 @@ public class main0611 {
 
 
 class Solution0611 {
-    public int triangleNumber(int[] nums) {
+    public int triangleNumber0(int[] nums) {
         int count = 0;
         Arrays.sort(nums);
         for (int i = 0; i < nums.length - 2; i++) {
@@ -19,4 +19,21 @@ class Solution0611 {
         }
         return count;
     }
+    public int triangleNumber(int[] nums) {
+        int count = 0;
+        Arrays.sort(nums);
+        for (int k = nums.length - 1; k >= 2; k--) {
+            int i = 0;
+            int j = k - 1;
+            while (i < j) {
+                if (nums[i] + nums[j] > nums[k]) {
+                    count += (j - i);
+                    j--;
+                } else {
+                    i++;
+                }
+            }
+        }
+        return count;
+    }    
 }
