@@ -31,7 +31,7 @@ class Solution0018 {
         if (k == 2)
             return twoSum(nums, target, start);
         for (int i = start; i < nums.length; ++i)
-            if (i == start || nums[i - 1] != nums[i])
+            if (i == start || nums[i - 1] != nums[i]) //dedup
                 for (List<Integer> set : kSum(nums, target - nums[i], i + 1, k - 1)) {
                     res.add(new ArrayList<>(Arrays.asList(nums[i])));
                     res.get(res.size() - 1).addAll(set);
