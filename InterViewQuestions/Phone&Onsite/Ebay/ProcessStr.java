@@ -1,3 +1,11 @@
+/*
+Input :You love having a great time.
+[you, love, having, a, great, time]
+[a, you, love, time, great, having]
+[A, you, love, time, great, having.]
+Result : A you love time great having.
+*/
+
 import java.util.*;
 
 public class ProcessStr {
