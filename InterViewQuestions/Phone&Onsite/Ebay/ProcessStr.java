@@ -3,7 +3,7 @@ import java.util.*;
 public class ProcessStr {
     public static void main(String[] args) {
         String s = "You love having a great time.";
-        System.out.println(s);
+        System.out.println("Input :" + s);
         // step 1. preprocessing;
         String[] strArr = s.split(" ");
         strArr[0] = strArr[0].toLowerCase();
@@ -36,7 +36,7 @@ public class ProcessStr {
         }
         sb.deleteCharAt(sb.length() - 1);
         String res = sb.toString();
-        System.out.println(res);
+        System.out.println("Result : " + res);
         
         // tc/sc: o(n), n - character
     }    
