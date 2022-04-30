@@ -45,7 +45,10 @@ public class ProcessStr {
         sb.deleteCharAt(sb.length() - 1);
         String res = sb.toString();
         System.out.println("Result : " + res);
-        
+        /* Method 2 of step 4
+        String res = String.join(" ", strArr);
+        System.out.println(res);
+        */
         // tc/sc: o(n), n - character
     }    
 }
