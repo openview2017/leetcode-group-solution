@@ -59,7 +59,8 @@
         "AlgorithmProblems/0035. Search Insert Position",
         "AlgorithmProblems/0025. Reverse Nodes in k-Group",
         "AlgorithmProblems/0024. Swap Nodes in Pairs",
-        "AlgorithmProblems/0018. 4Sum"
+        "AlgorithmProblems/0018. 4Sum",
+        "InterViewQuestions/Phone&Onsite/Ebay"
     ],
     "files.associations": {
         "iostream": "cpp"
