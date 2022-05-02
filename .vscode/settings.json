@@ -1,5 +1,6 @@
 {
     "java.project.sourcePaths": [
+        "InterViewQuestions/Phone&Onsite/Ebay",
         "InterViewQuestions/OA/Amazon/Count decreasing subarray",
         "InterViewQuestions/OA/Amazon/Channel quality",
         "AlgorithmProblems/oa020822",
@@ -60,7 +61,7 @@
         "AlgorithmProblems/0025. Reverse Nodes in k-Group",
         "AlgorithmProblems/0024. Swap Nodes in Pairs",
         "AlgorithmProblems/0018. 4Sum",
-        "InterViewQuestions/Phone&Onsite/Ebay"
+        "AlgorithmProblems/1696. Jump Game VI"
     ],
     "files.associations": {
         "iostream": "cpp"

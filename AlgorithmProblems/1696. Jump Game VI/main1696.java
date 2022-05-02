@@ -1,5 +1,25 @@
+import java.util.*;
+
 public class main1696 {
-    
+    public static void main(String[] args) {
+        int k, nums[], res;
+        Solution1696 sol = new Solution1696();
+
+        nums = new int[]{1,-1,-2,4,-7,3};
+        k = 2;
+        res = sol.maxResult(nums, k);
+        System.out.println(res);
+        
+        nums = new int[]{10,-5,-2,4,0,3};
+        k = 2;
+        res = sol.maxResult(nums, k);
+        System.out.println(res);
+
+        nums = new int[]{1,-1,-2,4,-7,3};
+        k = 2;
+        res = sol.maxResult(nums, k);
+        System.out.println(res);
+    }
 }
 
 
