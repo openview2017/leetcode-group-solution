@@ -11,7 +11,7 @@ public class main1696 {
         System.out.println(res);
         
         nums = new int[]{10,-5,-2,4,0,3};
-        k = 2;
+        k = 3;
         res = sol.maxResult(nums, k);
         System.out.println(res);
 
