@@ -25,7 +25,7 @@ public class main1696 {
 
 class Solution1696 {
     // best method: dp + compressed deque. tc: o(N), sc: o(n)
-    public int maxResult(int[] nums, int k) {
+    public int maxResult_2(int[] nums, int k) {
         int n = nums.length;
         int score = nums[0];
         Deque<int[]> dq = new LinkedList<>();
@@ -35,7 +35,7 @@ class Solution1696 {
             while (dq.peekFirst() != null && dq.peekFirst()[0] < i - k) {
                 dq.pollFirst();
             }
-            score = dq.peek()[1] + nums[i];
+            score = dq.peekFirst()[1] + nums[i];
             // pop the smaller value
             while (dq.peekLast() != null && score >= dq.peekLast()[1]) {
                 dq.pollLast();
@@ -43,6 +43,31 @@ class Solution1696 {
             dq.offerLast(new int[] { i, score });
         }
         return score;
+    }
+    // Zhao's common solution:
+    public int maxResult(int[] nums, int k) {
+        int len = nums.length;
+        int[] dp = new int[len];
+        Deque<Integer> idxstack = new ArrayDeque<>();
+        idxstack.offerLast(0);
+        dp[0] = nums[0];
+        
+        for (int i = 1; i < nums.length; i++) {
+            // 1. remove obsolete
+            while (!idxstack.isEmpty() && i - idxstack.peekFirst() > k) { // !!! not >=
+                idxstack.pollFirst();
+            }
+            // 2. update the dp
+            dp[i] = dp[idxstack.peekFirst()] + nums[i];
+            
+            // 3. remove the non-max
+            while (!idxstack.isEmpty() && dp[i] >= dp[idxstack.peekLast()]) {
+                idxstack.pollLast();
+            }
+            idxstack.offerLast(i);
+        }
+        System.out.println(Arrays.toString(dp));
+        return dp[len-1];
     }
     // method 1: priority queue, tc: o(nlogn), sc: o(n)
     public int maxResult_01(int[] nums, int k) {
