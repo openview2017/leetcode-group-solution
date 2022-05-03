@@ -1,5 +1,15 @@
+import java.util.*;
+
 public class main0975 {
-    
+    public static void main(String[] args) {
+        int count, arr[];
+        Solution0975 sol = new Solution0975();
+
+        arr = new int[]{10,13,12,14,15};
+        count = sol.oddEvenJumps(arr);
+        System.out.println(Arrays.toString(arr));
+        System.out.println(count);
+    }
 }
 
 
