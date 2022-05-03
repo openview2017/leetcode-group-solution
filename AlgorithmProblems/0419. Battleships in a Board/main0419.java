@@ -1,6 +1,12 @@
 public class main0419 {
     public static void main(String[] args) {
+        Solution0419 sol = new Solution0419();
+        int count;
+        char board[][];
         
+        board = new char[][]{ {'X','.','.','X' }, {'.','.','.','X' }, {'.','.','.','X' }};
+        count = sol.countBattleships(board);
+        System.out.println(count);
     }
 }
 
