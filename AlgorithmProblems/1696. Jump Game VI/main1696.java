@@ -72,7 +72,7 @@ class Solution1696 {
     // method 1: priority queue, tc: o(nlogn), sc: o(n)
     public int maxResult_01(int[] nums, int k) {
         int len = nums.length;
-        Queue<Integer> maxheap = new PriorityQueue<>(new Comparator<Integer>(){
+        Queue<Integer> maxheap = new PriorityQueue<Integer>(new Comparator<Integer>(){
             @Override
             public int compare(int i1, int i2) {
                 return nums[i2] - nums[i1];
