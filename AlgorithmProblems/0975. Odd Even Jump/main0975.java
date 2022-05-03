@@ -3,7 +3,22 @@ public class main0975 {
 }
 
 
-class Solution { // 52 - 07, tc:o(nlogn), sc: o(n)
+class Solution0975 { // 52 - 07, tc:o(nlogn), sc: o(n)
+    public int oddEvenJumps0(int[] A) {
+        int n  = A.length, res = 1;
+        boolean[] higher = new boolean[n], lower = new boolean[n];
+        higher[n - 1] = lower[n - 1] = true;
+        TreeMap<Integer, Integer> map = new TreeMap<>();
+        map.put(A[n - 1], n - 1);
+        for (int i = n - 2; i >= 0; --i) {
+            Map.Entry<Integer, Integer> hi = map.ceilingEntry(A[i]), lo = map.floorEntry(A[i]);
+            if (hi != null) higher[i] = lower[(int)hi.getValue()];
+            if (lo != null) lower[i] = higher[(int)lo.getValue()];
+            if (higher[i]) res++;
+            map.put(A[i], i);
+        }
+        return res;
+    } // author: @zhangchunlei0813,
     public int oddEvenJumps(int[] arr) {
         int n = arr.length;
         int count = 1;
