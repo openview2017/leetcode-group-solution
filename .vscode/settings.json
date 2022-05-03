@@ -23,6 +23,7 @@
         "AlgorithmProblems/1026.Maximum-Difference-Between-Node-and-Ancestor",
         "AlgorithmProblems/0984. String Without AAA or BBB",
         "AlgorithmProblems/0978. Longest Turbulent Subarray",
+        "AlgorithmProblems/0975. Odd Even Jump",
         "AlgorithmProblems/0954. Array of Doubled Pairs",
         "AlgorithmProblems/0939. Minimum Area Rectangle",
         "AlgorithmProblems/0912. Sort an Array",
@@ -63,7 +64,7 @@
         "AlgorithmProblems/0025. Reverse Nodes in k-Group",
         "AlgorithmProblems/0024. Swap Nodes in Pairs",
         "AlgorithmProblems/0018. 4Sum",
-        "AlgorithmProblems/0975. Odd Even Jump"
+        "AlgorithmProblems/1240. Tiling a Rectangle with the Fewest Squares"
     ],
     "files.associations": {
         "iostream": "cpp"
