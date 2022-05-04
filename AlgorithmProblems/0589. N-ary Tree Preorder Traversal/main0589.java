@@ -23,7 +23,7 @@ class Node {
 */
 
 class Solution0589 {
-    public List<Integer> preorder(Node root) {
+    public List<Integer> preorderIter(Node root) {
         Deque<Node> s = new ArrayDeque<>();
         List<Integer> res = new ArrayList<>();
         if (root == null) return res;
@@ -39,5 +39,19 @@ class Solution0589 {
             }
         }
         return res;
+    }
+
+    // recursion
+    public List<Integer> preorderRec(Node root) {
+        List<Integer> res = new ArrayList<>();
+        helper(root, res);
+        return res;
+    }
+    private void helper(Node root, List<Integer> res) {
+        if (root == null) return;
+        res.add(root.val);
+        for (Node child : root.children) {
+            helper(child, res);
+        }
     }
 }
