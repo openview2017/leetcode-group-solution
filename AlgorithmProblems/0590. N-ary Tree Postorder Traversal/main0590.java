@@ -39,4 +39,18 @@ class Solution0590 {
         }
         return res;
     }
+    // recursion method
+    public List<Integer> postorderRec(Node root) {
+        LinkedList<Integer> res = new LinkedList<>();
+        helper(root, res);
+        return res;
+    }
+    private void helper(Node root, LinkedList<Integer> res) {
+        if (root == null) return;
+        res.addFirst(root.val);
+        int size = root.children.size();
+        for (int i = size - 1; i >= 0; i--) {
+            helper(root.children.get(i), res);
+        }
+    }    
 }
