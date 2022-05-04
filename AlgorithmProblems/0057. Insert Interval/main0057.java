@@ -1,5 +1,14 @@
+import java.util.Arrays;
+
 public class main0057 {
-    
+    public static void main(String[] args) {
+        Solution0057 sol = new Solution0057();
+        int intervals[][], newInterval[], res[][];
+        intervals = new int[][]{{1,3},{6,9}};
+        newInterval = new int[]{2,5};
+        res = sol.insert(intervals, newInterval);
+        System.out.println(Arrays.deepToString(res));
+    }
 }
 
 
@@ -25,8 +34,7 @@ class Solution0057 {
         while (i < intervals.length) {
             res[idx++] = intervals[i++];
         }
-        //return res;
-        Arrays.copyOf(res, idx);
+        return Arrays.copyOf(res, idx);
     }
 
 

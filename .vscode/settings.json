@@ -20,6 +20,7 @@
         "AlgorithmProblems/1376. Time Needed to Inform All Employees",
         "AlgorithmProblems/1293. Shortest Path in a Grid with Obstacles Elimination",
         "AlgorithmProblems/1277. Count Square Submatrices with All Ones",
+        "AlgorithmProblems/1240. Tiling a Rectangle with the Fewest Squares",
         "AlgorithmProblems/1026.Maximum-Difference-Between-Node-and-Ancestor",
         "AlgorithmProblems/0984. String Without AAA or BBB",
         "AlgorithmProblems/0978. Longest Turbulent Subarray",
@@ -64,7 +65,7 @@
         "AlgorithmProblems/0025. Reverse Nodes in k-Group",
         "AlgorithmProblems/0024. Swap Nodes in Pairs",
         "AlgorithmProblems/0018. 4Sum",
-        "AlgorithmProblems/1240. Tiling a Rectangle with the Fewest Squares"
+        "AlgorithmProblems/0057. Insert Interval"
     ],
     "files.associations": {
         "iostream": "cpp"

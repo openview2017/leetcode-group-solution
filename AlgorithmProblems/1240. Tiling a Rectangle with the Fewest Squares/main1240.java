@@ -1,10 +1,15 @@
 public class main1240 {
     public static void main(String[] args) {
-        
+        Solution1240 sol = new Solution1240();
+        int n,m,res;
+
+        n = 2; m = 3;
+        res = sol.tilingRectangle(n, m);
+        System.out.println("[n,m,min]:" + n + "," + m + "," + res);
     }
 }
 
-class Solution {
+class Solution1240 {
     int min=Integer.MAX_VALUE; // 返回结果，先设个最大值
     public int tilingRectangle(int n, int m) {
         if(m==n) return 1; // 如果长宽相同，即是正方形，返回1
