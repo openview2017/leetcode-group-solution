@@ -23,7 +23,7 @@ class Solution0950 {
         Arrays.sort(deck);
         for (int card: deck) {
             //System.out.printf("%d,", index.peekFirst());
-            System.out.println(Arrays.toString(index.toArray()));
+            ////System.out.println(Arrays.toString(index.toArray()));
             ans[index.pollFirst()] = card;
             if (!index.isEmpty())
                 
