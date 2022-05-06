@@ -26,6 +26,7 @@
         "AlgorithmProblems/0978. Longest Turbulent Subarray",
         "AlgorithmProblems/0975. Odd Even Jump",
         "AlgorithmProblems/0954. Array of Doubled Pairs",
+        "AlgorithmProblems/0950. Reveal Cards In Increasing Order",
         "AlgorithmProblems/0939. Minimum Area Rectangle",
         "AlgorithmProblems/0912. Sort an Array",
         "AlgorithmProblems/0833. Find And Replace in String",
@@ -67,7 +68,7 @@
         "AlgorithmProblems/0025. Reverse Nodes in k-Group",
         "AlgorithmProblems/0024. Swap Nodes in Pairs",
         "AlgorithmProblems/0018. 4Sum",
-        "AlgorithmProblems/0950. Reveal Cards In Increasing Order"
+        "AlgorithmProblems/0323. Number of Connected Components in an Undirected Graph"
     ],
     "files.associations": {
         "iostream": "cpp"

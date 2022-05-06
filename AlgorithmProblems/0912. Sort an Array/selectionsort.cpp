@@ -37,15 +37,6 @@ class SelectionSort {
 };
 
 
-
-    // int main() {
-    //     int n[] = {1,3,5,6};
-    //     int length_n=sizeof(n)/sizeof(int);
-    //     mergesort(n, 0, length_n-1);
-    //     printArray(n, length_n);
-    //     return 0;
-    // }
-
 int main() {
     vector<int> vect{3,5,6,1};
     SelectionSort sol;
