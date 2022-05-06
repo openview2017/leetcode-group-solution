@@ -10,7 +10,7 @@ public class main0128 {
         System.out.println(count);
     }
 }
-
+// tc/sc: o(n) best in time
 class Solution0128 {
     public int longestConsecutive(int[] nums) {
         Set<Integer> num_set = new HashSet<Integer>();
