@@ -1,6 +1,13 @@
+import java.util.*;
+
 public class main0128 {
     public static void main(String[] args) {
-        
+        Solution0128 sol = new Solution0128();
+        int nums[], count;
+
+        nums = new int[]{0,3,7,2,5,8,4,6,0,1};
+        count = sol.longestConsecutive(nums);
+        System.out.println(count);
     }
 }
 
