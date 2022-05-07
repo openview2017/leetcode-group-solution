@@ -1,7 +1,11 @@
 public class main1258 {
     public static void main(String[] args) {
         Solution1258 sol = new Solution1258();
-        
+        String s = "codeleet";
+        System.out.println(s);
+        int[] indices = {4,5,6,7,0,2,1,3};
+        s= sol.restoreString(s, indices);
+        System.out.println(s);
     }
 }
 

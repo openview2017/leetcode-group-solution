@@ -62,6 +62,7 @@
         "AlgorithmProblems/0273. Integer to English Words",
         "AlgorithmProblems/0261. Graph Valid Tree",
         "AlgorithmProblems/0245. Shortest Word Distance III",
+        "AlgorithmProblems/0231. Power of Two",
         "AlgorithmProblems/0215.Kth Largest Element in an Array",
         "AlgorithmProblems/0209. Minimum Size Subarray Sum",
         "AlgorithmProblems/0167. Two Sum II - Input Array Is Sorted",
@@ -77,7 +78,7 @@
         "AlgorithmProblems/0025. Reverse Nodes in k-Group",
         "AlgorithmProblems/0024. Swap Nodes in Pairs",
         "AlgorithmProblems/0018. 4Sum",
-        "AlgorithmProblems/0231. Power of Two"
+        "AlgorithmProblems/1528. Shuffle String"
     ],
     "files.associations": {
         "iostream": "cpp"
