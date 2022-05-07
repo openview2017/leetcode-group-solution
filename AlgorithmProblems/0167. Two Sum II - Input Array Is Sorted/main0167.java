@@ -1,10 +1,13 @@
+import java.util.*;
+
 public class main0167 {
     public static void main(String[] args) {
         Solution0167 sol = new Solution0167();
-        int numbers[], target;
+        int numbers[], target, res[];
         numbers = new int[]{2,7,11,15};
         target = 9;
-
+        res = sol.twoSum(numbers, target);
+        System.out.println(Arrays.toString(res));
     }
 }
 
