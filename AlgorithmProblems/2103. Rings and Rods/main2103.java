@@ -1,7 +1,7 @@
 public class main2103 {
     
 }
-class Solution { // 54 - 59
+class Solution2103 { // 54 - 59
     public int countPoints(String rings) {
         int[] r = new int[10];
         int[] g = new int[10];
