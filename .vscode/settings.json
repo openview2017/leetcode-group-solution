@@ -54,6 +54,7 @@
         "AlgorithmProblems/0384. Shuffle an Array",
         "AlgorithmProblems/0360. Sort Transformed Array",
         "AlgorithmProblems/0329. Longest Increasing Path in a Matrix",
+        "AlgorithmProblems/0325. Maximum Size Subarray Sum Equals k",
         "AlgorithmProblems/0323. Number of Connected Components in an Undirected Graph",
         "AlgorithmProblems/0311. Sparse Matrix Multiplication",
         "AlgorithmProblems/0273. Integer to English Words",
@@ -73,7 +74,7 @@
         "AlgorithmProblems/0025. Reverse Nodes in k-Group",
         "AlgorithmProblems/0024. Swap Nodes in Pairs",
         "AlgorithmProblems/0018. 4Sum",
-        "AlgorithmProblems/0325. Maximum Size Subarray Sum Equals k"
+        "AlgorithmProblems/0796. Rotate String"
     ],
     "files.associations": {
         "iostream": "cpp"
