@@ -1,8 +1,11 @@
 public class main1258 {
-    
+    public static void main(String[] args) {
+        Solution1258 sol = new Solution1258();
+        
+    }
 }
 
-class Solution {
+class Solution1258 {
     public String restoreString(String s, int[] indices) {        
         char[] cArr = s.toCharArray(); //DFS
         for (int i = 0; i < cArr.length; i++) {
