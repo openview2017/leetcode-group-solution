@@ -64,6 +64,7 @@
         "AlgorithmProblems/0245. Shortest Word Distance III",
         "AlgorithmProblems/0215.Kth Largest Element in an Array",
         "AlgorithmProblems/0209. Minimum Size Subarray Sum",
+        "AlgorithmProblems/0167. Two Sum II - Input Array Is Sorted",
         "AlgorithmProblems/0156. Binary Tree Upside Down",
         "AlgorithmProblems/0153. Find Minimum in Rotated Sorted Array",
         "AlgorithmProblems/0148. Sort List",
@@ -76,7 +77,7 @@
         "AlgorithmProblems/0025. Reverse Nodes in k-Group",
         "AlgorithmProblems/0024. Swap Nodes in Pairs",
         "AlgorithmProblems/0018. 4Sum",
-        "AlgorithmProblems/0167. Two Sum II - Input Array Is Sorted"
+        "AlgorithmProblems/0231. Power of Two"
     ],
     "files.associations": {
         "iostream": "cpp"
