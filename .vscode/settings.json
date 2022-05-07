@@ -41,6 +41,7 @@
         "AlgorithmProblems/0678. Valid Parenthesis String",
         "AlgorithmProblems/0588. Design In-Memory File System",
         "AlgorithmProblems/0582. Kill Process",
+        "AlgorithmProblems/0560. Subarray Sum Equals K",
         "AlgorithmProblems/0539. Minimum Time Difference",
         "AlgorithmProblems/0524. Longest Word in Dictionary through Deleting",
         "AlgorithmProblems/0522. Longest Uncommon Subsequence II",
@@ -72,7 +73,7 @@
         "AlgorithmProblems/0025. Reverse Nodes in k-Group",
         "AlgorithmProblems/0024. Swap Nodes in Pairs",
         "AlgorithmProblems/0018. 4Sum",
-        "AlgorithmProblems/0560. Subarray Sum Equals K"
+        "AlgorithmProblems/0325. Maximum Size Subarray Sum Equals k"
     ],
     "files.associations": {
         "iostream": "cpp"
