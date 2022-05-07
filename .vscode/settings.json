@@ -15,6 +15,7 @@
         "AlgorithmProblems/2007. Find Original Array From Doubled Array",
         "AlgorithmProblems/1696. Jump Game VI",
         "AlgorithmProblems/1610. Maximum Number of Visible Points",
+        "AlgorithmProblems/1528. Shuffle String",
         "AlgorithmProblems/1386. Cinema Seat Allocation",
         "AlgorithmProblems/1381. Design a Stack With Increment Operation",
         "AlgorithmProblems/1376. Time Needed to Inform All Employees",
@@ -78,7 +79,7 @@
         "AlgorithmProblems/0025. Reverse Nodes in k-Group",
         "AlgorithmProblems/0024. Swap Nodes in Pairs",
         "AlgorithmProblems/0018. 4Sum",
-        "AlgorithmProblems/1528. Shuffle String"
+        "AlgorithmProblems/0389. Find the Difference"
     ],
     "files.associations": {
         "iostream": "cpp"
