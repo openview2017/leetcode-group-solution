@@ -1,5 +1,15 @@
+import java.util.*;
+
 public class main0560 {
-    
+    public static void main(String[] args) {
+        Solution0560 sol = new Solution0560();
+        int nums[], k, res;
+        
+        nums = new int[]{1,1,1};
+        k = 2;
+        res = sol.subarraySum(nums, k);
+        System.out.println(res);       
+    }
 }
 
 class Solution0560 {
