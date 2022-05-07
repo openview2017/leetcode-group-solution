@@ -1,6 +1,8 @@
+import java.util.*;
+
 public class main1099 {
     public static void main(String[] args) {
-        Solution sol = new Solution1099();
+        Solution1099 sol = new Solution1099();
         int nums[], k, res;
         
         nums = new int[]{34,23,1,24,75,33,54,8};
