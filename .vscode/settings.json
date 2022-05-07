@@ -34,6 +34,7 @@
         "AlgorithmProblems/0833. Find And Replace in String",
         "AlgorithmProblems/0828. Count Unique Characters of All Substrings of a Given String",
         "AlgorithmProblems/0821. Shortest Distance to a Character",
+        "AlgorithmProblems/0796. Rotate String",
         "AlgorithmProblems/0777. Swap Adjacent in LR String",
         "AlgorithmProblems/0722. Remove Comments",
         "AlgorithmProblems/0707. Design Linked List",
@@ -74,7 +75,7 @@
         "AlgorithmProblems/0025. Reverse Nodes in k-Group",
         "AlgorithmProblems/0024. Swap Nodes in Pairs",
         "AlgorithmProblems/0018. 4Sum",
-        "AlgorithmProblems/0796. Rotate String"
+        "AlgorithmProblems/0485. Max Consecutive Ones"
     ],
     "files.associations": {
         "iostream": "cpp"
