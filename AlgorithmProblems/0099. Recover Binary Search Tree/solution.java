@@ -27,7 +27,7 @@ class Solution {
     }
 }
 
-class Solution { //iterative
+class Solution0099_2 { //iterative
     public void swap(TreeNode a, TreeNode b) {
       int tmp = a.val;
       a.val = b.val;
