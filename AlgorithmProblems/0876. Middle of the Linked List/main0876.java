@@ -1,5 +1,7 @@
 public class main0876 {
-    
+    public static void main(String[] args) {
+        
+    }
 }
 /**
  * Definition for singly-linked list.
