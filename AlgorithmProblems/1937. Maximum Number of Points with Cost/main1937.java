@@ -1,9 +1,15 @@
 public class main1937 {
-    
+    public static void main(String[] args) {
+        Solution1937 sol = new Solution1937();
+        long points[][], res;
+        points = new long[][]{{1,2,3},{1,5,1},{3,1,1}};
+        res = sol.maxPoints(points);
+        System.out.println(res);
+    }
 }
 
 class Solution1937 { // 43 - 49x - 50
-    public long maxPoints(int[][] points) {
+    public long maxPoints(long[][] points) {
         int row = points.length, col = points[0].length;
         long[] cur = new long[col];   // ending at cur[col]     
         long[] prev = new long[col];

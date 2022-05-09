@@ -54,6 +54,7 @@
         "AlgorithmProblems/0445. Add Two Numbers II",
         "AlgorithmProblems/0420. Strong Password Checker",
         "AlgorithmProblems/0419. Battleships in a Board",
+        "AlgorithmProblems/0389. Find the Difference",
         "AlgorithmProblems/0384. Shuffle an Array",
         "AlgorithmProblems/0360. Sort Transformed Array",
         "AlgorithmProblems/0329. Longest Increasing Path in a Matrix",
@@ -79,7 +80,7 @@
         "AlgorithmProblems/0025. Reverse Nodes in k-Group",
         "AlgorithmProblems/0024. Swap Nodes in Pairs",
         "AlgorithmProblems/0018. 4Sum",
-        "AlgorithmProblems/0389. Find the Difference"
+        "AlgorithmProblems/1937. Maximum Number of Points with Cost"
     ],
     "files.associations": {
         "iostream": "cpp"
