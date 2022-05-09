@@ -71,3 +71,45 @@ class Solution {
         return limit;
     }
 }
+
+class Solution2096 { 
+    public String getDirections(TreeNode root, int startValue, int destValue) {
+        TreeNode lca = getLCA(root, startValue, destValue);
+        // System.out.println(lca.val);
+        StringBuilder startPath = new StringBuilder();
+        findNode(lca, startValue, startPath);    
+        // System.out.println(startPath.toString());
+        StringBuilder destPath = new StringBuilder();
+        findNode(lca, destValue, destPath);
+        StringBuilder res = new StringBuilder();        
+       // System.out.println(destPath.toString());
+
+        for (int i = 0; i < startPath.length(); i++) {
+            res.append('U');
+        }
+        res.append(destPath.reverse());
+        return res.toString();
+    }
+    
+    private TreeNode getLCA(TreeNode root, int p, int q) { // tc/ sc: o(N)
+        if (root == null || root.val==p || root.val==q) return root;
+        TreeNode left = getLCA(root.left, p, q);
+        TreeNode right = getLCA(root.right, p, q);
+        if (left != null && right != null) return root;
+        return left != null ? left : right;
+    }
+    
+    private boolean findNode(TreeNode root, int target, StringBuilder sb) { // dfs
+        if (root == null) return false;
+        if (root.val == target) return true;
+        if (root.left != null && findNode(root.left, target, sb)) {
+            sb.append('L');
+            return true;
+        }
+        if (root.right != null && findNode(root.right, target, sb)) {
+            sb.append('R');
+            return true;
+        }  
+        return sb.length() > 0;
+    }
+}
