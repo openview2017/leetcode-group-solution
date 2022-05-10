@@ -1,6 +1,11 @@
 public class main2110 {
     public static void main(String[] args) {
-        
+        Solution2110 sol = new Solution2110();
+        int prices[];
+        long count;
+        prices = new int[]{3,2,1,4};
+        count = sol.getDescentPeriods(prices);
+        System.out.println(count);
     }
 }
 
