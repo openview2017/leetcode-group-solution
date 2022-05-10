@@ -25,3 +25,26 @@ class Solution0560 {
         return count;
     }
 }
+
+/*abstract: if all positive
+    public int subarraySum(int[] nums, int k) {
+        int count = 0;
+        int left = 0, right = 0; // [left, right]
+        int len = nums.length;
+        int curSum = 0;
+        while (right < len) {
+            curSum += nums[right];
+            if (curSum == k) {
+                count++;
+            } 
+            while (curSum > k && left <= right) {
+                curSum -= nums[left++];
+                if (curSum == k) {
+                    count++;
+                }
+            }
+            right++;
+        }
+        return count;
+    }
+*/
