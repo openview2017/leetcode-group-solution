@@ -20,6 +20,7 @@
         "AlgorithmProblems/1386. Cinema Seat Allocation",
         "AlgorithmProblems/1381. Design a Stack With Increment Operation",
         "AlgorithmProblems/1376. Time Needed to Inform All Employees",
+        "AlgorithmProblems/1352. Product of the Last K Numbers",
         "AlgorithmProblems/1293. Shortest Path in a Grid with Obstacles Elimination",
         "AlgorithmProblems/1277. Count Square Submatrices with All Ones",
         "AlgorithmProblems/1240. Tiling a Rectangle with the Fewest Squares",
@@ -81,7 +82,7 @@
         "AlgorithmProblems/0025. Reverse Nodes in k-Group",
         "AlgorithmProblems/0024. Swap Nodes in Pairs",
         "AlgorithmProblems/0018. 4Sum",
-        "AlgorithmProblems/1352. Product of the Last K Numbers"
+        "AlgorithmProblems/2110. Number of Smooth Descent Periods of a Stock"
     ],
     "files.associations": {
         "iostream": "cpp"
