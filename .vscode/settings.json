@@ -12,6 +12,7 @@
         "AlgorithmProblems/2130. Maximum Twin Sum of a Linked List",
         "AlgorithmProblems/2128. Remove All Ones With Row and Column Flips",
         "AlgorithmProblems/2115. Find All Possible Recipes from Given Supplies",
+        "AlgorithmProblems/2110. Number of Smooth Descent Periods of a Stock",
         "AlgorithmProblems/2007. Find Original Array From Doubled Array",
         "AlgorithmProblems/1937. Maximum Number of Points with Cost",
         "AlgorithmProblems/1696. Jump Game VI",
@@ -82,7 +83,7 @@
         "AlgorithmProblems/0025. Reverse Nodes in k-Group",
         "AlgorithmProblems/0024. Swap Nodes in Pairs",
         "AlgorithmProblems/0018. 4Sum",
-        "AlgorithmProblems/2110. Number of Smooth Descent Periods of a Stock"
+        "AlgorithmProblems/0917. Reverse Only Letters"
     ],
     "files.associations": {
         "iostream": "cpp"
