@@ -59,3 +59,37 @@ class Solution {
         return false;
     }
 }
+
+class Solution { //37 - 47
+    public boolean checkInclusion(String s1, String s2) {
+        Map<Character, Integer> freqMap = new HashMap<>();
+        conv(s1, freqMap);
+        int match = 0;
+        for (int i = 0; i < s2.length(); i++) {
+            char c = s2.charAt(i);
+            if (freqMap.containsKey(c)) {
+                int fcount = freqMap.get(c);
+                if (fcount == 1) match++;
+                freqMap.put(c, fcount - 1);
+            } 
+            // process end
+            if (i >= s1.length()) {
+                char cb = s2.charAt(i - s1.length());
+                Integer bcount = freqMap.get(cb);
+                if (bcount != null){
+                    if (bcount == 0) match--;
+                    freqMap.put(cb, bcount + 1);                    
+                }
+            }
+            if (match == freqMap.size()) return true;
+        }
+        return false;
+    }
+    
+    private void conv(String s, Map<Character, Integer> freqMap) {
+        for (char c : s.toCharArray()) {
+            freqMap.put(c, freqMap.getOrDefault(c, 0) + 1);
+        }
+        return;
+    } 
+}
