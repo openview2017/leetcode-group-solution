@@ -1,6 +1,6 @@
 public class main0464 {
     public static void main(String[] args) {
-        Solution0464 sol = Solution0464();
+        Solution0464 sol = new Solution0464();
         int max; int target; boolean res;
         max = 10;
         target = 11;

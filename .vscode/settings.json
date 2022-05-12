@@ -34,6 +34,7 @@
         "AlgorithmProblems/0954. Array of Doubled Pairs",
         "AlgorithmProblems/0950. Reveal Cards In Increasing Order",
         "AlgorithmProblems/0939. Minimum Area Rectangle",
+        "AlgorithmProblems/0925. Long Pressed Name",
         "AlgorithmProblems/0917. Reverse Only Letters",
         "AlgorithmProblems/0912. Sort an Array",
         "AlgorithmProblems/0833. Find And Replace in String",
@@ -84,7 +85,7 @@
         "AlgorithmProblems/0025. Reverse Nodes in k-Group",
         "AlgorithmProblems/0024. Swap Nodes in Pairs",
         "AlgorithmProblems/0018. 4Sum",
-        "AlgorithmProblems/0925. Long Pressed Name"
+        "AlgorithmProblems/0464. Can I Win"
     ],
     "files.associations": {
         "iostream": "cpp"
