@@ -1,6 +1,9 @@
 public class main0925 {
     public static void main(String[] args) {
-        
+        Solution0925 sol = new Solution0925();
+        String name = "alex", typed = "aaleex";
+        boolean res = sol.isLongPressedName(name, typed);
+        System.out.println(res);
     }
 }
 

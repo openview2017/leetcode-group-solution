@@ -1,5 +1,11 @@
 public class main0523 {
-    
+    public static void main(String[] args) {
+        Solution0523 sol = new Solution0523();
+
+        int nums[], k;
+        nums = new int[]{23,2,4,6,7};
+        k = 6
+    }
 }
 
 class Solution0523 {

@@ -1,3 +1,6 @@
+#include<vector>
+#include<iostream>
+
 class Solution2110 {
 public:
     long long getDescentPeriods(vector<int>& prices) {
