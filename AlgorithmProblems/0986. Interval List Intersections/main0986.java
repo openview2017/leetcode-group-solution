@@ -1,9 +1,8 @@
-import java.util.Arrays;
+import java.util.*;
 
 public class main0986 {
     public static void main(String[] args) {
         Solution0986 sol = new Solution0986();
-
         int[][] firstList = {{0,2},{5,10},{13,23},{24,25}};
         int[][] secondList = {{1,5},{8,12},{15,24},{25,26}};
         int[][] res = sol.intervalIntersection(firstList, secondList);
