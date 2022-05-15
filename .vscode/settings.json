@@ -28,6 +28,7 @@
         "AlgorithmProblems/1099. Two Sum Less Than K",
         "AlgorithmProblems/1026.Maximum-Difference-Between-Node-and-Ancestor",
         "AlgorithmProblems/0990. Satisfiability of Equality Equations",
+        "AlgorithmProblems/0986. Interval List Intersections",
         "AlgorithmProblems/0984. String Without AAA or BBB",
         "AlgorithmProblems/0978. Longest Turbulent Subarray",
         "AlgorithmProblems/0975. Odd Even Jump",
@@ -86,7 +87,7 @@
         "AlgorithmProblems/0025. Reverse Nodes in k-Group",
         "AlgorithmProblems/0024. Swap Nodes in Pairs",
         "AlgorithmProblems/0018. 4Sum",
-        "AlgorithmProblems/0986. Interval List Intersections"
+        "AlgorithmProblems/0475. Heaters"
     ],
     "files.associations": {
         "iostream": "cpp"
