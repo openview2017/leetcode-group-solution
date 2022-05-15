@@ -1,3 +1,6 @@
+from typing import List
+
+
 class Solution0475:
     def findRadius(self, houses: List[int], heaters: List[int]) -> int:
         houses.sort()
@@ -21,4 +24,8 @@ class Solution0475:
         return heatRad
 
 
-        
+houses = [1,2,3]
+heaters = [2]
+sol = Solution0475()
+rad = sol.findRadius(houses, heaters)
+print(rad)
