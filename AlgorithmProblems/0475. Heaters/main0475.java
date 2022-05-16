@@ -1,5 +1,14 @@
 public class main0475 {
-    
+    public static void main(String[] args) {
+        Solution0475 sol = new Solution0475();
+        int houses[], heaters[], res;
+
+        houses = new int[]{1,2,3};
+        heaters = new int[]{2};
+        res = sol.findRadius(houses, heaters);
+        System.out.println(res);
+
+    }
 }
 
 class Solution0475 { // 30

@@ -1,9 +1,19 @@
+import java.util.*;
+
 public class main1091 {
-    
+    public static void main(String[] args) {
+        Solution1091 sol = new Solution1091();
+        int[][] grid;
+        int dist;
+
+        grid = new int[][]{{0,1},{1,0}};
+        dist = sol.shortestPathBinaryMatrix(grid);
+        System.out.println(dist);
+    }
 }
 
 
-class Solution { // 03 - 18
+class Solution1091 { // 03 - 18
     private static int[][] DIRS = new int[][]{{0,1},{1,1},{1,0},{1,-1},{0,-1},{-1,-1},{-1,0},{-1,1}};
     public int shortestPathBinaryMatrix(int[][] grid) { // bfs
         int n = grid.length;
@@ -43,7 +53,7 @@ class Solution { // 03 - 18
     }
 }
 
-class Solution { // 03 - 18 dijstra, tc: o(nlogn)
+class Solution1091_dijstra { // 03 - 18 dijstra, tc: o(nlogn)
     private static int[][] DIRS = new int[][]{{0,1},{1,1},{1,0},{1,-1},{0,-1},{-1,-1},{-1,0},{-1,1}};
     public int shortestPathBinaryMatrix(int[][] grid) { // bfs
         int n = grid.length;
