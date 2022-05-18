@@ -55,3 +55,34 @@ class Solution { //14 - 25
         return nei;
     }
 }
+
+/*
+beginWord = "hit", endWord = "cog", 
+wordList = ["hot","dot","dog","lot","log","cog"]
+
+Queue<List<String>>
+visited
+dictSet= ["hot","dot","dog","lot","log","cog"]
+wordPath: hit
+queue: <hit>
+
+1: size 1
+  <hit>  endWord-hit
+  adj:           hot
+        <hit>'+ hot -> <hit, hot>   <hit, ..., cog>-> res  visited.add(hot)
+  Queue: <hit, hot>
+  
+A: remove visited from wordList
+B. res.size() > 0 -> break
+res
+                 ...,abc                            ...,adf                  ...
+                  /\\\                               //|\\\
+            ...,abc,(abd)     ...,abc,abf          ...,adf,(abd)               ............ level 5, res.size() > 0
+            
+
+2: size 1
+
+
+
+*/
+
