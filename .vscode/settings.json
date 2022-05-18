@@ -26,6 +26,7 @@
         "AlgorithmProblems/1277. Count Square Submatrices with All Ones",
         "AlgorithmProblems/1240. Tiling a Rectangle with the Fewest Squares",
         "AlgorithmProblems/1099. Two Sum Less Than K",
+        "AlgorithmProblems/1091. Shortest Path in Binary Matrix",
         "AlgorithmProblems/1026.Maximum-Difference-Between-Node-and-Ancestor",
         "AlgorithmProblems/0990. Satisfiability of Equality Equations",
         "AlgorithmProblems/0986. Interval List Intersections",
@@ -88,7 +89,7 @@
         "AlgorithmProblems/0025. Reverse Nodes in k-Group",
         "AlgorithmProblems/0024. Swap Nodes in Pairs",
         "AlgorithmProblems/0018. 4Sum",
-        "AlgorithmProblems/1091. Shortest Path in Binary Matrix"
+        "AlgorithmProblems/1272. Remove Interval"
     ],
     "files.associations": {
         "iostream": "cpp"
