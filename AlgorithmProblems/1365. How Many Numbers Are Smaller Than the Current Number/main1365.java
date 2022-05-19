@@ -23,3 +23,4 @@ class Solution1365 { // 23
         return res;
     }
 }// tc/sc: o(N)
+// https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/discuss/524996/JAVA-beats-100-O(n)
