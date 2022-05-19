@@ -8,6 +8,7 @@
         "AlgorithmProblems/KeepDistanceK",
         "AlgorithmProblems/891. Sum of Subsequence Widths",
         "AlgorithmProblems/2214. Minimum Health to Beat Game",
+        "AlgorithmProblems/2178. Maximum Split of Positive Even Integers",
         "AlgorithmProblems/2158. Amount of New Area Painted Each Day",
         "AlgorithmProblems/2130. Maximum Twin Sum of a Linked List",
         "AlgorithmProblems/2128. Remove All Ones With Row and Column Flips",
@@ -90,7 +91,7 @@
         "AlgorithmProblems/0025. Reverse Nodes in k-Group",
         "AlgorithmProblems/0024. Swap Nodes in Pairs",
         "AlgorithmProblems/0018. 4Sum",
-        "AlgorithmProblems/2178. Maximum Split of Positive Even Integers"
+        "AlgorithmProblems/1160. Find Words That Can Be Formed by Characters"
     ],
     "files.associations": {
         "iostream": "cpp"
