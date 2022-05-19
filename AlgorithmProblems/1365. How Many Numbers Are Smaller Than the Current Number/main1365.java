@@ -41,3 +41,4 @@ class Solution1365_2 { // 38 - 40
         return res;
     }
 } // tc: o(nlogn), sc: o(n)
+https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/discuss/535421/Java-Clean-HashMap-solution-with-explanation
