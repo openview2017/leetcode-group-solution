@@ -14,9 +14,10 @@ class Solution2178 { //42 - 47
             i += 2;
         }
         if (finalSum > 0) {
-            long last = res.get(res.size() - 1);
-            res.remove(res.size() - 1);
-            res.add(finalSum + last);
+            // long last = res.get(res.size() - 1);
+            // res.remove(res.size() - 1);
+            // res.add(finalSum + last);
+            res.add(finalSum + res.remove(res.size() - 1));
         }
         return res;
     }
