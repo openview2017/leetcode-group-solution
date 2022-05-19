@@ -1,5 +1,15 @@
+import java.util.*;
+
 public class main2178 {
-    
+    public static void main(String[] args) {
+        Solution2178 sol = new Solution2178();
+        List<Long> res;
+        long finalSum;
+
+        finalSum = 12;
+        res = sol.maximumEvenSplit(finalSum);
+        System.out.println(Arrays.toString(res.toArray()));
+    }
 }
 
 
