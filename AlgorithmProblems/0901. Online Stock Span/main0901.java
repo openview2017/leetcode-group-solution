@@ -10,7 +10,7 @@ class StockSpanner {
     }
     
     public int next(int price) {
-        int count = 1;
+        int count = 1; //!!!!!
         while (!stack.isEmpty() && stack.peekLast()[0] <= price) {
             count += stack.pollLast()[1];
         }
