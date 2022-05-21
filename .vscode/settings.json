@@ -6,7 +6,6 @@
         "AlgorithmProblems/oa020822",
         "AlgorithmProblems/Largest-Square-Of-Matches",
         "AlgorithmProblems/KeepDistanceK",
-        "AlgorithmProblems/891. Sum of Subsequence Widths",
         "AlgorithmProblems/2214. Minimum Health to Beat Game",
         "AlgorithmProblems/2178. Maximum Split of Positive Even Integers",
         "AlgorithmProblems/2158. Amount of New Area Painted Each Day",
@@ -62,6 +61,7 @@
         "AlgorithmProblems/0475. Heaters",
         "AlgorithmProblems/0472. Concatenated Words",
         "AlgorithmProblems/0464. Can I Win",
+        "AlgorithmProblems/0460. LFU Cache",
         "AlgorithmProblems/0447. Number of Boomerangs",
         "AlgorithmProblems/0445. Add Two Numbers II",
         "AlgorithmProblems/0420. Strong Password Checker",
@@ -92,7 +92,7 @@
         "AlgorithmProblems/0025. Reverse Nodes in k-Group",
         "AlgorithmProblems/0024. Swap Nodes in Pairs",
         "AlgorithmProblems/0018. 4Sum",
-        "AlgorithmProblems/0460. LFU Cache"
+        "ObjectOrientedDesign/LinuxFind"
     ],
     "files.associations": {
         "iostream": "cpp"
