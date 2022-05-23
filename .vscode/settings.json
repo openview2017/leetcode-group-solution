@@ -1,5 +1,6 @@
 {
     "java.project.sourcePaths": [
+        "ObjectOrientedDesign/LinuxFind",
         "InterViewQuestions/Phone&Onsite/Ebay",
         "InterViewQuestions/OA/Amazon/Count decreasing subarray",
         "InterViewQuestions/OA/Amazon/Channel quality",
@@ -92,7 +93,7 @@
         "AlgorithmProblems/0025. Reverse Nodes in k-Group",
         "AlgorithmProblems/0024. Swap Nodes in Pairs",
         "AlgorithmProblems/0018. 4Sum",
-        "ObjectOrientedDesign/LinuxFind"
+        "AlgorithmProblems/0474. Ones and Zeroes"
     ],
     "files.associations": {
         "iostream": "cpp"
