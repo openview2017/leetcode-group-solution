@@ -18,7 +18,6 @@ import java.util.Map;
  public class Splendor {
 
     class Card {
-
         Map<GemColor, Integer> cost = new HashMap<GemColor, Integer>();
         GemColor cardColor;
 
