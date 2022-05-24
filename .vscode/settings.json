@@ -87,6 +87,7 @@
         "AlgorithmProblems/0148. Sort List",
         "AlgorithmProblems/0147. Insertion Sort List",
         "AlgorithmProblems/0128. Longest Consecutive Sequence",
+        "AlgorithmProblems/0123. Best Time to Buy and Sell Stock III",
         "AlgorithmProblems/0081. Search in Rotated Sorted Array II",
         "AlgorithmProblems/0068. Text Justification",
         "AlgorithmProblems/0057. Insert Interval",
@@ -94,7 +95,7 @@
         "AlgorithmProblems/0025. Reverse Nodes in k-Group",
         "AlgorithmProblems/0024. Swap Nodes in Pairs",
         "AlgorithmProblems/0018. 4Sum",
-        "AlgorithmProblems/0123. Best Time to Buy and Sell Stock III"
+        "AlgorithmProblems/0188. Best Time to Buy and Sell Stock IV"
     ],
     "files.associations": {
         "iostream": "cpp"
