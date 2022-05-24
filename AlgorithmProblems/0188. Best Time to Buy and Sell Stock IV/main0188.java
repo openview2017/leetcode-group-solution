@@ -21,7 +21,8 @@ class Solution0188 {
             for (int j = 1; j < n; j++) {
                 dp[i][j] = Math.max(dp[i][j-1],  prices[j] + localMax);
                 localMax = Math.max(localMax, dp[i-1][j] - prices[j]);
-            }
+                // i-1 times trans, keep one max
+            } 
             //System.out.println(Arrays.toString(dp[i]));
         }
         return dp[k][n-1];
