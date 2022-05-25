@@ -1,4 +1,4 @@
-# Step 0
+
 
 ## System design Parking Lot
     [Reference](https://www.youtube.com/watch?v=NtMvNh0WFVM)
@@ -6,6 +6,8 @@
     [Grokking OOD](https://www.educative.io/courses/grokking-the-object-oriented-design-interview/gxM3gRxmr8Z)
 ## Specify classes
 
+
+# Step 0
 ```java
 // "static void main" must be defined in a public class.
 public class Main { // testing
