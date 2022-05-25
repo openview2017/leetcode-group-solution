@@ -5,10 +5,16 @@
 
 ## Complex Parking Lot case:
 [Grokking OOD](https://www.educative.io/courses/grokking-the-object-oriented-design-interview/gxM3gRxmr8Z)
-## Specify classes
+
+## Simplified Parking Lot:
+1. two kinds of vehicle: car(largeSize) and truck(smallSize)
+2. half parking spot is small, half is large
+3. can park larger or equal parking spot
+4. parking lot has level
 
 
-# Step 0
+
+# Step 0. Specify classes
 ```java
 // "static void main" must be defined in a public class.
 public class Main { // testing
