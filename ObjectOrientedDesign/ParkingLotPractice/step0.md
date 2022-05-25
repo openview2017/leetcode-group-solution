@@ -261,20 +261,22 @@ public class Main { // testing
         // System.out.println(car_a.getSize().getSize());
         // Vehicle truck_b = new Truck();
         // System.out.println(truck_b.getSize().getSize());
-        ParkingLot lot = new ParkingLot(4, 10);
+        ParkingLot lot = new ParkingLot(4, 5);
         List<Vehicle> list = new ArrayList<>();
-        for (int i = 0; i < 50; i++) {
+        for (int i = 0; i < 30; i++) {
             final Vehicle v = (i%2==0) ? new Car() : new Truck();
+            list.add(v);
             boolean hasSpot = lot.hasSpot(v);        
-            if (i < 40) {
+          
                 System.out.println("i=" + i + ":" + v.getSize().getSize() + ", " + hasSpot + " , canPark?:" + lot.park(v));
                 // assert(hasSpot);
-                // assert(lot.park(v));
-            } else {
-                System.out.println("i=" + i + ":" + v.getSize().getSize() + ", " + hasSpot + " , canPark?:" + lot.park(v));
-                // assert(!hasSpot);
-                // assert(!lot.park(v));          
-            }
+                // assert(lot.park(v));        
+            
+        }
+        System.out.println();
+        int j = 0;
+        for (Vehicle v : list) {
+            System.out.println(lot.leave(v) + "," + (j++));
         }
     }
 }
@@ -412,5 +414,4 @@ enum VehicleSize {
         return size;
     }
 }
-
 ```
