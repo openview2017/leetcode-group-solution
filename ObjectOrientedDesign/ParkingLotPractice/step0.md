@@ -26,17 +26,6 @@ public class Main { // testing
     }
 }
 
-class Level {
-    private final List<ParkingSpot> spots;
-    private int NUMOFSPOTS;
-    Level(int numOfSpots) {
-        this.NUMOFSPOTS = numOfSpots;
-        this.spots = new ArrayList<>();
-    };
-    boolean hasSpot(Vehicle v) { return false; }; // iterate spots find fit
-    boolean park(Vehicle v) { return false; };
-    boolean leave(Vehicle v) { return false; };
-}
 
 class ParkingLot {
     private final Level[] levels;
@@ -49,6 +38,18 @@ class ParkingLot {
         }
     }
     boolean hasSpot(Vehicle v) { return false; };    
+    boolean park(Vehicle v) { return false; };
+    boolean leave(Vehicle v) { return false; };
+}
+
+class Level {
+    private final List<ParkingSpot> spots;
+    private int NUMOFSPOTS;
+    Level(int numOfSpots) {
+        this.NUMOFSPOTS = numOfSpots;
+        this.spots = new ArrayList<>();
+    };
+    boolean hasSpot(Vehicle v) { return false; }; // iterate spots find fit
     boolean park(Vehicle v) { return false; };
     boolean leave(Vehicle v) { return false; };
 }
