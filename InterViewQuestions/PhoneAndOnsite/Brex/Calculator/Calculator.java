@@ -1,5 +1,7 @@
 package Calculator;
 
+import java.util.Arrays;
+
 /**
  * Created by yingli on 4/26/22.
  */
@@ -17,7 +19,6 @@ link : https://www.1point3acres.com/bbs/thread-830803-1-1.html
 public class Calculator {
 
     public static void main(String[] args) {
-
     }
 
 
@@ -25,5 +26,7 @@ public class Calculator {
         if (str == null || str.length() == 0) return 0;
         String[] s = str.split(" ");
         return -1;
+
+
     }
 }
