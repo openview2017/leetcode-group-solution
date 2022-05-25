@@ -1,4 +1,9 @@
 # Step 0
+
+## System design Parking Lot
+    [Reference](https://www.youtube.com/watch?v=NtMvNh0WFVM)
+## Complex Parking Lot case:
+    [Grokking OOD](https://www.educative.io/courses/grokking-the-object-oriented-design-interview/gxM3gRxmr8Z)
 ## Specify classes
 
 ```java
