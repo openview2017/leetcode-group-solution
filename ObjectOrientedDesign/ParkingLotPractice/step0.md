@@ -85,3 +85,159 @@ enum VehicleSize {
 }
 
 ```
+
+# Step 1: finish all functions
+``` java
+/*
+1. two kinds of vehicle: car(largeSize) and truck(smallSize)
+2. half parking spot is small, half is large
+3. can park larger or equal parking spot
+4. parking lot has level
+
+*/ 
+public class Main { // testing
+    public static void main(String[] args) {
+        Vehicle car_a = new Car();
+        System.out.println(car_a.getSize().getSize());
+        Vehicle truck_b = new Truck();
+        System.out.println(truck_b.getSize().getSize());
+    }
+}
+
+class Level {
+    private final List<ParkingSpot> spots;
+    private int NUMOFSPOTS;
+    Level(int numOfSpots) {
+        this.NUMOFSPOTS = numOfSpots;
+        List<ParkingSpot> list = new ArrayList<>();
+        int i = 0;
+        for (i = 0; i < NUMOFSPOTS / 2; i++) {
+            list.add(new ParkingSpot(VehicleSize.Compact));
+        }
+        for (; i < NUMOFSPOTS; i++) {
+            list.add(new ParkingSpot(VehicleSize.Large));
+        }
+        spots = Collections.unmodifiableList(list);
+    };
+    boolean hasSpot(Vehicle v) { 
+        for (ParkingSpot spot : spots) {
+            if (spot.fit(v)) {
+                return true;
+            }
+        }
+        return false;
+    }; // iterate spots find fit
+    
+    boolean park(Vehicle v) {
+        for (ParkingSpot spot : spots) {
+            if (spot.fit(v)) {
+                spot.park(v);
+                return true;
+            }
+        }
+        return false;
+    };
+    boolean leave(Vehicle v) {
+        for (ParkingSpot spot : spots) {
+            if (spot.getVehicle() == v) {
+                spot.leave();
+                return true;
+            }
+        }
+        return false;    
+    };
+}
+
+class ParkingLot {
+    private final Level[] levels;
+    private int NUMOFLEVEL;
+    ParkingLot(int numOfLevel, int numOfSpotsPerLevel) {
+        this.NUMOFLEVEL = numOfLevel;
+        this.levels = new Level[numOfLevel];
+        for (int i = 0; i < numOfLevel; i++) {
+            levels[i] = new Level(numOfSpotsPerLevel);
+        }
+    }
+    boolean hasSpot(Vehicle v) { 
+        for (Level lvl : levels) {
+            if (lvl.hasSpot(v)) {
+                return true;
+            }
+        }
+        return false;
+    };    
+    boolean park(Vehicle v) { 
+        for (Level lvl : levels) {
+            if (lvl.hasSpot(v)) {
+                lvl.park(v);
+                return true;
+            }
+        }
+        return false;    
+    };
+    boolean leave(Vehicle v) { 
+        for (Level lvl : levels) {
+            if (lvl.leave(v)) {
+                return true;
+            }
+        }
+        return false;      
+    };
+}
+
+class ParkingSpot {
+    private final VehicleSize size;
+    private Vehicle currentVehicle;
+    
+    ParkingSpot(VehicleSize size) {
+        this.size = size;
+    }
+    
+    boolean fit(Vehicle v) { 
+        return currentVehicle == null && v.getSize().getSize() <= size.getSize();
+    }
+    void park(Vehicle v) {
+        this.currentVehicle = v;
+    }
+    void leave() {
+         this.currentVehicle = null;
+    }
+    Vehicle getVehicle() {
+        return currentVehicle; 
+    }
+}
+
+
+abstract class Vehicle {
+    public abstract VehicleSize getSize();
+}
+
+class Car extends Vehicle {
+    @Override
+    public VehicleSize getSize() {
+        return VehicleSize.Compact;
+    }
+} 
+
+class Truck extends Vehicle {
+    @Override
+    public VehicleSize getSize() {
+        return VehicleSize.Large;
+    }
+} 
+
+enum VehicleSize {
+    Compact(1),
+    Large(2);
+    private final int size;
+    VehicleSize(int size) {
+        this.size = size;
+    }
+    public int getSize(){
+        return size;
+    }
+}
+
+
+
+```
