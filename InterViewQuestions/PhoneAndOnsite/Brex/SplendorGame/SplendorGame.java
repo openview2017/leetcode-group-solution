@@ -1,3 +1,5 @@
+package SplendorGame;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -7,48 +9,70 @@ import java.util.Map;
  * Created by yingli on 4/25/22.
  */
 /*
-*  Splendor
+*  SplendorGame
 
 1: 手中gem可不可以afford一张卡
 2: 卡‍‍‍‌‌‍‌‌‍‍‌‍‌‌‍‍‌‌的颜色可以抵消相同颜色的gem, 手中有n张卡, 可不可以afford 其他的卡
 3: 如果multi threading怎么办 怎么lock
 
-
-parse log to csv text
-
-log: id=1,text=help,conp1= assf,conp2=ee2e ,
-       id=2
-
-split(id) //assume id at first!
-[=1,text=help,conp1= assf,conp2=ee2e ,]
-
-find("=")
-
-list of log
-sort by id
-
-maintain a set
-
-id  text   comp1  comp2  comp3
-1  helper  assf   ee2e
-2  call    dsd           dqd
-
-
-
-List<List> header
-sort by id
 * */
 
- public class Splendor {
+ public class SplendorGame {
 
     public static void main(String[] arg) {
 
+
+        Card blueCard = new Card(GemColor.BLUE);
+        Card redCard = new Card(GemColor.RED);
+        Card yellowCard = new Card(GemColor.YELLOW);
+        Card greenCard = new Card(GemColor.GREEN);
+
+        Player player1 = new Player();
+        player1.ownGems.put(GemColor.BLUE, 2);
+        player1.ownGems.put(GemColor.GREEN, 3);
+        player1.ownGems.put(GemColor.RED, 1);
+
+        yellowCard.cost.put(GemColor.RED, 1);
+        yellowCard.cost.put(GemColor.GREEN, 2);
+
+        greenCard.cost.put(GemColor.BLUE, 100);
+
+        System.out.println(player1.affordable(yellowCard));
+        System.out.println(player1.affordable(greenCard));
+
+        // let player hold some blue cards, in order to able purchase green
+        for (int i = 0; i < 101; i++) {
+            player1.ownCards.add(blueCard);
+        }
+        System.out.println("Own 100 blue cards but dose not count: " + player1.affordable(greenCard));
+        System.out.println("Own 100 blue cards : " + player1.affordableWithCard(greenCard));
+
+        System.out.println("before purchase a yellow card, player has yellow card ? : "
+                + player1.ownCards.contains(yellowCard));
+        System.out.println("player has how many cards before puchase: " + player1.ownCards.size());
+        try {
+            player1.purchase(yellowCard);
+            System.out.println("get 1 yellow card");
+        } catch (Exception e) {
+            System.out.println("CANNOT AFFORD");
+        }
+
+        System.out.println("after purchase a yellow card, player has yellow card ? : "
+                + player1.ownCards.contains(yellowCard));
+        System.out.println("player has how many cards after purchase: " + player1.ownCards.size());
+
+
+
     }
 
-    class Card {
-        Map<GemColor, Integer> cost = new HashMap<GemColor, Integer>();
+    static class Card {
+        Map<GemColor, Integer> cost;
         GemColor cardColor;
 
+        public Card(GemColor color) {
+            this.cardColor = color;
+            this.cost = new HashMap<GemColor, Integer>();
+        }
         public GemColor getCardColor() {
             return cardColor;
         }
@@ -63,7 +87,7 @@ sort by id
         YELLOW
     }
 
-    class Player {
+    static class Player {
 
         Map<GemColor, Integer> ownGems;
 
@@ -112,7 +136,7 @@ sort by id
                     throw new Exception("cannot afford");
                 }
             }
-
+            ownCards.add(card);
             return true;
         }
 
