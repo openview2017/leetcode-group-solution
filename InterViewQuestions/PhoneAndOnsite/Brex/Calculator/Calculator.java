@@ -18,7 +18,7 @@ link : https://www.1point3acres.com/bbs/thread-830803-1-1.html
 * */
 
 /*
-* Assume !!!! all the number is within 1 to 10
+* Assume !!!! all the number is within 1 to 20
 *
 * */
 public class Calculator {
@@ -26,7 +26,8 @@ public class Calculator {
     public static void main(String[] args) {
 
         Calculator test = new Calculator();
-        System.out.println(test.calculator("ten add four times negative two add ten minus negative five"));
+        System.out.println("Test 1 : " + test.calculator("ten add four times negative two add ten minus negative five"));
+        System.out.println("Test 2 : " + test.calculator("Two add three minus ten"));
     }
 
     Set<String> operation = new HashSet<>(Arrays.asList("add", "minus", "times", "divide", "negative"));
@@ -51,9 +52,7 @@ public class Calculator {
         //assume each word separated by a space, otherwise we need a function to parse string into a list of words
         //String[] words = parseString(str);
         str = str + " add zero";
-        String[] words = str.split(" ");
-
-        System.out.println(words.length);
+        String[] words = str.split(" "); //assume single space
 
         Deque<Integer> stack = new ArrayDeque<>();
         String preOperation = "add";
