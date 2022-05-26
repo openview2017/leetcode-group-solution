@@ -6,6 +6,94 @@
 5. 点数相同，庄家获胜
 5. A 可当做 1 或 11
 
+## Step 0: specify classes with needs 1,2
+``` java
+class BlackJack {
+	private List<NormalPlayer> players;
+	private Dealer dealer;
+	private List<Card> cards;
+    
+    public BlackJack() {
+		players = new ArrayList<>();
+		dealer = new Dealer();
+	}
+    public void initCards(List<Card> cards) {}
+    public void addPlayer(NormalPlayer p) {}
+    public void dealInitialCards() {}
+    public Card dealNextCard() {}
+    
+    public Dealer getDealer() {}
+    public void compareResult() {}
+    
+    public String print() {}
+}
+
+class NormalPlayer {
+    private BlackJack game;
+	private int id;
+	private Hand hand;
+	private int totalBets;
+	private int bets;
+	private boolean stopDealing;
+    
+    public NormalPlayer(int id, int bets) {}
+    public int getId() {}
+    
+    public void joinGame(BlackJack game) {}
+    
+    public String printPlayer() {}
+    
+    
+}
+
+class Hand {
+    private List<Card> cards;
+    public Hand() {
+		cards = new ArrayList<>();
+	}
+    public int getBestValue() {}
+    
+}
+
+class Card {
+    private int value;
+	public Card(int value) {
+		this.value = value;
+	}
+
+	public int getValue() {
+		return value;
+	}    
+}
+
+class Dealer {
+	private BlackJack game;
+	private Hand hand;
+	private int bets;
+    
+    public Dealer() {
+		hand = new Hand();
+		bets = 10000;
+	}
+    
+    public void updateBets(int amount) {
+		bets += amount;
+	}
+
+	public void setGame(BlackJack game) {
+		this.game = game;
+	}
+    
+    public String printDealer() {
+		return "Dealer " + hand.printHand() + ", total bets: " + bets + "\n";
+	}
+}
+
+```
+
+## Step 1: Simulate the game
+
+
 ``` java
 //Complete code w testing
 // "static void main" must be defined in a public class.
