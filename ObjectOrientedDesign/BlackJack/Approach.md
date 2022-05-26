@@ -1,4 +1,10 @@
-
+# 描述
+1. 每位玩家起始有1000筹码
+2. 庄家有10000筹码
+3. 如果玩家获胜，双倍获得押注的筹码
+4. 庄家获胜，玩家押注的筹码归庄家
+5. 点数相同，庄家获胜
+5. A 可当做 1 或 11
 
 ``` java
 //Complete code w testing
@@ -9,6 +15,7 @@ P1:Cards:  Current best value is: 0, current bets: 1000, total bets: 0
 P2:Cards:  Current best value is: 0, current bets: 1000, total bets: 0
 P3:Cards:  Current best value is: 0, current bets: 1000, total bets: 0
 Dealer:Dealer Cards:  Current best value is: 0, total bets: 10000
+
 P1:Cards: 1 , 1; Current best value is: 12, current bets: 0, total bets: 2000
 P2:Cards: 4 , 4; Current best value is: 8, current bets: 0, total bets: 2000
 P3:Cards: 2 , 2; Current best value is: 4, current bets: 0, total bets: 0
