@@ -281,6 +281,8 @@ class Dealer {
 
 ```
 
+# Step 2 place bet
+
 
 ``` java
 //Complete code w testing
