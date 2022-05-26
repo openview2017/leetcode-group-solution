@@ -111,7 +111,6 @@ public class FindSuspiciousActivity {
         Map<Integer, List<List<String>>> resWithDepth = new HashMap<>();
 
         while (!queue.isEmpty()) {
-            System.out.println("into loop");
             int size = queue.size();
             newSuspiciousElement = new ArrayList<>();
             for (int i = 0; i < size; i++) {
