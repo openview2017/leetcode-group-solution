@@ -1,13 +1,14 @@
 {
     "java.project.sourcePaths": [
+        "ObjectOrientedDesign/LinuxFind",
         "InterViewQuestions/Phone&Onsite/Ebay",
         "InterViewQuestions/OA/Amazon/Count decreasing subarray",
         "InterViewQuestions/OA/Amazon/Channel quality",
         "AlgorithmProblems/oa020822",
         "AlgorithmProblems/Largest-Square-Of-Matches",
         "AlgorithmProblems/KeepDistanceK",
-        "AlgorithmProblems/891. Sum of Subsequence Widths",
         "AlgorithmProblems/2214. Minimum Health to Beat Game",
+        "AlgorithmProblems/2178. Maximum Split of Positive Even Integers",
         "AlgorithmProblems/2158. Amount of New Area Painted Each Day",
         "AlgorithmProblems/2130. Maximum Twin Sum of a Linked List",
         "AlgorithmProblems/2128. Remove All Ones With Row and Column Flips",
@@ -24,7 +25,9 @@
         "AlgorithmProblems/1352. Product of the Last K Numbers",
         "AlgorithmProblems/1293. Shortest Path in a Grid with Obstacles Elimination",
         "AlgorithmProblems/1277. Count Square Submatrices with All Ones",
+        "AlgorithmProblems/1272. Remove Interval",
         "AlgorithmProblems/1240. Tiling a Rectangle with the Fewest Squares",
+        "AlgorithmProblems/1160. Find Words That Can Be Formed by Characters",
         "AlgorithmProblems/1099. Two Sum Less Than K",
         "AlgorithmProblems/1091. Shortest Path in Binary Matrix",
         "AlgorithmProblems/1026.Maximum-Difference-Between-Node-and-Ancestor",
@@ -57,8 +60,10 @@
         "AlgorithmProblems/0489. Robot Room Cleaner",
         "AlgorithmProblems/0485. Max Consecutive Ones",
         "AlgorithmProblems/0475. Heaters",
+        "AlgorithmProblems/0474. Ones and Zeroes",
         "AlgorithmProblems/0472. Concatenated Words",
         "AlgorithmProblems/0464. Can I Win",
+        "AlgorithmProblems/0460. LFU Cache",
         "AlgorithmProblems/0447. Number of Boomerangs",
         "AlgorithmProblems/0445. Add Two Numbers II",
         "AlgorithmProblems/0420. Strong Password Checker",
@@ -82,6 +87,7 @@
         "AlgorithmProblems/0148. Sort List",
         "AlgorithmProblems/0147. Insertion Sort List",
         "AlgorithmProblems/0128. Longest Consecutive Sequence",
+        "AlgorithmProblems/0123. Best Time to Buy and Sell Stock III",
         "AlgorithmProblems/0081. Search in Rotated Sorted Array II",
         "AlgorithmProblems/0068. Text Justification",
         "AlgorithmProblems/0057. Insert Interval",
@@ -89,7 +95,7 @@
         "AlgorithmProblems/0025. Reverse Nodes in k-Group",
         "AlgorithmProblems/0024. Swap Nodes in Pairs",
         "AlgorithmProblems/0018. 4Sum",
-        "AlgorithmProblems/1272. Remove Interval"
+        "AlgorithmProblems/0188. Best Time to Buy and Sell Stock IV"
     ],
     "files.associations": {
         "iostream": "cpp"
