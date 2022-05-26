@@ -299,7 +299,15 @@ P2:Cards: 4 , 4; Current best value is: 8, current bets: 0, total bets: 2000
 P3:Cards: 2 , 2; Current best value is: 4, current bets: 0, total bets: 0
 Dealer:Dealer Cards: 3 , 3; Current best value is: 6, total bets: 9000
 
-
+optimize: 
+1. have individual (Game class)
+2. use interface "playable" to encapsulate dealer
+   or use  abstract class player <- dealer
+                                 <- NormalPlayer
+3. SPADE, CLUB, DIAMOND, HEART
+4. GENERATE 52 cards, shuffle
+5. casino has lots of tables -> blackjack game
+                            conduct
 
 */
 public class Main {
