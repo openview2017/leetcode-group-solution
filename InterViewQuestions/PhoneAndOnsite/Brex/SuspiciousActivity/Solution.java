@@ -41,6 +41,8 @@ public class Solution {
         return findSuspiciousList(suspiciousSet, candidate_activity, k, new HashSet<>(), 1);
     }
 
+
+    //DFS recursion
     private List<List<String>> findSuspiciousList(Set<String> suspiciousSet, List<List<String>> candidate_activity, int k, Set<Integer> visited, int depth) {
         List<List<String>> suspiciousActivityList = new ArrayList<>();
         int count = 0;
@@ -60,7 +62,6 @@ public class Solution {
                     break;
                 }
             }
-
             //if we find a suspicious activity at index
             if (flag) {
                 curActivity.add(String.valueOf(depth));
@@ -79,4 +80,7 @@ public class Solution {
         return suspiciousActivityList;
 
     }
+
+    //BFS with depth
+
 }
