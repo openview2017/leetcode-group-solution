@@ -23,8 +23,7 @@
 - Elevator
 - LinuxFind
 - OnlineShoppingSystem
-- Parking LotPractice
+- Parking Lot - Tang Zhao / Jiaqian Wu, May 27th
 - Singleton
-- Splendor
 - StudentID
 - VendingMachine
