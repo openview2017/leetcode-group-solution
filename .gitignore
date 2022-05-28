@@ -24,5 +24,6 @@ hs_err_pid*
 
 # System/IDE Temp Files 
 .DS_Store
+*.iml
 .vscode
 .idea
