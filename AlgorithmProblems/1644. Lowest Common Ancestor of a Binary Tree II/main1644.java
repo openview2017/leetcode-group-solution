@@ -102,3 +102,31 @@ class Solution1644_3 {
     }
 }
 
+class Solution1644_4 {
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        // p and q does not need to exist in Tree
+        TreeNode pLca = lca(root, p, p);
+        TreeNode qLca = lca(root, q, q);
+        if (pLca != null && qLca != null) {
+            return lca(root, p, q);
+        } else {
+            return null;
+        }
+        
+        
+    }
+    private TreeNode lca(TreeNode root, TreeNode p, TreeNode q) {
+        if (root == null || root == p || root == q) {
+            return root;
+        }
+        TreeNode left = lca(root.left, p, q);
+        TreeNode right = lca(root.right, p, q);
+        
+        if (left != null && right != null) {
+            return root;
+        } else {
+            return left == null ? right : left;
+        }
+        
+    }
+}

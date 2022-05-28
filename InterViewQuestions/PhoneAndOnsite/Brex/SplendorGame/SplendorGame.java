@@ -1,168 +1,163 @@
 package SplendorGame;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
+import java.util.*;
 
-/**
- * Created by yingli on 4/25/22.
- */
+
+// Main class should be named 'Solution'
 /*
-*  SplendorGame
+class Card
+   color
+   cost
+class Player
+   list of cards
+   ---
+   can_purchase
+class Gem
+   Color
+*/
 
-1: 手中gem可不可以afford一张卡
-2: 卡‍‍‍‌‌‍‌‌‍‍‌‍‌‌‍‍‌‌的颜色可以抵消相同颜色的gem, 手中有n张卡, 可不可以afford 其他的卡
-3: 如果multi threading怎么办 怎么lock
+enum Color {
+    BLUE,
+    WHITE,
+    GREEN,
+    RED,
+    YELLOW
+}
 
-* */
-
- public class SplendorGame {
-
-    public static void main(String[] arg) {
-
-
-        Card blueCard = new Card(GemColor.BLUE);
-        Card redCard = new Card(GemColor.RED);
-        Card yellowCard = new Card(GemColor.YELLOW);
-        Card greenCard = new Card(GemColor.GREEN);
-
-        Player player1 = new Player();
-        player1.ownGems.put(GemColor.BLUE, 2);
-        player1.ownGems.put(GemColor.GREEN, 3);
-        player1.ownGems.put(GemColor.RED, 1);
-
-        yellowCard.cost.put(GemColor.RED, 1);
-        yellowCard.cost.put(GemColor.GREEN, 2);
-
-        greenCard.cost.put(GemColor.BLUE, 100);
-
-        System.out.println(player1.affordable(yellowCard));
-        System.out.println(player1.affordable(greenCard));
-
-        // let player hold some blue cards, in order to able purchase green
-        for (int i = 0; i < 101; i++) {
-            player1.ownCards.add(blueCard);
-        }
-        System.out.println("Own 100 blue cards but dose not count: " + player1.affordable(greenCard));
-        System.out.println("Own 100 blue cards : " + player1.affordableWithCard(greenCard));
-
-        System.out.println("before purchase a yellow card, player has yellow card ? : "
-                + player1.ownCards.contains(yellowCard));
-        System.out.println("player has how many cards before puchase: " + player1.ownCards.size());
-        try {
-            player1.purchase(yellowCard);
-            System.out.println("get 1 yellow card");
-        } catch (Exception e) {
-            System.out.println("CANNOT AFFORD");
-        }
-
-        System.out.println("after purchase a yellow card, player has yellow card ? : "
-                + player1.ownCards.contains(yellowCard));
-        System.out.println("player has how many cards after purchase: " + player1.ownCards.size());
+class Solution {
+    public static void main(String[] args) {
+        Card card1 = new Card(Color.BLUE);
+        Map<Color, Integer> cardCost = new HashMap<>();
+        cardCost.put(Color.GREEN, 1);
+        cardCost.put(Color.RED, 2);
+        cardCost.put(Color.YELLOW, 1);
+        card1.cost = cardCost;
 
 
+        Card card2 = new Card(Color.GREEN);
+        Card card3 = new Card(Color.RED);
+        Card card4 = new Card(Color.YELLOW);
+        Card card5 = new Card(Color.YELLOW);
+        Card card6 = new Card(Color.YELLOW);
+
+
+
+        List<Card> cardList = new ArrayList<>();
+        cardList.add(card2);
+        cardList.add(card3);
+        cardList.add(card4);
+
+        Map<Color, Integer> gems = new HashMap<>();
+        gems.put(Color.GREEN, 1);
+        gems.put(Color.RED, 2);
+        gems.put(Color.YELLOW, 3); //check before and after purchase
+
+        Player player = new Player();
+        player.ownCard = cardList;
+        player.ownGem = gems;
+
+        System.out.println(player.can_purchase(card1));
+
+        cardList.add(card5);
+        cardList.add(card6);
+
+        System.out.println(player.can_purchase(card1));
+
+
+        System.out.println(player.ownCard.size() + " should be 5");
+        System.out.println(player.ownGem.get(Color.YELLOW) + " equals to 3");
+
+        System.out.println(player.purchase(card1));
+        System.out.println(player.ownCard.size() + " should be 6");
+        System.out.println(player.ownGem.get(Color.YELLOW) + " equals to 3");
 
     }
 
     static class Card {
-        Map<GemColor, Integer> cost;
-        GemColor cardColor;
+        Color cardColor;
+        Map<Color, Integer> cost;
 
-        public Card(GemColor color) {
-            this.cardColor = color;
-            this.cost = new HashMap<GemColor, Integer>();
-        }
-        public GemColor getCardColor() {
+        Color getColor() {
             return cardColor;
         }
-    }
-
-
-    enum GemColor {
-        RED,
-        GREEN,
-        WHILE,
-        BLUE,
-        YELLOW
+        Map<Color, Integer> getCost() {
+            return cost;
+        }
+        public Card(Color color) {
+            this.cardColor = color;
+            cost = new HashMap<>();
+        }
     }
 
     static class Player {
+        List<Card> ownCard;
+        Map<Color, Integer> ownGem;
 
-        Map<GemColor, Integer> ownGems;
-
-        List<Card> ownCards;
-        //constructor
         public Player() {
-            ownGems = new HashMap<GemColor, Integer>();
-            ownCards = new ArrayList<Card>();
+            ownCard = new ArrayList<>();
+            ownGem = new HashMap<>();
         }
 
-        public boolean affordable(Card card) {
+        public boolean can_purchase(Card card) {
+            Map<Color, Integer> cardCost = card.getCost();
 
-            //count by color for input card
-            Map<GemColor, Integer> costByGemColor = card.cost;
+            Map<Color, Integer> ownCardByColor = new HashMap<>();
+            for (Card each : ownCard) {
+                if (!ownCardByColor.containsKey(each.cardColor)) {
+                    ownCardByColor.put(each.cardColor, 0);
+                }
+                ownCardByColor.put(each.cardColor, ownCardByColor.get(each.cardColor) + 1);
+            }
 
-            //count player own gem by color
-            Map<GemColor, Integer> ownByGemColor = ownGems;
-
-
-            //check if affordable
-            for (Map.Entry<GemColor, Integer> entry : costByGemColor.entrySet()) {
-                GemColor color = entry.getKey();
+            for (Map.Entry<Color, Integer> entry : cardCost.entrySet()) {
+                Color color = entry.getKey();
                 int count = entry.getValue();
-                if (!ownByGemColor.containsKey(color)) return false;
-                if (ownByGemColor.get(color) < count) return false;
+                //check players own cards
+                if (!ownGem.containsKey(color) && !ownCardByColor.containsKey(color)) return false;
+                if (ownGem.get(color) + ownCardByColor.get(color)< count) return false;
             }
             return true;
         }
 
-        boolean purchase(Card card) throws Exception{
-            if (!affordable(card)) {
+        public boolean purchase(Card card) {
+            if (!can_purchase(card)) {
                 return false;
             }
-            //count by color for input card
-            Map<GemColor, Integer> costByColor = card.cost;
-
-            //remove gems by color
-            for (Map.Entry<GemColor, Integer> entry : costByColor.entrySet()) {
-                GemColor color = entry.getKey();
-                int count = entry.getValue();
-                if (!ownGems.containsKey(color)) {
-                    throw new Exception("cannot afford");
+            Map<Color, Integer> ownCardByColor = new HashMap<>();
+            for (Card each : ownCard) {
+                if (!ownCardByColor.containsKey(each.cardColor)) {
+                    ownCardByColor.put(each.cardColor, 0);
                 }
-                ownGems.put(color, ownGems.get(color) - count);
-                if (ownGems.get(color) < 0) {
-                    throw new Exception("cannot afford");
-                }
+                ownCardByColor.put(each.cardColor, ownCardByColor.get(each.cardColor) + 1);
             }
-            ownCards.add(card);
+            Map<Color, Integer> cardCost = card.getCost();
+            for (Map.Entry<Color, Integer> entry : cardCost.entrySet()) {
+                Color color = entry.getKey();
+                int count = entry.getValue() - ownCardByColor.getOrDefault(color, 0);
+                if (count <= 0) continue;
+                if (!ownGem.containsKey(color)) return false;
+                ownGem.put(color, ownGem.get(color) - count);
+                if (ownGem.get(color) < 0) return false;
+            }
+            ownCard.add(card);
             return true;
-        }
-
-        boolean affordableWithCard (Card card) {
-
-            //count by color for input card
-            Map<GemColor, Integer> costByGemColor = card.cost;
-
-            //count player own gem by color
-            Map<GemColor, Integer> ownByGemColor = ownGems;
-
-            //add own card color into count
-            for (Card ownCard : ownCards) {
-                GemColor ownCardColor = ownCard.getCardColor();
-                ownByGemColor.put(ownCardColor, ownByGemColor.getOrDefault(ownCardColor, 0) + 1);
-            }
-
-            //check if affordable
-            for (Map.Entry<GemColor, Integer> entry : costByGemColor.entrySet()) {
-                GemColor color = entry.getKey();
-                int count = entry.getValue();
-                if (!ownByGemColor.containsKey(color)) return false;
-                if (ownByGemColor.get(color) < count) return false;
-            }
-            return true;
-
         }
     }
+
+
 }
+
+// Part 1. We want to write a function can_purchase() such that, given a particular card and collection of gems for a player,
+// we return true if the player can afford the card, and false if they cannot.
+
+// Part 2. We want to write a function purchase() such that, given a particular card and collection of gems for a player,
+// we add the card to the player's hand and subtract the cost from the player's gems, if they are able to afford the card. The function should return true if the player can afford the card, and false if they cannot.
+
+// Part 3. We want to introduce a new concept: for each card in a player's hand of a given color,
+// we want to reduce the cost of any new purchase by 1 gem for that held card's color. For example,
+// if the player holds 2 (G)reen cards and 1 (R)ed, and we are considering a card that lists its cost as 4 (G)reen, 2 (R)ed, and 1 (B)lue,
+// then the player should be able to purchase it for 2 G, 1 R, and 1 B.

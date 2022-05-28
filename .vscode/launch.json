@@ -6,6 +6,55 @@
     "configurations": [
       {
         "type": "java",
+        "name": "Launch main0188",
+        "request": "launch",
+        "mainClass": "main0188",
+        "projectName": "leetcode-group-solution_96afe6d1"
+      },
+      {
+        "type": "java",
+        "name": "Launch main0123",
+        "request": "launch",
+        "mainClass": "main0123",
+        "projectName": "leetcode-group-solution_96afe6d1"
+      },
+      {
+        "type": "java",
+        "name": "Launch main0474",
+        "request": "launch",
+        "mainClass": "main0474",
+        "projectName": "leetcode-group-solution_96afe6d1"
+      },
+      {
+        "type": "java",
+        "name": "Launch Main",
+        "request": "launch",
+        "mainClass": "Main",
+        "projectName": "leetcode-group-solution_96afe6d1"
+      },
+      {
+        "type": "java",
+        "name": "Launch main0460",
+        "request": "launch",
+        "mainClass": "main0460",
+        "projectName": "leetcode-group-solution_96afe6d1"
+      },
+      {
+        "type": "java",
+        "name": "Launch main1160",
+        "request": "launch",
+        "mainClass": "main1160",
+        "projectName": "leetcode-group-solution_96afe6d1"
+      },
+      {
+        "type": "java",
+        "name": "Launch main2178",
+        "request": "launch",
+        "mainClass": "main2178",
+        "projectName": "leetcode-group-solution_96afe6d1"
+      },
+      {
+        "type": "java",
         "name": "Launch main1272",
         "request": "launch",
         "mainClass": "main1272",
