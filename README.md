@@ -6,13 +6,6 @@
 
 
 
-## BookReading
-
-读书笔记
-
-- *"DDIA - Design Data Intensive Application"*
-- *"Effecive Java"*
-
 ## Object Oriented Design
 
 - [BlackJack](https://github.com/openview2017/leetcode-group-solution/tree/main/Object%20Oriented%20Design/BlackJack)
@@ -29,6 +22,14 @@
 
 ### LintCode
 
-- 0747 -  自动咖啡机
+- [0747 -  自动咖啡机](https://github.com/openview2017/leetcode-group-solution/tree/main/Object%20Oriented%20Design/LintCode%20-%20747%20-%E8%87%AA%E5%8A%A8%E5%92%96%E5%95%A1%E6%9C%BA)
 - [714 - 二十一点](https://github.com/openview2017/leetcode-group-solution/tree/main/Object%20Oriented%20Design/LintCode%20-%20714%20-%20%20%E4%BA%8C%E5%8D%81%E4%B8%80%E7%82%B9) 
 - [748 - 设计 Kindle](https://github.com/openview2017/leetcode-group-solution/tree/main/Object%20Oriented%20Design/LintCode%20-%20748%20-%20%E8%AE%BE%E8%AE%A1Kindle%20) 
+
+
+## BookReading
+
+读书笔记
+
+- *"DDIA - Design Data Intensive Application"*
+- *"Effecive Java"*
