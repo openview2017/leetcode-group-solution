@@ -1,13 +1,29 @@
-# leetcode-group-solution
-leetcode-group-solution
+# 刷题小小 offer大大群
 
-### 目录
+## Algorithms Problems
 
-[String](https://github.com/openview2017/leetcode-group-solution/tree/main/String)
+已经讨论过的 LeetCode 题目的 Solution，按序号排列
 
-[1239. Maximum Length of a Concatenated String with Unique Characters](https://github.com/openview2017/leetcode-group-solution/tree/main/String/1239.Maximum-Length-of-a-Concatenated-String-with-Unique-Characters)
 
-[1371.Find-the-Longest-Substring-Containing-Vowels-in-Even-Counts](https://github.com/openview2017/leetcode-group-solution/tree/main/String/1371.Find-the-Longest-Substring-Containing-Vowels-in-Even-Counts)
 
-[1531.String-Compression-II](https://github.com/openview2017/leetcode-group-solution/tree/main/String/1531.String-Compression-II)
+## BookReading
 
+读书笔记
+
+- *"DDIA - Design Data Intensive Application"*
+- *"Effecive Java"*
+
+## Object Oriented Design
+
+- 0747 -  自动咖啡机 OOD
+- 714 - 二十一点 00 Design
+- 748 - 设计 kindle OO Design
+- BlackJack
+- CoffeeMakerDesign
+- Elevator
+- LinuxFind
+- OnlineShoppingSystem
+- Parking Lot - *Tang Zhao / Jiaqian Wu, May 27th*
+- Singleton
+- StudentID
+- VendingMachine

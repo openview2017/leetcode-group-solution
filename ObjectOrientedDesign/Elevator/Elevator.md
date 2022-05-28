@@ -1,5 +1,15 @@
+# Elevator
 
+## Description
+Design a elevator system for a building
 
+No need to consider overweight
+The building currently has only one elevator, and this building has n floors
+Each elevator has three states: up, down, idle
+When the elevator moves in one direction, the reverse floor button cannot be pressed in the elevator
+We have provided several implemented classes, you only need to implement some of the functions in Elevator Class.
+
+----
 
 ```java
 // "static void main" must be defined in a public class.
@@ -45,7 +55,7 @@ public class Elevator {
         upQueue = new PriorityQueue<>((a, b) -> a.desiredFloor - b.desiredFloor);
 
         // use a max heap
-        downQueue =  new PriorityQueue<>((a, b) -> b.desiredFloor - a.desiredFloor);
+        downQueue = new PriorityQueue<>((a, b) -> b.desiredFloor - a.desiredFloor);
     }
 
     public void sendUpRequest(Request upRequest) {
@@ -55,9 +65,9 @@ public class Elevator {
         if (upRequest.location == Location.OUTSIDE_ELEVATOR) {
             // Go pick up the requester who is outside of the elevator
             upQueue.offer(new Request(upRequest.currentFloor,
-                upRequest.currentFloor,
-                Direction.UP,
-                Location.OUTSIDE_ELEVATOR));
+                    upRequest.currentFloor,
+                    Direction.UP,
+                    Location.OUTSIDE_ELEVATOR));
 
             System.out.println("Append up request going to floor " + upRequest.currentFloor + ".");
         }
@@ -72,9 +82,9 @@ public class Elevator {
         // Similar to the sendUpRequest logic
         if (downRequest.location == Location.OUTSIDE_ELEVATOR) {
             downQueue.offer(new Request(downRequest.currentFloor,
-                downRequest.currentFloor,
-                Direction.DOWN,
-                Location.OUTSIDE_ELEVATOR));
+                    downRequest.currentFloor,
+                    Direction.DOWN,
+                    Location.OUTSIDE_ELEVATOR));
 
             System.out.println("Append down request going to floor " + downRequest.currentFloor + ".");
         }
@@ -132,7 +142,6 @@ public class Elevator {
         }
     }
 
-
     public static void main(String[] args) {
         Elevator elevator = new Elevator(0);
 
@@ -159,6 +168,5 @@ public class Elevator {
     }
 
 }
-
 
 ```
