@@ -1,7 +1,6 @@
 {
     "java.project.sourcePaths": [
         "ObjectOrientedDesign/LinuxFind",
-        "InterViewQuestions/Phone&Onsite/Ebay",
         "InterViewQuestions/OA/Amazon/Count decreasing subarray",
         "InterViewQuestions/OA/Amazon/Channel quality",
         "AlgorithmProblems/oa020822",
@@ -81,6 +80,7 @@
         "AlgorithmProblems/0231. Power of Two",
         "AlgorithmProblems/0215.Kth Largest Element in an Array",
         "AlgorithmProblems/0209. Minimum Size Subarray Sum",
+        "AlgorithmProblems/0188. Best Time to Buy and Sell Stock IV",
         "AlgorithmProblems/0167. Two Sum II - Input Array Is Sorted",
         "AlgorithmProblems/0156. Binary Tree Upside Down",
         "AlgorithmProblems/0153. Find Minimum in Rotated Sorted Array",
@@ -95,7 +95,7 @@
         "AlgorithmProblems/0025. Reverse Nodes in k-Group",
         "AlgorithmProblems/0024. Swap Nodes in Pairs",
         "AlgorithmProblems/0018. 4Sum",
-        "AlgorithmProblems/0188. Best Time to Buy and Sell Stock IV"
+        "AlgorithmProblems/0926. Flip String to Monotone Increasing"
     ],
     "files.associations": {
         "iostream": "cpp"
