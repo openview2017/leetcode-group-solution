@@ -8,7 +8,7 @@
 
 ## Object Oriented Design
 
-- [BlackJack](https://github.com/openview2017/leetcode-group-solution/tree/main/Object%20Oriented%20Design/BlackJack)
+- [BlackJack](https://github.com/openview2017/leetcode-group-solution/tree/main/Object%20Oriented%20Design/Black%20Jack)
 - [Coffee Maker](https://github.com/openview2017/leetcode-group-solution/tree/main/Object%20Oriented%20Design/Coffee%20Maker)
 - [Elevator](https://github.com/openview2017/leetcode-group-solution/tree/main/Object%20Oriented%20Design/Elevator)
 - [Linux Find](https://github.com/openview2017/leetcode-group-solution/tree/main/Object%20Oriented%20Design/Linux%20Find)
