@@ -1,9 +1,13 @@
-import java.util.List;
+import java.util.*;
 
 public class main0332 {
     public static void main(String[] args) {
         Solution0332 sol = new Solution0332();
-        String[][] tickets = new String[]{{"JFK","SFO"},{"JFK","ATL"},{"SFO","ATL"},{"ATL","JFK"},{"ATL","SFO"}};
+        String[][] ticket = new String[][]{{"JFK","SFO"},{"JFK","ATL"},{"SFO","ATL"},{"ATL","JFK"},{"ATL","SFO"}};
+        List<List<String>> tickets = new ArrayList<>();
+        for (String[] t: ticket) {
+            tickets.add(Arrays.asList(t));
+        }
         List<String> res = sol.findItinerary(tickets);
         System.out.println(res.toString());
     }
