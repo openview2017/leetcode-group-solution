@@ -27,7 +27,7 @@ public class Calculator {
 
         Calculator test = new Calculator();
         System.out.println("Test 1 : " + test.calculator("ten add four times negative two add ten minus negative five"));
-        System.out.println("Test 2 : " + test.calculator("Two add three minus ten"));
+        System.out.println("Test 2 : " + test.calculator("Two add three times negative two"));
     }
 
     Set<String> operation = new HashSet<>(Arrays.asList("add", "minus", "times", "divide", "negative"));
@@ -52,8 +52,7 @@ public class Calculator {
         //assume each word separated by a space, otherwise we need a function to parse string into a list of words
         //String[] words = parseString(str);
         str = str + " add zero";
-        String[] words = str.split(" "); //assume single space
-
+        String[] words = str.split(" ");
         Deque<Integer> stack = new ArrayDeque<>();
         String preOperation = "add";
         int sign = 1;
@@ -63,11 +62,11 @@ public class Calculator {
             if (numbers.containsKey(word)) {
                 num = sign * numbers.get(word);
                 System.out.println("number to add to stack : " + num);
-            }
+            } else
             if (word.equals("negative")) {
                 sign = -1;
                 continue;
-            }
+            } else
             if (operation.contains(word)) {
                 if (preOperation.equals("add")) {
                     stack.push(num);
@@ -84,7 +83,6 @@ public class Calculator {
         }
         int res = 0;
         while (!stack.isEmpty()) {
-
             res += stack.pop();
         }
         return res;

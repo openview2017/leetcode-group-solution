@@ -64,10 +64,10 @@ public class FindSuspiciousActivity {
         while (!queue.isEmpty()) {
             int size = queue.size();
             for (int i = 0; i < size; i++) {
-                Activity curActivity = queue.poll();
+                Activity curSuspiciousActivity = queue.poll();
                 for (Activity activity : candidateActivity) {
                     if (visited.contains(activity)) continue;
-                    int similarity = getSimilarity(curActivity, activity);
+                    int similarity = getSimilarity(curSuspiciousActivity, activity);
                     if (similarity >= k) {
                         queue.offer(activity);
                         activity.depth = depth;
