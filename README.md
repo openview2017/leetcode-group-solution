@@ -21,7 +21,7 @@
 - [Linux Find](https://github.com/openview2017/leetcode-group-solution/tree/main/Object%20Oriented%20Design/Linux%20Find)
 - [Online Shopping System](https://github.com/openview2017/leetcode-group-solution/tree/main/Object%20Oriented%20Design/Online%20Shopping%20System)
 
-- [Parking Lot - *Tang Zhao / Jiaqian Wu, May 27th*](https://github.com/openview2017/leetcode-group-solution/tree/main/Object%20Oriented%20Design/Parking%20Lot)
+- [Parking Lot](https://github.com/openview2017/leetcode-group-solution/tree/main/Object%20Oriented%20Design/Parking%20Lot)  - *Tang Zhao / Jiaqian Wu, May 27th*
 
 - [Singleton](https://github.com/openview2017/leetcode-group-solution/tree/main/Object%20Oriented%20Design/Singleton)
 - [Student ID](https://github.com/openview2017/leetcode-group-solution/tree/main/Object%20Oriented%20Design/Student%20ID)
