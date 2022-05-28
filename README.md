@@ -18,12 +18,12 @@
 - 0747 -  自动咖啡机 OOD
 - 714 - 二十一点 00 Design
 - 748 - 设计 kindle OO Design
-- BlackJack
-- CoffeeMakerDesign
+- [BlackJack](https://github.com/openview2017/leetcode-group-solution/tree/main/Object%20Oriented%20Design/BlackJack)
+- Coffee Maker
 - Elevator
 - LinuxFind
 - OnlineShoppingSystem
 - Parking Lot - *Tang Zhao / Jiaqian Wu, May 27th*
-- Singleton
+- [Singleton](https://github.com/openview2017/leetcode-group-solution/tree/main/Object%20Oriented%20Design/Singleton)
 - StudentID
 - VendingMachine
