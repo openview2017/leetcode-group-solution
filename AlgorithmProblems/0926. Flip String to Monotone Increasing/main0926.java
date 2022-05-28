@@ -1,5 +1,10 @@
 public class main0926 {
-    
+    public static void main(String[] args) {
+        Solution0926 sol = new Solution0926();
+        String s = "00110";
+        int res = sol.minFlipsMonoIncr(s);
+        System.out.println(res);
+    }
 }
 
 
