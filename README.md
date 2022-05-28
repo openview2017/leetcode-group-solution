@@ -23,7 +23,7 @@
 - Elevator
 - LinuxFind
 - OnlineShoppingSystem
-- Parking Lot - Tang Zhao / Jiaqian Wu, May 27th
+- Parking Lot - *Tang Zhao / Jiaqian Wu, May 27th*
 - Singleton
 - StudentID
 - VendingMachine
