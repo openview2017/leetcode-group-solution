@@ -2,8 +2,6 @@
 
 [Design an ATM - Grokking the Object Oriented Design Interview (educative.io)](https://www.educative.io/courses/grokking-the-object-oriented-design-interview/m22LWKgQ4Wr)
 
-[toc]
-
 An automated teller machine (ATM) is an electronic telecommunications instrument that provides the clients of a financial institution with access to financial transactions in a public space without the need for a cashier or bank teller. ATMs are necessary as not all the bank branches are open every day of the week, and some customers may not be in a position to visit a bank each time they want to withdraw or deposit money.
 
 ## Requirements and Goals of the System
@@ -66,7 +64,7 @@ Here are the actors of the ATM system and their use cases:
 
 Here is the use case diagram of our ATM system:
 
-![ATM use case diagram](ATM use case diagram.svg)
+![ATM use case diagram](images/ATM use case diagram.svg)
 
 ATM use case diagram
 
@@ -87,35 +85,39 @@ Here are the main classes of the ATM System:
 - **Card:** Encapsulating the ATM card that the customer will use to authenticate themselves. Each customer can have one card.
 - **Transaction:** Encapsulating all transactions that the customer can perform on the ATM, like BalanceInquiry, Deposit, Withdraw, etc.
 
-![Class diagram for ATM](Class diagram for ATM.png)
+![Class diagram for ATM](images/Class diagram for ATM.png)
 
 Class diagram for ATM
 
-![widget](UML conventions.svg)
+![widget](images/UML conventions.svg)
 
 ## Activity Diagram
 
-**Customer authentication:** Following is the activity diagram for a customer authenticating themselves to perform an ATM transaction:
+### **Customer authentication:** 
 
-![Activity Diagram - Customer Authentication](Activity Diagram - Customer Authentication.svg)
+Following is the activity diagram for a customer authenticating themselves to perform an ATM transaction:
 
-Activity Diagram - Customer Authentication
+![Activity Diagram - Customer Authentication](images/Activity Diagram - Customer Authentication.svg)
 
-**Withdraw:** Following is the activity diagram for a user withdrawing cash:
+### Withdraw: 
 
-![Activity Diagram - Cash Withdraw](https://www.educative.io/api/collection/5668639101419520/5692201761767424/page/5703128158568448/image/5695586732867584.png)
+Following is the activity diagram for a user withdrawing cash:
 
-Activity Diagram - Cash Withdraw
+![Activity Diagram - Cash Withdraw](images/Activity Diagram - Cash Withdraw.svg)
 
-**Deposit check:** Following is the activity diagram for the customer depositing a check:
 
-![Activity Diagram - Deposit Check](Activity Diagram - Cash Withdraw.svg)
 
-Activity Diagram - Deposit Check
+### **Deposit check:** 
 
-**Transfer:** Following is the activity diagram for a user transferring funds to another account:
+Following is the activity diagram for the customer depositing a check:
 
-![Activity Diagram - Transfer funds](Activity Diagram - Deposit Check.svg)
+![](images/Activity Diagram - Deposit Check.svg)
+
+### **Transfer:** 
+
+Following is the activity diagram for a user transferring funds to another account:
+
+![Activity Diagram - Transfer funds](images/Activity Diagram - Deposit Check.svg)
 
 Activity Diagram - Transfer funds
 
