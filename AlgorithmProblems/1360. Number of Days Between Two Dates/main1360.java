@@ -1,5 +1,10 @@
 public class main1360 {
-    
+    public static void main(String[] args) {
+        Solution1360 sol = new Solution1360();
+        String date1 = "2019-06-29", date2 = "2019-06-30";
+        int res = sol.daysBetweenDates(date1, date2);
+        System.out.println(res);
+    }
 }
 
 
