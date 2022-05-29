@@ -58,3 +58,4 @@ class Solution1438 { //tc/sc:o(n)
         return longest;
     }
 }
+// https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/discuss/609743/Java-Detailed-Explanation-Sliding-Window-Deque-O(N)
