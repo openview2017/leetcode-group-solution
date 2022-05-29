@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+import java.util.*;
+=======
 /*
 https://leetcode.com/problems/reconstruct-itinerary/
 https://leetcode.cn/problems/reconstruct-itinerary/solution/zhong-xin-an-pai-xing-cheng-by-leetcode-solution/
@@ -36,11 +39,18 @@ https://leetcode.cn/problems/reconstruct-itinerary/solution/zhong-xin-an-pai-xin
     - 死胡同会先入栈
     - 最终将栈中的元素依次出栈，即为路径
 */
+>>>>>>> 37d460e40ee914a993ec3dca25cae948b7803c95
 
 public class main0332 {
     public static void main(String[] args) {
         Solution0332 sol = new Solution0332();
-
+        String[][] ticket = new String[][]{{"JFK","SFO"},{"JFK","ATL"},{"SFO","ATL"},{"ATL","JFK"},{"ATL","SFO"}};
+        List<List<String>> tickets = new ArrayList<>();
+        for (String[] t: ticket) {
+            tickets.add(Arrays.asList(t));
+        }
+        List<String> res = sol.findItinerary(tickets);
+        System.out.println(res.toString());
     }
 }
 

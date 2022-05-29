@@ -1,15 +1,15 @@
 # Singleton
 
-https://www.lintcode.com/problem/204/?utm_source=sc-libao-cyc 
-
 ## <b>Problem Description</b>
+
+https://www.lintcode.com/problem/204/
 
 Singleton is a most widely used design pattern. If a class has and only has one instance at every moment, we call this design as singleton. 
 For example, for class Mouse (not a animal mouse), we should design it in singleton.
 
 You job is to implement a getInstance method for given class, return the same instance of this class every time you call this method.
 
-Example
+**Example**
 
       In Java:
     
@@ -18,8 +18,9 @@ Example
     
       a should equal to b.
 
-Challenge:
-If we call getInstance concurrently, can you make sure your code could run correctly?
+**Challenge:**
+
+- If we call getInstance concurrently, can you make sure your code could run correctly?
 
 ----
 
@@ -173,3 +174,4 @@ public enum Solution{
     }
 }
 ```
+
