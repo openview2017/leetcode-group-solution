@@ -26,6 +26,10 @@
 - [714 - 二十一点](https://github.com/openview2017/leetcode-group-solution/tree/main/Object%20Oriented%20Design/LintCode%20-%20714%20-%20%20%E4%BA%8C%E5%8D%81%E4%B8%80%E7%82%B9) 
 - [748 - 设计 Kindle](https://github.com/openview2017/leetcode-group-solution/tree/main/Object%20Oriented%20Design/LintCode%20-%20748%20-%20%E8%AE%BE%E8%AE%A1Kindle%20) 
 
+### Grokking the OOD Interview
+
+- [ATM](https://github.com/openview2017/leetcode-group-solution/tree/main/Object%20Oriented%20Design/Grokking%20the%20OOD%20Interview%20-%20ATM)
+
 
 ## BookReading
 
