@@ -1,9 +1,11 @@
+import java.util.*;
+
 public class main1438 {
     public static void main(String[] args) {
         Solution1438 sol = new Solution1438();
         int[] nums = {8,2,4,7};
         int limit = 4;
-        res = sol.longestSubarray(nums, limit);
+        int res = sol.longestSubarray(nums, limit);
         System.out.println(res);
     }
 }
