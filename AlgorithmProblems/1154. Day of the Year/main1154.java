@@ -1,5 +1,10 @@
 public class main1154 {
-    
+    public static void main(String[] args) {
+        Solution1154 sol = new Solution1154();
+        date = "2019-01-09";
+        int count = sol.dayOfYear(date);
+        System.out.println(count);
+    }
 }
 
 
@@ -35,4 +40,4 @@ class Solution1154 {
         }
         return false;
     }
-}
+} // https://leetcode.com/problems/day-of-the-year/discuss/355880/Simple-Java-Solution-easy-to-understand-GregorianCalendar
