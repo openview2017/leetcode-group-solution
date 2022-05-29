@@ -1,8 +1,13 @@
 public class main0318 {
-    
+    public static void main(String[] args) {
+        Solution0318 sol = new Solution0318();
+        String[] words = new String[]{"abcw","baz","foo","bar","xtfn","abcdef"};
+        int res = sol.maxProduct(words);
+        System.out.println(res);
+    }
 }
 
-class Solution { // 31 - 36
+class Solution0318 { // 31 - 36
     public int maxProduct(String[] words) {
         int[] masks = new int[words.length];
         for (int i = 0; i < words.length; i++) {
