@@ -20,15 +20,17 @@
 - [Student ID](https://github.com/openview2017/leetcode-group-solution/tree/main/Object%20Oriented%20Design/Student%20ID)
 - [Vending Machine](https://github.com/openview2017/leetcode-group-solution/tree/main/Object%20Oriented%20Design/Vending%20Machine)
 
+
+### Grokking the OOD Interview
+
+- [ATM](https://github.com/openview2017/leetcode-group-solution/tree/main/Object%20Oriented%20Design/Grokking%20the%20OOD%20Interview%20-%20ATM)
+- [Movie Ticket Booking System](https://github.com/openview2017/leetcode-group-solution/tree/a40d59b1541f898318eb24e024ffe92dd5779f20/Object%20Oriented%20Design/Grokking%20the%20OOD%20Interview%20-%20Movie%20Ticket%20Booking%20System)
+
 ### LintCode
 
 - [0747 -  自动咖啡机](https://github.com/openview2017/leetcode-group-solution/tree/main/Object%20Oriented%20Design/LintCode%20-%20747%20-%E5%92%96%E5%95%A1%E6%9C%BA.java)
 - [714 - 二十一点](https://github.com/openview2017/leetcode-group-solution/tree/main/Object%20Oriented%20Design/LintCode%20-%20714%20-%20%20%E4%BA%8C%E5%8D%81%E4%B8%80%E7%82%B9) 
 - [748 - 设计 Kindle](https://github.com/openview2017/leetcode-group-solution/tree/main/Object%20Oriented%20Design/LintCode%20-%20748%20-%20%E8%AE%BE%E8%AE%A1Kindle%20) 
-
-### Grokking the OOD Interview
-
-- [ATM](https://github.com/openview2017/leetcode-group-solution/tree/main/Object%20Oriented%20Design/Grokking%20the%20OOD%20Interview%20-%20ATM)
 
 
 ## BookReading
