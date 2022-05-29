@@ -20,6 +20,12 @@
 - [Student ID](https://github.com/openview2017/leetcode-group-solution/tree/main/Object%20Oriented%20Design/Student%20ID)
 - [Vending Machine](https://github.com/openview2017/leetcode-group-solution/tree/main/Object%20Oriented%20Design/Vending%20Machine)
 
+
+### Grokking the OOD Interview
+
+- [ATM](https://github.com/openview2017/leetcode-group-solution/tree/main/Object%20Oriented%20Design/Grokking%20the%20OOD%20Interview%20-%20ATM)
+- [Movie Ticket Booking System](https://github.com/openview2017/leetcode-group-solution/tree/a40d59b1541f898318eb24e024ffe92dd5779f20/Object%20Oriented%20Design/Grokking%20the%20OOD%20Interview%20-%20Movie%20Ticket%20Booking%20System)
+
 ### LintCode
 
 - [0747 -  自动咖啡机](https://github.com/openview2017/leetcode-group-solution/tree/main/Object%20Oriented%20Design/LintCode%20-%20747%20-%E5%92%96%E5%95%A1%E6%9C%BA.java)
