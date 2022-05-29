@@ -1,6 +1,8 @@
+# Singleton
+
 https://www.lintcode.com/problem/204/?utm_source=sc-libao-cyc 
 
-<b>Problem Description</b>
+## <b>Problem Description</b>
 
 Singleton is a most widely used design pattern. If a class has and only has one instance at every moment, we call this design as singleton. 
 For example, for class Mouse (not a animal mouse), we should design it in singleton.
@@ -83,7 +85,6 @@ public class ParkingLot {
 ## 静态内部类
 
 <aside> 💡 static, nested class
-
 </aside>
 
 既是线程安全的，又性能比较好
@@ -105,24 +106,7 @@ public class ParkingLot {
 
 - 由于 `LazyParkingLot` 在 `ParkingLot` 的内部，所以可以调用 `ParkingLot` 的构造函数
 
-- ```
-  _instance
-  ```
-
-   是 
-
-  ```
-  final
-  ```
-
-   的，所以不需要 
-
-  ```
-  synchronize
-  ```
-
-   关键词也是线程安全的
-
+- `_instance `是 `final`的，所以不需要 `synchronize`关键词也是线程安全的
   - 即使有多个线程，也不会创造多个 instance
   - 在创建 `LayParkingLot` 的时候，就已经完成了 `new ParkingLot`
 
