@@ -1,7 +1,7 @@
 public class main1154 {
     public static void main(String[] args) {
         Solution1154 sol = new Solution1154();
-        date = "2019-01-09";
+        String date = "2019-01-09";
         int count = sol.dayOfYear(date);
         System.out.println(count);
     }
@@ -15,7 +15,7 @@ class Solution1154 {
         int year = Integer.parseInt(ds[0]);        
         int month = Integer.parseInt(ds[1]);
         int day = Integer.parseInt(ds[2]);
-        System.out.println(year + "_" + month + "_" + day);
+        //System.out.println(year + "_" + month + "_" + day);
         int count = 0;
         
         // count += day;
