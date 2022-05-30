@@ -1,6 +1,12 @@
+import java.util.*;
+import java.util.function.BiPredicate;
+
 public class main2104 {
     public static void main(String[] args) {
         Solution2104 sol = new Solution2104();
+        int[] nums = new int[]{1,2,3};
+        long res = sol.subArrayRanges(nums);
+        System.out.println(res);
     }
 }
 
