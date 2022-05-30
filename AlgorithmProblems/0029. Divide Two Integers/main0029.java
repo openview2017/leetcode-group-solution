@@ -1,6 +1,9 @@
 public class main0029 {
     public static void main(String[] args) {
-        
+        Solution0029 sol = new Solution0029();
+        int dividend = 10, divisor = 3;
+        int res = sol.divide(dividend, divisor);
+        System.out.println(res);
     }
 }
 
