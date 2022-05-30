@@ -1,5 +1,10 @@
 public class main0907 {
-    
+    public static void main(String[] args) {
+        Solution0907 sol = new Solution0907();
+        int[] arr = new int[]{3,1,2,4};
+        int res = sol.sumSubarrayMins(nums);
+        System.out.println(res);
+    }
 }
 
 class Solution0907 {
