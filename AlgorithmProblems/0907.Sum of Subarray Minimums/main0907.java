@@ -1,8 +1,10 @@
+import java.util.*;
+
 public class main0907 {
     public static void main(String[] args) {
         Solution0907 sol = new Solution0907();
         int[] arr = new int[]{3,1,2,4};
-        int res = sol.sumSubarrayMins(nums);
+        int res = sol.sumSubarrayMins(arr);
         System.out.println(res);
     }
 }
