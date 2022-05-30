@@ -29,3 +29,4 @@ class Solution2104 { // 08
         return res;
     }
 }
+// https://leetcode.com/problems/sum-of-subarray-ranges/discuss/1624268/Reformulate-Problem-O(n)
