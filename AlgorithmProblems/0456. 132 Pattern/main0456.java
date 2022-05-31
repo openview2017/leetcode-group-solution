@@ -1,4 +1,4 @@
-import java.util.Deque;
+import java.util.*;
 
 public class main0456 {
     public static void main(String[] args) {

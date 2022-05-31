@@ -71,7 +71,7 @@ public class Main {
         
         datebegin = sdf.parse("2013-01-06");
         dateend = sdf.parse("2013-01-10");
-         bs.makeReservation(h2, new ReservationRequest(datebegin, dateend, roomsNeeded1));        
+        bs.makeReservation(h2, new ReservationRequest(datebegin, dateend, roomsNeeded1));        
         // reservationRequest(2, "2013-01-06", "2013-10-10", 2);
     }
 }
