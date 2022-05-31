@@ -1,5 +1,10 @@
 public class main0456 {
-    
+    public static void main(String[] args) {
+        Solution0456 sol = new Solution0456();
+        int[] nums = {1,2,3,4};
+        boolean res = sol.find132pattern(nums);
+        System.out.println(res);
+    }
 }
 
 class Solution0456 {
