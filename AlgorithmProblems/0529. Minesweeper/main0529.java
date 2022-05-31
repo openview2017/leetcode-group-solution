@@ -1,5 +1,14 @@
+import java.util.Arrays;
+
 public class main0529 {
-    
+    public static void main(String[] args) {
+        Solution0529 sol = new Solution0529();
+        char[][] board = {{'E','E','E','E','E'},{'E','E','M','E','E'},{'E','E','E','E','E'},{'E','E','E','E','E'}};
+        System.out.println(Arrays.deepToString(board));
+        int[] click = {3,0};
+        char[][] res = sol.updateBoard(board, click);
+        System.out.println(Arrays.deepToString(res));
+    }
 }
 
 
