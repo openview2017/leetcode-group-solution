@@ -1,3 +1,5 @@
+import java.util.Deque;
+
 public class main0456 {
     public static void main(String[] args) {
         Solution0456 sol = new Solution0456();
