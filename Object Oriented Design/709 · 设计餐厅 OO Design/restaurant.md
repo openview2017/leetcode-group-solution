@@ -28,6 +28,140 @@ class Party {
 
 ```
 
+# 1. set up restaurant
+``` java
+public class Main {
+    public static void main(String[] args) {
+        Restaurant rest = new Restaurant();
+        //创建三个桌子
+        Table t1 = new Table(4);
+        Table t2 = new Table(4);
+        Table t3 = new Table(10);  
+        rest.addTable(t1);        
+        rest.addTable(t2);
+        rest.addTable(t3);  
+        
+        //创建三个菜
+        Meal m1 = new Meal(10.0f);
+        Meal m2 = new Meal(13.0f);
+        Meal m3 = new Meal(17.0f);        
+
+        List<Meal> restMeal = rest.getMenu();
+        restMeal.add(m1);
+        restMeal.add(m2);
+        restMeal.add(m3);
+        System.out.println(rest.restaurantDescription());
+    }
+}
+
+
+class Restaurant {
+	private List<Table> tables;
+	private List<Meal> menu;
+
+    	
+	public Restaurant()
+	{
+		tables = new ArrayList<Table>();
+		menu = new ArrayList<Meal>();
+	}
+
+    public List<Meal> getMenu()
+	{
+		return menu;
+	}
+	
+	public void addTable(Table t)
+	{
+		tables.add(t);
+		//Collections.sort(tables);
+	}
+    
+	public String restaurantDescription()
+	{
+        // Keep them, don't modify.
+		String description = "";
+		for(int i = 0; i < tables.size(); i++)
+		{
+			Table table = tables.get(i);
+			description += ("Table: " + i + ", table size: " + table.getCapacity() + ", isAvailable: " + table.isAvailable() + ".");
+			if(table.getCurrentOrder() == null)
+				description += " No current order for this table"; 
+			else if (table.getCurrentOrder() == null)
+                description +=  " Order price: 0.0";
+            else
+				description +=  " Order price: " + table.getCurrentOrder().getBill();
+			
+			description += ".\n";
+		}
+		description += "*****************************************\n";
+		return description;
+	}    
+}
+
+class Table {
+	private int capacity;
+	private boolean available;
+	private Order order; 
+    
+	public Table(int capacity)
+	{
+		this.capacity = capacity;
+		available = true;
+		order = null;
+	}
+	public int getCapacity()
+	{
+		return this.capacity;
+	}
+	
+	public boolean isAvailable()
+	{
+		return this.available;
+	}
+	
+	public Order getCurrentOrder()
+	{
+		return this.order;
+	}
+}
+
+class Order { 
+    private List<Meal> meals;
+ 
+	public Order()
+	{
+		meals = new ArrayList<Meal>();
+	}
+    
+	public float getBill()
+	{ // !!!
+		int bill = 0;
+		return bill;
+	}    
+}
+
+class Meal {
+	private float price;
+	
+	public Meal(float price)
+	{
+		this.price = price;
+	}
+	
+	public float getPrice()
+	{
+		return this.price;
+	}
+}
+
+class Party {
+    private int size;
+}
+
+
+```
+
 ```java
 // "static void main" must be defined in a public class.
 public class Main {
@@ -41,17 +175,19 @@ public class Main {
         rest.addTable(t1);        
         rest.addTable(t2);
         rest.addTable(t3);
-        
-        List<Meal> restMeal = rest.getMenu();
-        restMeal.add(new Meal(10.0f));
-        restMeal.add(new Meal(13.0f));
-        restMeal.add(new Meal(17.0f));
-        System.out.println(rest.restaurantDescription());
-        
+
         //创建三个菜
         Meal m1 = new Meal(10.0f);
         Meal m2 = new Meal(13.0f);
-        Meal m3 = new Meal(17.0f);
+        Meal m3 = new Meal(17.0f);        
+
+        List<Meal> restMeal = rest.getMenu();
+        restMeal.add(m1);
+        restMeal.add(m2);
+        restMeal.add(m3));
+        System.out.println(rest.restaurantDescription());
+        
+
         
         //输入备选的party
         Party p1 = new Party(3);
