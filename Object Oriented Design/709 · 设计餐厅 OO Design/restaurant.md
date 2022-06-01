@@ -267,7 +267,7 @@ class Restaurant {
 	public void addTable(Table t)
 	{
 		tables.add(t);
-		//Collections.sort(tables);
+		Collections.sort(tables);
 	}
 
 /************find the table*****************/
@@ -310,7 +310,7 @@ class Restaurant {
 	}    
 }
 
-class Table {
+class Table implements Comparable<Table> {
 	private int capacity;
 	private boolean available;
 	private Order order; 
@@ -345,6 +345,14 @@ class Table {
 	{
 		return this.order;
 	}
+    
+    /*******/
+    @Override
+	public int compareTo(Table compareTable) {
+		// TODO Auto-generated method stub
+		return this.capacity - compareTable.getCapacity();
+	}
+    /*******/
 }
 
 class Order { 
