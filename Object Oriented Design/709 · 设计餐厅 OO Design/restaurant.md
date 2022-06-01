@@ -170,6 +170,8 @@ class Party {
 
 ```
 
+
+## Complete code
 ```java
 // "static void main" must be defined in a public class.
 public class Main {
@@ -192,7 +194,7 @@ public class Main {
         List<Meal> restMeal = rest.getMenu();
         restMeal.add(m1);
         restMeal.add(m2);
-        restMeal.add(m3));
+        restMeal.add(m3);
         System.out.println(rest.restaurantDescription());
         
 
