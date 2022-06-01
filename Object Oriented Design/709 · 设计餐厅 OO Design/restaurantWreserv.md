@@ -1,4 +1,15 @@
-# 731
+# 题目：设计餐馆 
+
+1. 不能订外卖
+2. 能预订座位
+3. MAX_DINETIME 为 2， 意为占用一桌吃饭的最大时长为2小时
+4. 如果餐桌被预定，则无法入座
+5. 餐馆的桌子有不同大小
+6. 餐馆会优先选择适合当前Party最小的空桌（例如，如果当事人有3人，餐厅会安排4人桌，而不是10人桌）
+7. 相对设计餐馆 I，Table新增functions 需要实现。相关函数之后会调用restaurantDescription, 来验证你的程序是否正确。
+
+
+# Archive code
 ```java
 // "static void main" must be defined in a public class.
 import java.util.*;
