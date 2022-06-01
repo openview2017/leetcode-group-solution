@@ -184,11 +184,35 @@ class Party {
 ```
 
 ## find table for the party
+### Output
+```
+Table: 0, table size: 4, isAvailable: true. No current order for this table.
+Table: 1, table size: 4, isAvailable: true. No current order for this table.
+Table: 2, table size: 10, isAvailable: true. No current order for this table.
+*****************************************
 
-# Code
+Table: 0, table size: 4, isAvailable: false. No current order for this table.
+Table: 1, table size: 4, isAvailable: true. No current order for this table.
+Table: 2, table size: 10, isAvailable: true. No current order for this table.
+*****************************************
+
+Table: 0, table size: 4, isAvailable: false. No current order for this table.
+Table: 1, table size: 4, isAvailable: false. No current order for this table.
+Table: 2, table size: 10, isAvailable: true. No current order for this table.
+*****************************************
+
+Table: 0, table size: 4, isAvailable: false. No current order for this table.
+Table: 1, table size: 4, isAvailable: false. No current order for this table.
+Table: 2, table size: 10, isAvailable: false. No current order for this table.
+*****************************************
+
+
+```
+
+### Code
 ``` java
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws NoTableException {
         Restaurant rest = new Restaurant();
         //创建三个桌子
         Table t1 = new Table(4);
@@ -207,6 +231,18 @@ public class Main {
         restMeal.add(m1);
         restMeal.add(m2);
         restMeal.add(m3);
+        System.out.println(rest.restaurantDescription());
+ /**********************************************/
+         //输入备选的party
+        Party p1 = new Party(3);
+        Party p3 = new Party(4);
+        Party p4 = new Party(6);   
+        //给第1，3，4的party安排桌子
+        rest.findTable(p1);
+        System.out.println(rest.restaurantDescription());
+        rest.findTable(p3);
+        System.out.println(rest.restaurantDescription());
+        rest.findTable(p4);
         System.out.println(rest.restaurantDescription());
     }
 }
@@ -233,6 +269,24 @@ class Restaurant {
 		tables.add(t);
 		//Collections.sort(tables);
 	}
+
+/************find the table*****************/
+	public void findTable(Party p) throws NoTableException
+	{
+		for(Table t: tables)
+		{
+			if(t.isAvailable())
+			{
+				if(t.getCapacity() >= p.getSize())
+				{
+					t.markUnavailable();
+					return;
+				}
+			}
+		}
+		throw new NoTableException(p);
+	}
+/************find the table*****************/
     
 	public String restaurantDescription()
 	{
@@ -276,7 +330,17 @@ class Table {
 	{
 		return this.available;
 	}
+     /*******/
+	public void markAvailable()
+	{
+		this.available = true;
+	}
 	
+	public void markUnavailable()
+	{
+		this.available = false;
+	}
+     /*******/	
 	public Order getCurrentOrder()
 	{
 		return this.order;
@@ -312,9 +376,31 @@ class Meal {
 	}
 }
 
+/*******/
 class Party {
-    private int size;
+	private int size;
+	
+	public Party(int size)
+	{
+		this.size = size;
+	}
+	
+	public int getSize()
+	{
+		return this.size;
+	}
 }
+
+class NoTableException extends Exception{
+
+	public NoTableException(Party p)
+	{
+		super("No table available for party size: " + p.getSize());
+	}
+}
+/*******/
+
+
 ```
 
 
