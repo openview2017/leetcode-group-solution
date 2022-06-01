@@ -416,6 +416,15 @@ class NoTableException extends Exception{
 ### Output
 ```
 
+Table: 0, table size: 4, isAvailable: false. Order price: 10.0.
+Table: 1, table size: 4, isAvailable: false. No current order for this table.
+Table: 2, table size: 10, isAvailable: false. No current order for this table.
+*****************************************
+
+Table: 0, table size: 4, isAvailable: false. Order price: 10.0.
+Table: 1, table size: 4, isAvailable: false. No current order for this table.
+Table: 2, table size: 10, isAvailable: false. Order price: 30.0.
+*****************************************
 
 ```
 
