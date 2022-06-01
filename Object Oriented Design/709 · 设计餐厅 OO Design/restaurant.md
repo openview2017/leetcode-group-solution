@@ -16,7 +16,7 @@
 4. check out;
 
 
-## Step 0 define classes
+## 0. define classes
 ``` java
 class Restaurant {
 	private List<Table> tables;
@@ -43,15 +43,15 @@ class Party {
 
 ```
 
-# 1. set up restaurant
-## Output
+## 1. set up restaurant
+### Output
 ``` java
 // Table: 0, table size: 4, isAvailable: true. No current order for this table.
 // Table: 1, table size: 4, isAvailable: true. No current order for this table.
 // Table: 2, table size: 10, isAvailable: true. No current order for this table.
 ```
 
-# Code
+### Code
 ``` java
 public class Main {
     public static void main(String[] args) {
@@ -183,7 +183,7 @@ class Party {
 }
 ```
 
-## find table for the party
+## 2. find table for the party
 ### Output
 ```
 Table: 0, table size: 4, isAvailable: true. No current order for this table.
