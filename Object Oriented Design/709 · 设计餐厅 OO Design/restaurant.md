@@ -29,6 +29,14 @@ class Party {
 ```
 
 # 1. set up restaurant
+## Output
+``` java
+// Table: 0, table size: 4, isAvailable: true. No current order for this table.
+// Table: 1, table size: 4, isAvailable: true. No current order for this table.
+// Table: 2, table size: 10, isAvailable: true. No current order for this table.
+```
+
+# Code
 ``` java
 public class Main {
     public static void main(String[] args) {
