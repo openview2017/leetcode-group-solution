@@ -1,7 +1,22 @@
 
 
+# 描述
 
-# Step 0 define classes
+1. 不能预订座位
+2. 不能订外卖
+3. 餐馆的桌子有不同大小
+4. 餐馆会优先选择适合当前Party最小的空桌（例如，如果客人一共有3个人，餐厅将分配一张4人的桌子，而不是10人的桌子）
+5. 需要实现Restaurant Class
+
+
+## steps
+1. set up restaurant
+2. find the table for party
+3. place an order
+4. check out;
+
+
+## Step 0 define classes
 ``` java
 class Restaurant {
 	private List<Table> tables;
@@ -166,8 +181,6 @@ class Meal {
 class Party {
     private int size;
 }
-
-
 ```
 
 
