@@ -96,7 +96,33 @@ class Solution {
 ```
 ## iterative
 ``` java
-
+public class Solution {
+  public List<Integer> rightView(TreeNode root) {
+    // Write your solution here
+    List<Integer> result = new ArrayList<Integer>();
+    if (root == null) {
+      return result;
+    }
+    Deque<TreeNode> queue = new LinkedList<TreeNode>();
+    queue.offer(root);
+    while (!queue.isEmpty()) {
+      int count = queue.size();
+      for (int i = 0; i < count; i++) {
+        TreeNode tmp = queue.poll();
+        if (tmp.left != null) {
+          queue.offer(tmp.left);       
+        }        
+        if (tmp.right != null) {
+          queue.offer(tmp.right);                    
+        }
+        if (i == count - 1) {
+          result.add(tmp.key);
+        }
+      }    
+    }
+    return result;
+  }
+}
 
 ```
 
