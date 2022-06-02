@@ -24,7 +24,7 @@ Output: 12
 The path sum is (3 + 5) + (3 + 1) = 12
 ```
 
-<img src="https://assets.leetcode.com/uploads/2021/04/30/pathsum4-1-tree.jpg" alt="Untitled" style="zoom:50%;" />
+<img src="https://assets.leetcode.com/uploads/2021/04/30/pathsum4-1-tree.jpg" alt="Untitled" style="zoom:50%;float:right"/>
 
 # DFS
 
@@ -41,6 +41,8 @@ Complexity Analysis:
 
 - Time Complexity: O(n)
 - Space Complexity: O(n)
+
+Java:
 
 ```java
 class Solution {
@@ -94,3 +96,48 @@ class Solution {
     }
 }
 ```
+
+Python:
+
+```python
+class Solution:
+    def pathSum(self, nums: List[int]) -> int:
+        tree = dict()
+        result = [0]
+        
+        for node in nums:
+            value = node % 10
+            code = node // 10
+            tree[code] = value
+        
+        root = nums[0] // 10
+        self.dfs(root, 0, result, tree)
+        return result[0]
+    
+    def dfs(self,code, sum, result, tree):
+        if code not in tree:
+            return
+        
+        value = tree[code]
+        depth, id = self.decode(code)
+        
+        left_code = self.encode(depth + 1, id * 2 - 1)
+        right_code = self.encode(depth + 1, id * 2)
+        
+        # leaf node
+        if (left_code not in tree) and (right_code not in tree):
+            result[0] += sum + value;
+            return
+        
+        self.dfs(left_code, sum + value, result, tree)
+        self.dfs(right_code, sum + value, result, tree)
+        
+    
+    # depth, id -> 
+    def encode(self, depth, id):
+        return 10 * depth + id
+    
+    
+    # code -> depth, id
+    def decode(self, code):
+        return (code // 10, code % 10)
