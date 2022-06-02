@@ -76,7 +76,9 @@ DFS 中存在许多重复计算
 
 定义节点的前缀和为：由根结点到当前结点的路径上所有节点的和。
 
-
+Complexity Analysis:
+- Time Complexity: O(n)
+- Space Complexity:  O(n)
 
 Java
 
