@@ -13,6 +13,8 @@
 
 # DFS
 
+*Ziheng Gong - June 2nd 2022*
+
 bottom up, 左右自
 
 - Use a hashMap `count` to count the subtree sum occurrence.
