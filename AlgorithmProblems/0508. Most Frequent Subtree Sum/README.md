@@ -13,15 +13,18 @@
 
 # DFS
 
+bottom up, 左右自
+
 - Use a hashMap `count` to count the subtree sum occurrence.
 - A sub function `dfs(TreeNode node)` will travel through a tree, recursively calculate the sum of subtree,increment the `count`, and finally return the sum of the sub tree.
 
 Java
 
-```python
+```java
 class Solution {
 
     public int[] findFrequentTreeSum(TreeNode root) {
+        //   value   frequence
         Map<Integer, Integer> counter = new HashMap<Integer, Integer>();
         int[] max_freq = new int[1];
         dfs(root, counter, max_freq);
@@ -37,19 +40,27 @@ class Solution {
             .stream()
             .mapToInt(Integer::intValue)
             .toArray();
-    }
 
+        /* 或者
+        int[] res = new int[ans.size()];
+        for(int i = 0; i < ans.size(); i++){
+            res[i] = ans.get(i);
+        }            
+        */
+    }
+		// 求解以 root 为根节点的当前子树的 sum
     private int dfs(TreeNode root, Map<Integer, Integer> counter, int[] max_freq) {
         if (root == null) {
             return 0;
         } 
+        int leftSum =  dfs(root.left, counter, max_freq);
+		int rightSum =  dfs(root.right, counter, max_freq);
+        int val = leftSum + rightSum + root.val;
         
-        int s = dfs(root.left, counter, max_freq) + dfs(root.right, counter, max_freq) + root.val;
+        counter.put(val, counter.getOrDefault(val, 0) + 1);
+        max_freq[0] = Math.max(max_freq[0], counter.get(val));
         
-        counter.put(s, counter.getOrDefault(s, 0) + 1);
-        max_freq[0] = Math.max(max_freq[0], counter.get(s));
-        
-        return s;
+        return val;
     }
 }
 ```
