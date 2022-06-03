@@ -15,7 +15,7 @@
 
 see also [**814. Binary Tree Pruning**](https://github.com/openview2017/leetcode-group-solution/tree/bbd2610f84a045f4d07ca80fc4027699ebf8f3c5/AlgorithmProblems/0814.%20Binary%20Tree%20Pruning)
 
-- Post-order 遍历，自底向上处理
+- 类似 Post-order 的顺序，自底向上处理
 - 看一下左右孩子的返回值，就可以直到自己是不是新的 leaf
 
 Complexity Analysis:

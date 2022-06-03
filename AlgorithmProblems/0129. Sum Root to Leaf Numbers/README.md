@@ -33,6 +33,29 @@ Complexity Analysis:
   - call stack
 
 ```java
+public int sumNumbers(TreeNode root) {
+    int[] sum = new int[1];
+    preOrderDfs(root, sum, 0);
+    return sum[0];
+}
+
+private void preOrderDfs(TreeNode node, int[] sum, int num) {
+    if (node == null) return;
+    num = 10 * num + node.val;
+    
+    if (node.left == null && node.right == null) {
+        sum[0] += num;
+    }
+    
+    preOrderDfs(node.left, sum, num);
+    preOrderDfs(node.right, sum, num);
+}
+```
+
+
+
+
+```java
 class Solution {
     public int sumNumbers(TreeNode root) {
         return dfs(root, 0);
