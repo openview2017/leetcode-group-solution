@@ -1,5 +1,5 @@
 # 124. Binary Tree Maximum Path Sum
-124 二叉树中的最大路径和
+124 二叉树中的最大路径和 [124. Binary Tree Maximum Path Sum - LeetCode](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
 
 - input：Tree
 - output：
@@ -15,7 +15,7 @@
 解释：最优路径是 15 -> 20 -> 7 ，路径和为 15 + 20 + 7 = 42
 ```
 
-see also [**687. Longest Univalue Path**]([leetcode-group-solution/AlgorithmProblems/0687. Longest Univalue Path at main · openview2017/leetcode-group-solution (github.com)](https://github.com/openview2017/leetcode-group-solution/tree/main/AlgorithmProblems/0687. Longest Univalue Path))
+see also [**687. Longest Univalue Path**](https://github.com/openview2017/leetcode-group-solution/tree/main/AlgorithmProblems/0687.%C2%A0Longest%20Univalue%20Path)
 
 # Recursion
 
@@ -41,7 +41,7 @@ eg.
 Complexity Analysis:
 
 - Time Complexity: O(n)
-  - 对每个节点访问不超过 2 此
+  - 对每个节点访问不超过 2 次
 - Space Complexity: O(height)
 
 Java

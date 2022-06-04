@@ -1,6 +1,10 @@
 # 437. Path Sum III
 
-[Path Sum III - LeetCode](https://leetcode.com/problems/path-sum-iii/submissions/)
+437 路径总和 III 
+
+https://leetcode.com/problems/path-sum-iii/
+
+---
 
 输入：`TreeNode` 二叉树的 root ，`int` 整数 targetSum ，
 
@@ -18,9 +22,11 @@ Output: 3
 Explanation: The paths that sum to 8 are shown.
 ```
 
-![https://assets.leetcode.com/uploads/2021/04/09/pathsum3-1-tree.jpg](https://assets.leetcode.com/uploads/2021/04/09/pathsum3-1-tree.jpg)
+<img src="https://assets.leetcode.com/uploads/2021/04/09/pathsum3-1-tree.jpg" alt="https://assets.leetcode.com/uploads/2021/04/09/pathsum3-1-tree.jpg" style="zoom:50%;" />
 
 # DFS (will be optimized)
+
+*Ziheng Gong - June 1st 2022*
 
 LeetCode Accepted
 
@@ -71,6 +77,8 @@ class Solution {
 ```
 
 # Prefix Sum
+
+*Linghan Ye - May 31st 2022*
 
 DFS 中存在许多重复计算
 
