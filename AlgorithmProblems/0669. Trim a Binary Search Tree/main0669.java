@@ -1,7 +1,11 @@
 public class main0669 {
     
 }
-
+/*
+ * Two cases:
+ *  1. the root will be deleted
+ *  2. the root remains
+ */
 class Solution0669 {
     public TreeNode trimBST(TreeNode root, int low, int high) {
         if (root == null) return root;
