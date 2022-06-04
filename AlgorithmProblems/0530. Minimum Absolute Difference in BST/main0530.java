@@ -16,7 +16,7 @@ public class main0530 {
  *     }
  * }
  */
-public class Solution {
+public class Solution0530_r {
     int min = Integer.MAX_VALUE;
     Integer prev = null;
     
@@ -24,7 +24,7 @@ public class Solution {
         if (root == null) return min;
         
         getMinimumDifference(root.left);
-        
+      
         if (prev != null) {
             min = Math.min(min, root.val - prev);
         }
@@ -33,10 +33,31 @@ public class Solution {
         getMinimumDifference(root.right);
         
         return min;
-    }
-    
+    }    
 }
 
+public class Solution0530_i {
+    public int getMinimumDifference(TreeNode root) {
+        int minDif = Integer.MAX_VALUE;
+        Deque<TreeNode> stack = new ArrayDeque<>();
+        TreeNode cur = root;
+        TreeNode prev = null;
+        while (cur != null || !stack.isEmpty()) {
+            if (cur != null) {
+                stack.offerLast(cur);
+                cur = cur.left;
+            } else {
+                cur = stack.pollLast();
+                if (prev != null) {
+                    minDif = Math.min(minDif, cur.val - prev.val);
+                }
+                prev = cur;
+                cur = cur.right;
+            }
+        }
+        return minDif;
+    }
+}
 // public class Solution {
 //     TreeSet<Integer> set = new TreeSet<>();
 //     int min = Integer.MAX_VALUE;
