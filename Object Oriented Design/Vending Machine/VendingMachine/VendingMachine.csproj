@@ -51,8 +51,10 @@
     <Compile Include="Objects\Inventory.cs" />
     <Compile Include="Objects\Money.cs" />
     <Compile Include="Objects\MoneyType.cs" />
-    <Compile Include="Services\PaymentService.cs" />
-    <Compile Include="Services\SelectionService.cs" />
+    <Compile Include="Services\IPaymentService.cs" />
+    <Compile Include="Services\ISelectionService.cs" />
+    <Compile Include="Services\CashPaymentService.cs" />
+    <Compile Include="Services\CmdSelectionService.cs" />
     <Compile Include="VendingMachineState\IdleState.cs" />
     <Compile Include="Objects\Item.cs" />
     <Compile Include="Objects\ItemType.cs" />
@@ -67,6 +69,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
