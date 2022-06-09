@@ -58,3 +58,4 @@ class Solution2242 {
         return res;
     }
 }
+//https://leetcode.cn/problems/maximum-score-of-a-node-sequence/solution/by-endlesscheng-dt8h/
