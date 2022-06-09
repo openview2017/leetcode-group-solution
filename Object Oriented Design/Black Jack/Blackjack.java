@@ -192,7 +192,7 @@ public class Game {
             case "hit" : hit(hand); break;
             case "split": split(hand); break;
             case "stand pat": break;
-            case "stand": stand; break;
+            case "stand": break;
             default: print("Wrong input");
         }
     }

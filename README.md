@@ -25,6 +25,7 @@
 
 - [ATM](https://github.com/openview2017/leetcode-group-solution/tree/main/Object%20Oriented%20Design/Grokking%20the%20OOD%20Interview%20-%20ATM)
 - [Movie Ticket Booking System](https://github.com/openview2017/leetcode-group-solution/tree/a40d59b1541f898318eb24e024ffe92dd5779f20/Object%20Oriented%20Design/Grokking%20the%20OOD%20Interview%20-%20Movie%20Ticket%20Booking%20System)
+- [Chess](https://github.com/openview2017/leetcode-group-solution/tree/main/Object%20Oriented%20Design/Grokking%20the%20OOD%20Interview%20-%20Chess)
 
 ### LintCode
 
