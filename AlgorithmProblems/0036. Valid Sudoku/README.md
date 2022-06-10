@@ -16,6 +16,8 @@
 
 # 数组计数 - 1 Pass Solution
 
+*Ziheng Gong - June 9th 2022*
+
 使用三个数组，分别记录行，列，宫
 
 对于数组中的一个格子 (i, j), 其
@@ -59,6 +61,8 @@ class Solution {
 ```
 
 # Python , Bitmask
+
+*Ziheng Gong - June 9th 2022*
 
 ```python
 class Solution:
