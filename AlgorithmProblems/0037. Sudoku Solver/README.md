@@ -39,7 +39,7 @@ Time Complexity: $O(9^{9 \times 9})$
 
 宫的计算：
 
-![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e938b49b-e0a0-4e97-b778-366769763bc5/image.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220610%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220610T014002Z&X-Amz-Expires=86400&X-Amz-Signature=3085a65faf1d62e7c367d032d72ab32bdc4360a7c5795f35384ca1317af7a613&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22image.jpg%22&x-id=GetObject)
+![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e938b49b-e0a0-4e97-b778-366769763bc5/image.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220610%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220610T044034Z&X-Amz-Expires=86400&X-Amz-Signature=b03ab07ee7a7ef59b867d967219b6fd0db9772a97ea4ce29837045b7508d4561&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22image.jpg%22&x-id=GetObject)
 
 
 
@@ -177,7 +177,7 @@ Idea：
 Bit tricks:
 
 -  `!rows[i][digit] && !cols[j][digit] && !boxes[i / 3][j / 3][digit]`  → `~(rows[i] | cols[j] | boxes[i / 3][j / 3]) & 0x1ff`
--  todo
+-  todo....
 
 ```java
 class Solution {

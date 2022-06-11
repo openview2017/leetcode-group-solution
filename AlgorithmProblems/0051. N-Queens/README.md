@@ -15,7 +15,7 @@ LeetCode 输出与 LaiCode 不一样：eg. n = 4
 
 *Ziheng Gong - June 9th 2022*
 
-<img src="233%20N%20Queens%203de1fc8e633b4cf98391b4ffb0941e0e/Untitled.png" alt="233%20N%20Queens%203de1fc8e633b4cf98391b4ffb0941e0e/Untitled.png" style="zoom:50%;" />
+<img src="233%20N%20Queens%203de1fc8e633b4cf98391b4ffb0941e0e/Untitled.png"   />
 
 - 红色Code
 - 8 × 8 的国际象棋棋盘上放置八个皇后，使得任何两个皇后都无法互相攻击
