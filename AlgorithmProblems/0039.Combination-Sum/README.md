@@ -220,7 +220,7 @@ class Solution {
 
 
 
-## Combination Sum IV
+## 377. Combination Sum IV
 
 [377. Combination Sum IV - LeetCode](https://leetcode.com/problems/combination-sum-iv/)
 
@@ -252,7 +252,7 @@ class Solution {
 
 ### DFS w/ memo, buttom up
 
-![Untitled.png (1480×977) (amazonaws.com)](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a92383c9-cb75-4bca-8396-f44e14902d88/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220611T023009Z&X-Amz-Expires=86400&X-Amz-Signature=547a564e0183b35acb7c6a80b26b0cfca59aee20e8d8a6d90b6a52c4367aec86&X-Amz-SignedHeaders=host&response-content-disposition=filename %3D"Untitled.png"&x-id=GetObject)
+![Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a92383c9-cb75-4bca-8396-f44e14902d88/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220611T023009Z&X-Amz-Expires=86400&X-Amz-Signature=547a564e0183b35acb7c6a80b26b0cfca59aee20e8d8a6d90b6a52c4367aec86&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
 
 - 观察 Recursion Tree，发现很多很多重复计算
 - 实现的时候，使用 remaining
