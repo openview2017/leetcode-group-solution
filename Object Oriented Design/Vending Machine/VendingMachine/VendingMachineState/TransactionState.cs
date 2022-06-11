@@ -21,7 +21,10 @@ namespace VendingMachineService.VendingMachineState
                 Console.WriteLine("The changes returned are.");
                 Console.WriteLine($"Coin value: {coin.Value}, Coin Amount: {changes.GetQuantity(coin)}");
             }
+            // Take items from vending machine item storage.
             vendingMachine.CurItems.Reduce(vendingMachine.CurSelectedItems);
+            // Take items from vending machine changes storage.
+            vendingMachine.CurChanges.Reduce(changes);
             vendingMachine.Reset();
         }
     }
