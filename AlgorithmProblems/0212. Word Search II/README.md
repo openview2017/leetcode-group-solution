@@ -2,7 +2,7 @@
 
 Same as [LintCode 132](https://www.lintcode.com/problem/132/)
 
-See also LeetCode - [79. Word Search](https://leetcode.com/problems/word-search/); LintCode - 1848 Word Search III
+See also [LeetCode - 79. Word Search](https://leetcode.com/problems/word-search/); [LintCode - 1848 Word Search III](https://www.lintcode.com/problem/1848)
 
 输入一个图和一个单词表，问哪些词在图中能找到
 
