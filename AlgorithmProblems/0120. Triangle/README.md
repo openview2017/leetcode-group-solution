@@ -19,6 +19,8 @@ triangle = [
 output: 2 + 3 + 5 + 1 = 11
 ```
 
+*Ziheng Gong - June 16th 2022*
+
 与二叉树比较：
 
 - n 层数字三角形，有 $n ^ 2$  个节点
@@ -118,15 +120,12 @@ class Solution:
     def minimumTotal(self, triangle: List[List[int]]) -> int:
         n = len(triangle)
         
-        # dp[i][j] 表示：从 i，j 走到最底层的最小 path sum
-       
+        # dp[i][j] 表示：从 i，j 走到最底层的最小 path sum       
         dp = [[0] * (i + 1) for i in range(n)]  # [ [0],[0,0],[0,0,0] ]
-        
-        
+                
         # initialization, 最底层行
         for i in range(n):
-            dp[n-1][i] = triangle[n-1][i]
-        
+            dp[n-1][i] = triangle[n-1][i]        
          
         for i in range(n - 2, -1, -1):
             for j in range(i + 1):
@@ -147,8 +146,7 @@ class Solution:
         
         # dp[i][j] 表示：从 0,0 走到 i，j 的最小 sum path       
         dp = [[0] * (i + 1) for i in range(n)]  # [ [0],[0,0],[0,0,0] ]
-        
-        
+                
         # initialization, 三角形的左边和右边
         """
          triangle     dp
@@ -161,8 +159,7 @@ class Solution:
         dp[0][0] = triangle[0][0]
         for i in range(1, n):
             dp[i][0] = dp[i-1][0] + triangle[i][0]      # DP 三角形的左边
-            dp[i][i] = dp[i-1][i-1] + triangle[i][i]    # DP 三角形的右边
-        
+            dp[i][i] = dp[i-1][i-1] + triangle[i][i]    # DP 三角形的右边        
          
         for i in range(2, n):
             for j in range(1, i):
