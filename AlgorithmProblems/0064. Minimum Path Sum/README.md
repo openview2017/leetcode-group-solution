@@ -107,7 +107,7 @@ class Solution {
 
 ## Follow-Up
 
-<aside> 💡 如果要输出总和最低的路径呢？（如果有多个答案，返回其中之一即可） </aside>
+<aside style="background-color:grey; color: white"> 💡 如果要输出总和最低的路径呢？（如果有多个答案，返回其中之一即可） </aside>
 
 基于 bottom - up ：
 
