@@ -1,9 +1,12 @@
 # **62. Unique Paths**
 
-https://leetcode.com/problems/unique-paths/
+[62. Unique Paths - LeetCode](https://leetcode.com/problems/unique-paths/)
 
-same as [LintCode 114](https://www.lintcode.com/problem/114/)
+See Also:
 
+- same as [LintCode 114](https://www.lintcode.com/problem/114/)
+- [【动态规划 / 总结必看】从一道入门题与你分享关于 DP 的分析技巧 -  [宫水三叶的刷题日记]](https://mp.weixin.qq.com/s?__biz=MzU4NDE3MTEyMA==&mid=2247485037&idx=1&sn=d6d52c48600e655161e84f25d3402514&chksm=fd9cad72caeb2464e1d8adcd991ec178001472a6c6ddc02a1764bc74ea27a97f71fddbce9975&scene=178&cur_album_id=1773144264147812354#rd)
+---
 - 输入：int m, int n, 表示 m 行 n 列的矩阵
 
 - 输出：`int`
