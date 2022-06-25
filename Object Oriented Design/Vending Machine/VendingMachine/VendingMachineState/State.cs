@@ -4,18 +4,18 @@ namespace VendingMachineService.VendingMachineState
 {
     public abstract class State : IState
     {
-        protected VendingMachine vendingMachine;
+        protected VendingMachine VendingMachine;
 
-        public State(VendingMachine vendingMachine)
+        protected State(VendingMachine vendingMachine)
         {
-            this.vendingMachine = vendingMachine;
+            VendingMachine = vendingMachine;
         }
 
         public abstract void Handle();
 
         public override string ToString()
         {
-            return this.GetType().Name;
+            return GetType().Name;
         }
     }
 }

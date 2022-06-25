@@ -3,9 +3,8 @@ using System.Linq;
 using System.Collections.Generic;
 using VendingMachineService.Objects;
 using VendingMachineService.Exceptions;
-using VendingMachineService.Services;
 
-namespace VendingMachineService
+namespace VendingMachineService.Services
 {
     /// <summary>
     /// Vending machine item selection service using command line.
@@ -13,11 +12,11 @@ namespace VendingMachineService
     /// </summary>
     public class CmdSelectionService : ISelectionService
     {
-        private readonly VendingMachine vendingMachine;
+        private readonly VendingMachine _vendingMachine;
 
         public CmdSelectionService(VendingMachine vendingMachine)
         {
-            this.vendingMachine = vendingMachine;
+            _vendingMachine = vendingMachine;
         }
 
         /// <summary>
@@ -36,8 +35,8 @@ namespace VendingMachineService
                 string itemName = Console.ReadLine();
                 Console.Write("Please put in the amount: ");
                 int.TryParse(Console.ReadLine(), out int amount);
-                var curItem = vendingMachine.CurItems.GetAllItems().FirstOrDefault(x => x.Name == itemName);
-                if (vendingMachine.CurItems.GetQuantity(curItem) - selectedItems.GetQuantity(curItem) < amount)
+                var curItem = _vendingMachine.CurItems.GetAllItems().FirstOrDefault(x => x.Name == itemName);
+                if (_vendingMachine.CurItems.GetQuantity(curItem) - selectedItems.GetQuantity(curItem) < amount)
                 {
                     throw new OutOfInventoryException($"{itemName} is out of inventory. Please put in another amount.");
                 }
@@ -52,7 +51,7 @@ namespace VendingMachineService
 
         public void ShowMenu()
         {
-            var itemNames = vendingMachine?.CurItems?.Item?.Keys?.ToList() ?? new List<Item>();
+            var itemNames = _vendingMachine?.CurItems?.Item?.Keys?.ToList() ?? new List<Item>();
             Console.WriteLine("Current Items in inventory:");
             foreach (var itemName in itemNames)
             {

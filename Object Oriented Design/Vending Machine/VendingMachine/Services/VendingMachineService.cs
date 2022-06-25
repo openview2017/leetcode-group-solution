@@ -1,7 +1,7 @@
 ﻿using VendingMachineService.Objects;
 using VendingMachineService.VendingMachineState;
 
-namespace VendingMachineService
+namespace VendingMachineService.Services
 {
     public class VendingMachineService
     {
@@ -30,11 +30,29 @@ namespace VendingMachineService
         public void Run()
         {
             Init();
-            VendingMachine.SetState(new IdleState(VendingMachine));
+            var paymentService = new CashPaymentService(VendingMachine);
+            var selectionService = new CmdSelectionService(VendingMachine);
+
+            var idleState = new IdleState(VendingMachine)
+            {
+                SelectionService = selectionService
+            };
+            var paymentState = new PaymentState(VendingMachine)
+            {
+                PaymentService = paymentService
+            };
+            var transactionState = new TransactionState(VendingMachine)
+            {
+                PaymentService = paymentService
+            };
+
+            VendingMachine.SetState(idleState);
             VendingMachine.Handle();
-            VendingMachine.SetState(new PaymentState(VendingMachine));
+            
+            VendingMachine.SetState(paymentState);
             VendingMachine.Handle();
-            VendingMachine.SetState(new TransactionState(VendingMachine));
+            
+            VendingMachine.SetState(transactionState);
             VendingMachine.Handle();
         }
     }

@@ -1,26 +1,25 @@
 ﻿using System;
 using System.Linq;
-using VendingMachineService.Objects;
 using VendingMachineService.Exceptions;
-using VendingMachineService.Services;
+using VendingMachineService.Objects;
 
-namespace VendingMachineService
+namespace VendingMachineService.Services
 {
     public class CashPaymentService : IPaymentService
     {
-        private readonly VendingMachine vendingMachine;
+        private readonly VendingMachine _vendingMachine;
         public CashPaymentService(VendingMachine vendingMachine)
         {
-            this.vendingMachine = vendingMachine;
+            _vendingMachine = vendingMachine;
         }
 
         public void AddBalance(decimal totalPrice, decimal currentBalance)
         {
             Console.WriteLine($"You need to insert at least {totalPrice - currentBalance} amount of money.");
             Console.Write("Please insert money (Amount): ");
-            var amount = decimal.Parse(Console.ReadLine());
-            vendingMachine.AddBalance(amount);
-            Console.WriteLine($"The current balance is {vendingMachine.CurBalance}");
+            var amount = decimal.Parse(Console.ReadLine() ?? string.Empty);
+            _vendingMachine.AddBalance(amount);
+            Console.WriteLine($"The current balance is {_vendingMachine.CurBalance}");
         }
 
         /// <summary>
@@ -33,18 +32,16 @@ namespace VendingMachineService
         {
             var changes = new Inventory<Money>();
             // Pick only coins instead of bills with the sorted denomination, from high to low. Fill the amount.
-            var changesInStock = vendingMachine.CurChanges.GetAllItems()
+            var changesInStock = _vendingMachine.CurChanges.GetAllItems()
                 .Where(x => x.Type == MoneyType.COIN).OrderByDescending(x => x.Value);
             foreach (var change in changesInStock)
             {
-                if (amount > change.Value)
-                {
-                    int coinsNeeded = (int) (amount / change.Value);
-                    int coinsInStock = vendingMachine.CurChanges.GetQuantity(change);
-                    int coinsUsed = Math.Min(coinsNeeded, coinsInStock);
-                    amount -= coinsUsed * change.Value;
-                    changes.Add(change, coinsUsed);
-                }
+                if (amount <= change.Value) continue;
+                var coinsNeeded = (int) (amount / change.Value);
+                var coinsInStock = _vendingMachine.CurChanges.GetQuantity(change);
+                var coinsUsed = Math.Min(coinsNeeded, coinsInStock);
+                amount -= coinsUsed * change.Value;
+                changes.Add(change, coinsUsed);
             }
             if (amount != 0)
             {

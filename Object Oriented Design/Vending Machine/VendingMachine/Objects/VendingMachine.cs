@@ -14,7 +14,7 @@ namespace VendingMachineService.Objects
         /// <summary>
         /// Current amount of money customer has inserted or provided.
         /// </summary>
-        public decimal CurBalance;
+        public decimal CurBalance { get; private set; }
 
         /// <summary>
         /// Current products the vending machine has.

@@ -2,10 +2,10 @@
 {
     public class Item
     {
-        public string Id { get; set; }
-        public string Name { get; set; }
-        public decimal Price { get; set; }
-        public ItemType Type { get; set; }
+        public string Id { get; }
+        public string Name { get; }
+        public decimal Price { get; }
+        public ItemType Type { get; }
 
         public Item(string name, string id="001", decimal price = 0, ItemType type = ItemType.DEFAULT)
         {
@@ -18,13 +18,13 @@
         public override bool Equals(object obj)
         {
             //Check for null and compare run-time types.
-            if ((obj == null) || !this.GetType().Equals(obj.GetType()))
+            if ((obj == null) || this.GetType() != obj.GetType())
             {
                 return false;
             }
             else
             {
-                Item p = (Item)obj;
+                var p = (Item)obj;
                 return Name == p.Name;
             }
         }
