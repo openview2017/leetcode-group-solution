@@ -31,6 +31,8 @@ There are two ways to reach the bottom-right corner:
 
 ## DP Top-down
 
+*Tang Zhao - June 24th 2022*
+
 State：`dp[i][j]` 是到达 (i, j) 的方案总数
 
 Initialization：
