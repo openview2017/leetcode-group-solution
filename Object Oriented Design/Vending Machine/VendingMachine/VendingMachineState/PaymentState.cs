@@ -1,23 +1,25 @@
 ﻿using System;
 using VendingMachineService.Objects;
+using VendingMachineService.Services;
 
 namespace VendingMachineService.VendingMachineState
 {
     public class PaymentState : State
     {
+        public IPaymentService PaymentService { get; set; }
+
         public PaymentState(VendingMachine vendingMachine) : base(vendingMachine)
         {
-            this.vendingMachine = vendingMachine;
+            VendingMachine = vendingMachine;
         }
 
         public override void Handle()
         {
-            var totalPrice = vendingMachine.GetSalePrice();
+            var totalPrice = VendingMachine.GetSalePrice();
             Console.WriteLine($"Current total price is: {totalPrice}");
-            var paymentService = new CashPaymentService(vendingMachine);
-            while (vendingMachine.CurBalance < totalPrice)
+            while (VendingMachine.CurBalance < totalPrice)
             {
-                paymentService.AddBalance(totalPrice, vendingMachine.CurBalance);
+                PaymentService.AddBalance(totalPrice, VendingMachine.CurBalance);
             }
         }
     }

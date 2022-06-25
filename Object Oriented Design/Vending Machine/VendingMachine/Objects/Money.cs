@@ -14,10 +14,10 @@ namespace VendingMachineService.Objects
         /// The currency type of the money.
         /// </summary>
         public CurrencyType CurrencyType { get; } 
-        public Money(decimal moneyValue, MoneyType MoneyType, CurrencyType currencyType = CurrencyType.USD)
+        public Money(decimal moneyValue, MoneyType moneyType, CurrencyType currencyType = CurrencyType.USD)
         {
             Value = moneyValue;
-            Type = MoneyType;
+            Type = moneyType;
             CurrencyType = currencyType;
 
         }
@@ -28,7 +28,7 @@ namespace VendingMachineService.Objects
             {
                 return false;
             }
-            Money other = (Money)obj;
+            var other = (Money)obj;
             return Value == other.Value && Type == other.Type && CurrencyType == other.CurrencyType;
         }
 

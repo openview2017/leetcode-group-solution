@@ -2,9 +2,9 @@
 {
     public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            var vendingMachineService = new VendingMachineService();
+            var vendingMachineService = new Services.VendingMachineService();
             vendingMachineService.Run();
         }
     }

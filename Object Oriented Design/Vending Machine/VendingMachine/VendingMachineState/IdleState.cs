@@ -1,4 +1,5 @@
 ﻿using VendingMachineService.Objects;
+using VendingMachineService.Services;
 
 namespace VendingMachineService.VendingMachineState
 {
@@ -7,16 +8,17 @@ namespace VendingMachineService.VendingMachineState
     /// </summary>
     public class IdleState : State
     {
+        public ISelectionService SelectionService { get; set; }
+
         public IdleState(VendingMachine vendingMachine) : base(vendingMachine)
         {
-            this.vendingMachine = vendingMachine;
+            VendingMachine = vendingMachine;
         }
+
         public override void Handle()
         {
-            var selectionService = new CmdSelectionService(vendingMachine);
-            var items = selectionService.GetSelectedItems();
-            vendingMachine.SelectItem(items);
-            return;
+            var items = SelectionService.GetSelectedItems();
+            VendingMachine.SelectItem(items);
         }
     }
 }
