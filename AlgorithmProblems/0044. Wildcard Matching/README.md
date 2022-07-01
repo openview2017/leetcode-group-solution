@@ -23,11 +23,11 @@ Tree:
 - 层：source 或 pattern 的较长者的长度
 - 叉： 最多为 source 的长度
 
-<<<<<<< HEAD
-![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/83f38732-8c66-4e02-bf1f-0eff5522bf18/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220701%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220701T013206Z&X-Amz-Expires=86400&X-Amz-Signature=26eefe1167a253daa27db65b2c8999053ddd6291986a69ef54e6f420f95a10ce&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
-=======
-![Untitled]([Untitled.png (1314×1257) (amazonaws.com)](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/83f38732-8c66-4e02-bf1f-0eff5522bf18/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220701%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220701T013206Z&X-Amz-Expires=86400&X-Amz-Signature=26eefe1167a253daa27db65b2c8999053ddd6291986a69ef54e6f420f95a10ce&X-Amz-SignedHeaders=host&response-content-disposition=filename %3D"Untitled.png"&x-id=GetObject))
->>>>>>> main
+<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/83f38732-8c66-4e02-bf1f-0eff5522bf18/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220701%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220701T013206Z&X-Amz-Expires=86400&X-Amz-Signature=26eefe1167a253daa27db65b2c8999053ddd6291986a69ef54e6f420f95a10ce&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject" alt="Untitled" style="zoom: 33%;" />
+
+Complexity Analysis:
+
+- Time Complexity: $O(\text{s.length} \cdot \text{p.length})$
 
 Python
 
