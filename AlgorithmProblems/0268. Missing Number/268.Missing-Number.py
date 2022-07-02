@@ -28,3 +28,10 @@ class Solution2:
             if nums[i] != i:
                 return i
         return len(nums)
+
+class Solution3:
+    def missingNumber(self, nums):
+        missing = len(nums)
+        for i, num in enumerate(nums):
+            missing ^= i ^ num
+        return missing
