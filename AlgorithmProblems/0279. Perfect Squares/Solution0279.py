@@ -1,3 +1,6 @@
+import math
+
+
 class Solution0279(object):
     def numSquares(self, n):
         """

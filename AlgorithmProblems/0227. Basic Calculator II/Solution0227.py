@@ -45,3 +45,14 @@ class Solution0227:
                 sign = s[i]
 
         return last + res  
+
+sol = Solution0227()
+s="3+2*2"
+ans = sol.calculate(s)
+print(s + "=" + str(ans))
+s=" 3/2 "
+ans = sol.calculate(s)
+print(s + "=" + str(ans))
+s=" 3+5 / 2 "
+ans = sol.calculate(s)
+print(s + "=" + str(ans))
