@@ -1,3 +1,6 @@
+from typing import List
+
+
 class Solution0066:
     def plusOne(self, digits: List[int]) -> List[int]:
         n = len(digits)
