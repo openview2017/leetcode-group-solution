@@ -1,6 +1,16 @@
+import java.util.Arrays;
+
 public class main1465 {
     public static void main(String[] args) {
-        
+        Solution1465 sol = new Solution1465();
+        int h, w, horizontalCuts[], verticalCuts[], res;
+
+        h = 5;
+        w = 4;
+        horizontalCuts = new int[]{1,2,4};
+        verticalCuts = new int[]{1,3};
+        res = sol.maxArea(h, w, horizontalCuts, verticalCuts);
+        System.out.println(res);
     }
 }
 
