@@ -23,3 +23,11 @@ class Solution1465:
         
         # Python doesn't need to worry about overflow - don't forget the modulo though!
         return (max_height * max_width) % (10**9 + 7)
+
+sol = Solution1465()
+h = 5
+w = 4
+horizontalCuts = [1,2,4]
+verticalCuts = [1,3]
+ans = sol.maxArea(h,2,horizontalCuts,verticalCuts)
+print(ans)
