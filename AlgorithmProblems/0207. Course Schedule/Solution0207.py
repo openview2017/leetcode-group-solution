@@ -18,3 +18,4 @@ class Solution0207:
                     bfs.append(j)
         return len(bfs) == numCourses
     
+# https://leetcode.com/problems/course-schedule/discuss/162743/JavaC%2B%2BPython-BFS-Topological-Sorting-O(N-%2B-E)
