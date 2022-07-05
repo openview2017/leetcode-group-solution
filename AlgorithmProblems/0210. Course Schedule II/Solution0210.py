@@ -17,3 +17,5 @@ class Solution0210:
                 if degree[j] == 0:
                     bfs.append(j)
         return bfs if len(bfs) == numCourses else []        
+
+# https://leetcode.com/problems/course-schedule/discuss/162743/JavaC%2B%2BPython-BFS-Topological-Sorting-O(N-%2B-E)
