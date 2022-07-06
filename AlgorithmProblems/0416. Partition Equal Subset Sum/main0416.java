@@ -1,5 +1,13 @@
 public class main0416 {
-    
+    public static void main(String[] args) {
+        Solution0416 sol = new Solution0416();
+        int[] nums;
+        boolean res;
+
+        nums = new int[]{1,5,11,5};
+        res = sol.canPartition(nums);
+        System.out.println(res);
+    }
 }
 
 
