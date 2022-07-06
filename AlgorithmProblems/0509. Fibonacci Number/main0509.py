@@ -1,5 +1,6 @@
 import copy
 from typing import List
+
 class Solution0509:
     def fib(self, N: int) -> int:
         if (N <= 1):
