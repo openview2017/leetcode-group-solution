@@ -12,7 +12,7 @@ class main2272{
 }
 
 class Solution2272 { // 00 - 11
-    public int largestVariance(String s) {
+    public int largestVariance0(String s) { // for testing
         int n = s.length(), res = 0;
         int[] dp0 = new int[n+1];
         int[] dp1 = new int[n+1];
@@ -39,6 +39,24 @@ class Solution2272 { // 00 - 11
                 if (i == 'b' && j == 'a') {
                     System.out.println(Arrays.toString(dp0));                    
                     System.out.println(Arrays.toString(dp1));
+                }
+            }
+        }
+        return res;
+    }
+
+    public int largestVariance(String s) {
+        int n = s.length(), res = 0;
+        for (char i = 'a'; i <= 'z'; i++) {
+            for (char j = 'a'; j <= 'z'; j++) {
+                if (i == j) continue;
+                int dp0 = 0, dp1 = -n-1; // max wo b, max w b
+                for (int k = 0; k < n; k++) {
+                    char ch = s.charAt(k);
+                    int v = ch == i ? 1 : (ch == j ? -1 : 0);
+                    dp0 = Math.max(dp0 + v, v);
+                    dp1 = v == -1 ? dp0 : dp1 + v;
+                    res = Math.max(res, dp1);
                 }
             }
         }
