@@ -1,3 +1,5 @@
+// reference: https://leetcode.cn/problems/substring-with-largest-variance/solution/mei-ju-chu-xian-zui-duo-he-zui-shao-de-z-g9gz/
+
 import java.util.Arrays;
 
 class main2272{
