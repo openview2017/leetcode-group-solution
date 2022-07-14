@@ -1,6 +1,9 @@
 public class main1864 {
     public static void main(String[] args) {
-        
+        Solution1864 sol = new Solution1864();
+        String s = "111000";
+        int res = sol.minSwaps(s);
+        System.out.println(res);
     }
 }
 
