@@ -42,7 +42,7 @@ private:
   }
 };
 
-class Solution0148 {
+class Solution0148_huahua {
 public:
   ListNode* sortList(ListNode* head) {
     // 0 or 1 element, we are done.
