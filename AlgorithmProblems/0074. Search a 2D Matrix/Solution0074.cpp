@@ -24,3 +24,18 @@ public:
     return false;
   }
 };
+
+int main() {
+    Solution0074 sol;
+
+    vector<vector<int>> vect
+    {
+        {1,3,5,7},
+        {10,11,16,20},
+        {723,30,34,60}
+    }; 
+
+    int target = 3;
+    bool res = sol.searchMatrix(vect, target);
+    cout << res;
+}
