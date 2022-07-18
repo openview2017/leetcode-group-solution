@@ -1,6 +1,6 @@
 
 
-class Solution100 {
+class Solution0100 {
 
 struct TreeNode {
     int val;
