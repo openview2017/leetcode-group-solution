@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution0108 {
+class Solution0118 {
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> res = new ArrayList<List<Integer>>();
         if (numRows == 0) {
@@ -25,7 +25,7 @@ class Solution0108 {
     }
 
     public static void main(String[] args) {
-        Solution0108 sol = new Solution0108();
+        Solution0118 sol = new Solution0118();
         int numRows = 5;
         List<List<Integer>> res = sol.generate(numRows);
         System.out.println(Arrays.deepToString(res.toArray()));
