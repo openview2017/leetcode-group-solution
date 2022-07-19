@@ -169,3 +169,55 @@ public class WordDictionary {
 }
 ```
 
+``` java 
+// solution 2 Zhao
+class WordDictionary { 
+    TrieNode root;
+    public WordDictionary() {
+        root = new TrieNode();
+    }
+    
+    public void addWord(String word) {
+        TrieNode curr = root;
+        for (char c : word.toCharArray()) {
+            if (curr.children[c - 'a'] == null) {
+                curr.children[c - 'a'] = new TrieNode();
+            }
+            curr = curr.children[c - 'a']; 
+        }
+        curr.isWord = true;
+    }
+    
+    public boolean search(String word) { 
+        return search(word.toCharArray(), 0, root);       
+    }
+    
+    private boolean search(char[] arr, int index, TrieNode curr) {
+        if (curr == null) {
+            return false;
+        }
+        if (index == arr.length) {
+            return curr.isWord;
+        }
+        if (arr[index] == '.') {
+            for (TrieNode child : curr.children) {
+                if (search(arr, index + 1, child)) {
+                    return true;
+                }
+            }
+            return false;
+        } else {
+            curr = curr.children[arr[index] - 'a'];
+            return search(arr, index + 1, curr);
+        }
+    }
+}
+
+class TrieNode {
+    boolean isWord = false;
+    TrieNode[] children = new TrieNode[26]; 
+}
+
+
+
+```
