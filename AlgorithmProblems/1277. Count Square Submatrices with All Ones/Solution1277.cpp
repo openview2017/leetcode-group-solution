@@ -4,7 +4,7 @@
 #include <algorithm>
 using namespace std;
 
-class Solution {
+class Solution1277 {
 public:
     int countSquares(vector<vector<int>>& matrix) {
         int sum = 0;
